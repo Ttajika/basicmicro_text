@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>市場均衡分析の応用 &#8212; 基礎ミクロ経済学</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch1/ch1.6';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="課税と死荷重損失" href="ch1.7.html" />
+    <link rel="prev" title="市場均衡と余剰" href="ch1.5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="基礎ミクロ経済学 - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="基礎ミクロ経済学 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    基礎ミクロ経済学
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ch1.1.html">単一財市場の理論</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ch1.2.html">市場における交換</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1.3.html">単一財の消費者理論</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1.4.html">単一財の生産者理論</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1.5.html">市場均衡と余剰</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">市場均衡分析の応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1.7.html">課税と死荷重損失</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch1/ch1.6.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ch1/ch1.6.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>市場均衡分析の応用</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">需要曲線・供給曲線のシフト</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">需要法則の検証</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">豊作貧乏</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="id1">
+<h1>市場均衡分析の応用<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>本節では市場均衡を用いた分析を紹介する．</p>
+<section id="id2">
+<h2>需要曲線・供給曲線のシフト<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>はじめに紹介するのは，経済環境が変わったときに，市場均衡における価格や取引量がどのように変化するのか，である．
+ある財の需要量や供給量は，その財の価格以外の要因によって変化することがある．例えば，消費者の面からすると，所得が増加する，製品の改良によってもっと消費したくなる，逆に不祥事等によってその財を使うことの嫌悪感がでてきてしまう，などがある．生産者の方も同様にものを作るための材料費が高騰する，技術革新によって安く作れるようになる，などである．</p>
+<p>こういった場合，需要曲線や供給曲線そのものが変化する．需要曲線は「価格」と「需要量」の関係を示すものであり，それ以外の要因はグラフには出てこない．したがって，価格以外の要因によって需要量が変化するのであれば，需要曲線そのものが変化するのである．例えば，ある財が人気が出て，需要量が増えたとしてみよう．このとき，同じ価格だったとしても需要量はそれまでと比べ，増えているに違いない．その場合，需要曲線は<a class="reference internal" href="#demand-shift"><span class="std std-numref">Fig. 11</span></a>のように<strong>右にシフトする</strong>.</p>
+<figure class="align-default" id="demand-shift">
+<img alt="../_images/demand_shift.svg" src="../_images/demand_shift.svg" /><figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">需要曲線のシフト</span><a class="headerlink" href="#demand-shift" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>上の図を見ればわかる通り，需要曲線が<span class="math notranslate nohighlight">\(D^{\text{前}}\)</span>から<span class="math notranslate nohighlight">\(D^{\text{後}}\)</span>に変化すると，同じ価格<span class="math notranslate nohighlight">\(p\)</span>のときの需要量は<span class="math notranslate nohighlight">\(q^\text{前}\)</span>から<span class="math notranslate nohighlight">\(q^\text{後}\)</span>に変換する．この図であれば，どの価格でもそうなっていることを確かめてみよう．</p>
+<p>さて，このとき，市場均衡における価格はどうなるだろうか．これは図を見ればわかる．
+<a class="reference internal" href="#demand-shift-eq"><span class="std std-numref">Fig. 12</span></a>にあるように，取引量は<span class="math notranslate nohighlight">\({q^*}^\text{前}\)</span>から<span class="math notranslate nohighlight">\({q^*}^\text{後}\)</span>に，価格は<span class="math notranslate nohighlight">\({p^*}^\text{前}\)</span>から<span class="math notranslate nohighlight">\({p^*}^\text{後}\)</span>に両方とも上昇することになる．</p>
+<figure class="align-default" id="demand-shift-eq">
+<img alt="../_images/demand_shift_eq.svg" src="../_images/demand_shift_eq.svg" /><figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">需要曲線のシフトと市場均衡の変化</span><a class="headerlink" href="#demand-shift-eq" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>このように図に描くことで，需要曲線の変化が市場均衡にどのように影響を与えるかを理解することができる．需要曲線が左にシフトする場合や，供給曲線が左や右にシフトする場合も同様に考えることができるので，実際に図を描いて確かめてみよう．</p>
+</section>
+<section id="id3">
+<h2>需要法則の検証<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>需要曲線や供給曲線のシフトのアイデアは需要曲線が右下がりであるかどうか（あるいは供給曲線が右上がりであるかどうか）を検証することができる．</p>
+<p>例えば次のような状況を考えてみよう.</p>
+<blockquote>
+<div><p>1月15日に鳥インフルエンザにより大量の鶏の殺処分が行われ，3月15日には鶏の餌代の価格が上昇したというニュースがあった．鶏卵の価格と取引量が次のようになっていた.</p>
+<ul class="simple">
+<li><p>1月1日: 価格100, 取引量140</p></li>
+<li><p>3月1日: 価格120, 取引量100</p></li>
+<li><p>5月1日: 価格200, 取引量80</p></li>
+</ul>
+</div></blockquote>
+<p>ニュースの内容から，生産者にとっての費用上昇，つまり，供給曲線の左シフト（価格が同じでも供給したくなくなる）が起きたと考えられる．そして，価格が増加する一方で取引量が減少している．</p>
+<p>さて，これを用いて，需要曲線が右下がりであるはずだと言うことが導かれることを示そう．需要曲線と供給曲線のありうるパターンは次の<a class="reference internal" href="#patterns"><span class="std std-numref">Fig. 13</span></a>のとおりであろう．</p>
+<figure class="align-default" id="patterns">
+<img alt="../_images/patterns.svg" src="../_images/patterns.svg" /><figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">需要曲線と供給曲線のパターン</span><a class="headerlink" href="#patterns" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>ここで，供給曲線の左シフトが起きたとすれば，それぞれのパターンにおいて取引量と価格は次の<a class="reference internal" href="#patterns2"><span class="std std-numref">Fig. 14</span></a>のようになる（新しい供給曲線を<span class="math notranslate nohighlight">\(S'\)</span>で示している）．</p>
+<figure class="align-default" id="patterns2">
+<img alt="../_images/patterns2.svg" src="../_images/patterns2.svg" /><figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">供給曲線のシフト後の需要曲線と供給曲線のパターン</span><a class="headerlink" href="#patterns2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>このうち，価格が上昇し，取引量が減少するパターンは(a)と(f)のみであり，いずれにおいても需要曲線は右下がりとなる．つまり，右上がりであるような需要曲線は実際の現象から否定されることになるのである．なお，(f)も許容されるので，供給曲線が右下がりであることは否定できないことに注意である.</p>
+</section>
+<section id="id4">
+<h2>豊作貧乏<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ch1.5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">市場均衡と余剰</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ch1.7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">課税と死荷重損失</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">需要曲線・供給曲線のシフト</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">需要法則の検証</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">豊作貧乏</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 多鹿 智哉
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
