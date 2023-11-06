@@ -1,0 +1,616 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>独占企業の戦略 &#8212; 基礎ミクロ経済学</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch2/ch2_4';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="複数企業の競争" href="ch2_5.html" />
+    <link rel="prev" title="外部性" href="ch2_3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/miclogo.png" class="logo__image only-light" alt="基礎ミクロ経済学 - Home"/>
+    <script>document.write(`<img src="../_static/miclogo.png" class="logo__image only-dark" alt="基礎ミクロ経済学 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    基礎ミクロ経済学
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch1/ch1.1.html">単一財市場の理論</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.2.html">市場における交換</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.3.html">単一財の消費者理論</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.4.html">単一財の生産者理論</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.5.html">市場均衡と余剰</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.6.html">市場均衡分析の応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.7.html">課税と死荷重損失</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ch2_0.html">市場の失敗</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ch2_1.html">非対称情報とレモン市場</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch2_2.html">公共財市場</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch2_3.html">外部性</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">独占企業の戦略</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch2_5.html">複数企業の競争</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Ttajika/basicmicro_text" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch2/ch2_4.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ch2/ch2_4.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>独占企業の戦略</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">独占均衡</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">価格差別</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">完全価格差別</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">属性による価格差別</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">非線形価格とバンドリング</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">スクリーニング</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="id1">
+<h1>独占企業の戦略<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2>独占均衡<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>完全競争の三番目の仮定、「価格受容者であること」はむしろ満たされない場合が多いだろう。
+企業は自社製品の価格は自社で決定する場合が普通である。</p>
+<p>しかしそうであったとしても無数の企業が競争していればどうだろうか。他社よりも不当に高い価格をつけていればたちまち他社に顧客を持っていかれるだろう。たとえ1社しかない場合でも、潜在的に企業のチャンスがあるならば利益を上げている限り新規参入をしてその企業の利潤を奪うだろう。
+そのような場合には企業はまるで価格受容者のように振る舞うに違いない。</p>
+<p>ここではそのような場合でなく、本当に一社しかない、そして潜在的な参入も考えられない分野を考える。そのような状況を<strong>独占</strong>と呼ぶ。独占の状況では価格受容者のように振る舞うことは損である。<a class="reference internal" href="#monopoly"><span class="std std-numref">Fig. 19</span></a>を見てみよう。もしこの企業が価格受容者のように振る舞えば均衡取引量<span class="math notranslate nohighlight">\(q^{*}\)</span>になり、利潤は図中の点AEFで囲まれた部分の面積である。しかしあえて<span class="math notranslate nohighlight">\(q'\)</span>しか生産しなければ価格は<span class="math notranslate nohighlight">\(p'\)</span>までつり上がり企業の利潤は点ABCDで囲まれた部分の面積となる。そうすると少し比較してみればわかるように明らかに利潤は増加する。</p>
+<figure class="align-default" id="monopoly">
+<img alt="../_images/monopoly.svg" src="../_images/monopoly.svg" /><figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">生産量をあえて少なくすることで価格をつり上げる</span><a class="headerlink" href="#monopoly" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>数式で見てみよう。企業は生産量を減らすことで価格をつり上げられることがわかっている。需要関数は<span class="math notranslate nohighlight">\(D(p)=d-p\)</span>としてみよう。するとこの関係をひっくり返せば<span class="math notranslate nohighlight">\(p=d-D(p)\)</span>となる。均衡では生産量<span class="math notranslate nohighlight">\(q\)</span>が需要量<span class="math notranslate nohighlight">\(D(p)\)</span>と一致するので生産量と価格の関係は<span class="math notranslate nohighlight">\(p=d-q\)</span>である。（この関係は逆需要関数と呼ばれる）
+すると企業の利潤は</p>
+<div class="math notranslate nohighlight">
+\[p\times q-C(q)=(d-q)\times q-C(q)\]</div>
+<p>となる。いま、<span class="math notranslate nohighlight">\(C(q)=c\times q\)</span>としてみよう。ただし<span class="math notranslate nohighlight">\(c&lt;d\)</span> とする。企業の利潤を最大化する生産量は微分したものを<span class="math notranslate nohighlight">\(0\)</span>とおいたものを<span class="math notranslate nohighlight">\(q\)</span>について解くことで得られる。したがってそれを計算すれば</p>
+<div class="math notranslate nohighlight">
+\[d-2q-c=0 \iff q^{\text{独}}=\frac{d-c}{2}\]</div>
+<p>となる。これが独占の時の生産量<span class="math notranslate nohighlight">\(q^{\text{独}}=\frac{d-c}{2}\)</span>である。この時の価格は
+<span class="math notranslate nohighlight">\(p=d-q\)</span>という関係を使って<span class="math notranslate nohighlight">\(p^{\text{独}}=d-(d-c)/2=(d+c)/2\)</span>となり、これが独占水準での価格である。
+ところで企業が価格受容者のように振る舞えば<span class="math notranslate nohighlight">\(p=C'(q)\)</span>が成り立つのであった。これを計算すれば完全競争での価格は<span class="math notranslate nohighlight">\(p^{\text{競}}=c\)</span>となる。<span class="math notranslate nohighlight">\(d&gt;c\)</span>であるので明らかに<span class="math notranslate nohighlight">\(p^{\text{独}}&gt;p^{\text{競}}\)</span>となることがわかるだろう。</p>
+<p>独占企業ができるのは（生産調整を通じた）価格つり上げ行動だけではない。様々な価格設定戦略をもってして消費者の余剰を吸い上げることができる。次節はそれをみてみる。</p>
+</section>
+<section id="id3">
+<h2>価格差別<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>前節では独占企業が価格に与える影響を考察した。そこではすべての財は同一の財であれば同じ価格であるという前提に立った議論をしていた。これは<strong>一物一価の法則</strong>と呼ばれる。一物一価の法則を成立させるためには裁定機会があることが重要である。例えばある消費者Aが10万円でカメラを買おうとしているとき、別の消費者Bが８万円で全く同一のカメラを買う機会があるのであれば、Bが８万円でカメラを買って、Aに9万円で売りつければBは１万円儲けることができる。こういう機会は裁定機会と呼ばれる。転売はこれの最たるものである。裁定機会が徹底していれば売られる価格は全く同一になるはずである。</p>
+<p>一方で裁定機会がない状況は現実にたくさんある。例えば地理的に隔たれていれば、例えばX国で買ってY国で売りに行くには非常に費用がかかる。このとき、X国とY国で価格差があっても完全には解消されない。地理的に隔たれていなくても裁定の相手を見つけるのは通常困難である。誰がその財を欲しがっているのか、あるいは誰がその財を手に入れられるかの情報は普通はわからない。このように裁定機会が欠如していれば同一の財であっても価格差が発生することがある。
+逆に言えば、裁定機会のないことを利用して、異なる人々に別々の価格で財を売りつけることができるのである。こういったとき、企業はより利潤を大きくすることができる。これを見てみよう。</p>
+</section>
+<section id="id4">
+<h2>完全価格差別<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<p>最もかんたんな例として次の状況を考えてみよう。
+消費者が二人、アダムとイヴがいるとする。ある企業は彼らに遊園地のチケットを売ることを考える。簡単のため<a class="footnote-reference brackets" href="#note5" id="id5">1</a>、どれだけ売っても費用は変わらないとしよう。つまりなるべく収入を多くすることが企業の目的である。</p>
+<p>アダムはチケットに8000円支払意思額がある一方、イヴには10000円まで支払意思額がある。
+さて、 企業はいくらに価格をすれば良いだろうか。</p>
+<p>もし価格が8000円なら両者とも買ってくれて収入は16000円である。一方それよりも1円でも高く価格をつけるとアダムは買ってくれない。イヴは10000円までなら買ってくれるのでそれ以上の価格をつけるときには収入は最大でも10000円である。したがって企業は8000円に価格を設定する。</p>
+<p>しかし、企業がアダムに売る金額とイヴに売る金額に差をつけて良いとしたらより良い戦略がある。アダムには8000円で売って、イヴには10000円で売るのである。こうすれば両者とも買ってくれて収入は18000円に増加する。これによって消費者の余剰は<span class="math notranslate nohighlight">\(0\)</span>になるがその分企業の利潤が増えるのである。
+このように各個人ごとに価格を変え、余剰を完全に収奪するような価格差別は<strong>完全価格差別</strong>あるいは<strong>第一種価格差別</strong>と呼ばれる。</p>
+</section>
+<section id="id6">
+<h2>属性による価格差別<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<p>価格を個人ごとに設定するのは実際には難しい。通常はどの個人がどういった需要を持っているのか、どういった支払意思額を持っているのかを知るのは困難だからである。</p>
+<p>この困難を部分的に解消するために、消費者の属性ごとに価格を変えてみることを考えてみよう。
+パソコンソフトを買うときのアカデミック版などがそうである。また遊園地のチケットにも学生料金などがある。これらは支払意思額が低そうな属性を持つ人には安い価格を、そうでない人には高い価格をつけ、企業が余剰を収奪しているのである。このように人々を属性などのグループに分け、それぞれのグループに対して価格を変えるような行為は<strong>第三種価格差別</strong>とよばれれる。</p>
+</section>
+<section id="id7">
+<h2>非線形価格とバンドリング<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<p>これまで見た価格差別は個人ごとに価格を変えるというものであったが、購入単位ごとに価格を変えるという価格差別も存在する。次の例を見てみよう。</p>
+<p>消費者がニンジンを買おうとしている。ニンジン１個に支払ってもいい価格は80円だが、もうひとつ余計に買おうとするときには追加的には40円までしか支払いたくない。それ以上のニンジンは全くいらないとしよう。
+また企業がニンジン一本を仕入れるのに20円かかったとする。この場合、価格はいくらにすればいいだろうか。</p>
+<p>もし価格が40円であれば消費者はニンジンを二本買う。そのときの企業の利益は40円である。もっといい方法がある。80円で売ればニンジンを買うのは一本だが、そのときの利益は60円である。企業は80円をつけるに違いない。</p>
+<p>いやもっといい方法がある。二本まとめて120円という価格をつけるのである。このとき消費者はニンジンの２本パックを買うだろう。そのときの利潤は80円である。
+このようにまとめ売りをするとバラバラに売るよりも利潤を増やすことができるのである。この手の行動は ** 抱き合わせ（バンドリング）** と呼ばれる。</p>
+<p>ではまとめ売りを禁止すればいいだろうか。そうしたとしても企業には他の手がある。一本目のニンジンを80円で売って、二本目を40円で売ればいいのである。そうしたら消費者はニンジンをちゃんと二本買ってくれ、そのときの利潤はまとめ売りのときと同じ80円である。こういう価格の付け方は<strong>非線形価格</strong>と呼ばれる。</p>
+<p>似たような発想ではあるが、購入単位ごとに価格を変えずに料金体系を工夫する方法として<strong>二部料金制度</strong>というものがある。例えば携帯料金や電気料金は定額料金+単価という形をしている。
+二部料金を使って企業がどれほど消費者の余剰を収奪できるかを以下の例を使って見てみよう。</p>
+<p>消費者は<span class="math notranslate nohighlight">\(q\)</span>だけ電気を使うと<span class="math notranslate nohighlight">\(v(q)\)</span>だけの効用が得られる。一方で全く使わなければ効用は<span class="math notranslate nohighlight">\(0\)</span>であるとする。
+これに対して企業は<span class="math notranslate nohighlight">\(q\)</span>だけ電気を提供すると<span class="math notranslate nohighlight">\(C(q) \)</span>だけの費用がかかる。余剰を最大化する消費量は<span class="math notranslate nohighlight">\(v'(q^*)=C'(q^*)\)</span>をみたす<span class="math notranslate nohighlight">\(q^*\)</span>である。このときの値を<span class="math notranslate nohighlight">\(p=v'(q^*)=C'(q^*)\)</span>と置こう。これを単価とする。
+このとき、消費者が<span class="math notranslate nohighlight">\(q^*\)</span>だけ消費することによる効用は<span class="math notranslate nohighlight">\(v(q^*)-p\times q^*\)</span>である。
+企業は定額部分を<span class="math notranslate nohighlight">\(B=v(q^*)-p\times q^*\)</span>とする。そうすれば
+消費者の効用は最終的に<span class="math notranslate nohighlight">\(v(q^*)-p\times q^*-B=0\)</span>となる。全く電気を契約しない場合と効用値は同じなので契約してくれるはずである。このときの企業の収入は<span class="math notranslate nohighlight">\(p\times q^*+B=v(q^*)\)</span>となる。そこから費用を引いた<span class="math notranslate nohighlight">\(v(q^*)-C(q^*)\)</span>が合計の利潤である。
+これによると社会的余剰は結果的には最大化されるが、その余剰はすべて企業が奪ってしまうのである。</p>
+</section>
+<section id="id8">
+<h2>スクリーニング<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<p>今までの議論は企業が消費者に関する情報（効用や需要関数、支払意思額など）をすべて知っているという前提に立っていた。しかし実際には企業はその情報を得られているとは限らない<a class="footnote-reference brackets" href="#note3" id="id9">2</a>。</p>
+<p>そこで、各消費者自身に直接その情報を聞いてみようということになる。消費者は自分からそんな情報を教えるだろうか、と思うかもしれないが、ちょっとした工夫をすることで自発的に教えてくれるような行動をとってくれるのである。これを見てみよう。</p>
+<p>今、ハンバーガーとドリンクを売ることを考える。
+消費者には2タイプいるとする。Aタイプの消費者はハンバーガーには600円の支払意思額、ドリンクには100円の支払意思額がある。
+Bタイプの消費者はハンバーガーには700円の支払意思額、ドリンクには300円の支払意思額があるとしよう。AタイプとBタイプの消費者はそれぞれ半々の割合で存在するとしよう。
+企業にはそういった2つのタイプの消費者がいることは承知しているが、どっちがAでBかはわからないとしてみよう。</p>
+<p>まず、普通にバンドリングを使ってセットで700円で売ってみよう。
+そうするとどっちのタイプの消費者も買ってくれるので収入は平均<span class="math notranslate nohighlight">\(700\)</span>円である。</p>
+<p>もっとうまい方法はないだろうか。ここでハンバーガー単品を600円、セットを899円で売ってみよう。
+そうするとAタイプの消費者はハンバーガーだけを買ってくれる。Aタイプは単品では600円の支払意思額があるが、セットでは<span class="math notranslate nohighlight">\(600+100=700\)</span>円までしか支払意思額がないので899円のセットは購入しない。
+Bタイプの消費者はセットで899円で買ってくれる。なぜならばハンバーガー単品を購入するとハンバーガー単品には700円の支払意思額があるので効用は<span class="math notranslate nohighlight">\(700-600=100\)</span>である。一方でセットで購入するとセットには1000円の支払意思額があるので効用は<span class="math notranslate nohighlight">\(1000-899=101\)</span>である。それぞれの効用を比較をするとセット購入のほうが大きいのでセットを購入するのである。
+収入は<span class="math notranslate nohighlight">\(\frac{600+899}{2}=749.5\)</span>円に増える。このように消費者自身に単品かセットかを選ばせ、その行動により、彼ら自身の情報を引き出しているのである。このように複数の選択肢を用意し、消費者自身に自発的に選ばせることで情報を獲得する行為は<strong>スクリーニング</strong>あるいは<strong>第二種価格差別</strong>と呼ばれている。</p>
+<p>注目するべきはAタイプの効用は結果的に差し引き0であるが、Bタイプの効用は101円になっていることである。これはBタイプの方が支払意思額が大きいということが効いている。もしAタイプもBタイプも効用が0になるような価格付けをするのなら、BタイプはAタイプのふりをして安く抑えたいと思うだろう。そう思わせないようにBタイプには少しおまけをしてBタイプ用のメニューを選ばせているのである。このように売り手側が情報を知らないことによって比較的高い支払意思額をもつひとが得をする分は<strong>情報レント</strong>と呼ばれる。</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="note5"><span class="brackets"><a class="fn-backref" href="#id5">1</a></span></dt>
+<dd><p>「簡単のため」とは「話の本質を失うことなく、話を簡単にするため」のことを意味する。英語で言う、``for simplicity’’ である。</p>
+</dd>
+<dt class="label" id="note3"><span class="brackets"><a class="fn-backref" href="#id9">2</a></span></dt>
+<dd><p>企業はそういった個人の効用に関する情報をインターネットのアクセス記録やアンケート、検索履歴などを通じて収集している。アンケートに答えればポイントなどがもらえたりすることがあるが、その情報をうまく使えば余剰を収奪できるので、情報収集のためには幾ばくかの支出をしても良いのである。</p>
+</dd>
+</dl>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ch2_3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">外部性</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ch2_5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">複数企業の競争</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">独占均衡</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">価格差別</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">完全価格差別</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">属性による価格差別</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">非線形価格とバンドリング</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">スクリーニング</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 多鹿 智哉
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
