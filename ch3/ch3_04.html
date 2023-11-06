@@ -1,0 +1,589 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>無差別曲線 &#8212; 基礎ミクロ経済学</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch3/ch3_04';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="効用最大化問題" href="ch3_05.html" />
+    <link rel="prev" title="予算制約" href="ch3_03.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/miclogo.png" class="logo__image only-light" alt="基礎ミクロ経済学 - Home"/>
+    <script>document.write(`<img src="../_static/miclogo.png" class="logo__image only-dark" alt="基礎ミクロ経済学 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    基礎ミクロ経済学
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch1/ch1.1.html">単一財市場の理論</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.2.html">市場における交換</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.3.html">単一財の消費者理論</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.4.html">単一財の生産者理論</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.5.html">市場均衡と余剰</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.6.html">市場均衡分析の応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch1/ch1.7.html">課税と死荷重損失</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch2/ch2_0.html">市場の失敗</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch2/ch2_1.html">非対称情報とレモン市場</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch2/ch2_2.html">公共財市場</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch2/ch2_3.html">外部性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch2/ch2_4.html">独占企業の戦略</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch2/ch2_5.html">複数企業の競争</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ch3.html">複数財市場の消費者問題</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ch3_01.html">消費者の問題</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch3_02.html">消費財と消費者の選好</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch3_03.html">予算制約</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">無差別曲線</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch3_05.html">効用最大化問題</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="ch3_06.html">補償需要関数とスルツキー方程式*</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Ttajika/basicmicro_text" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch3/ch3_04.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ch3/ch3_04.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>無差別曲線</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="id1">
+<h1>無差別曲線<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>あらゆる消費プランを考えるとき、どれが最適なものかを導くために有用な方法として、<strong>無差別</strong>な場合を考えるというものがある。</p>
+<p>二つの消費プラン<span class="math notranslate nohighlight">\(a\)</span>、 <span class="math notranslate nohighlight">\(b\)</span>が無差別であるとはその二つの消費プランがもたらす効用水準が同じであることをいう。
+例として次の図を見てみよう。<a class="reference internal" href="#indifferent"><span class="std std-numref">Fig. 21</span></a>では消費プランA、B、Cが全て無差別である。つまり同じ効用水準を持つ。</p>
+<figure class="align-default" id="indifferent">
+<img alt="../_images/indifferent.svg" src="../_images/indifferent.svg" /><figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">無差別曲線</span><a class="headerlink" href="#indifferent" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>無差別な点同士を結んだ曲線を<strong>無差別曲線</strong>という。
+無差別曲線にはいくらか特徴がある。</p>
+<ul class="simple">
+<li><p>「無差別曲線を描くことができる。」</p></li>
+</ul>
+<p>無差別曲線が描けないケースはかなりのレアケースである。例えば消費者が消費プラン同士を比較できないという場合にはそういう事が起きる可能性がある。また、あらゆる消費プランが無差別だという場合には無差別曲線が線にならず無差別平面になる可能性はある。ただしこの講義ノートで考える「普通」の効用関数ではそういったことは起きない。</p>
+<ul class="simple">
+<li><p>「どの無差別曲線が高い効用水準を示すかがわかる。」</p></li>
+</ul>
+<p>通常、財が多ければ多いほど望ましいということを仮定する。したがって右上にある方の無差別曲線がより高い効用水準を示すことになる。</p>
+<ul class="simple">
+<li><p>「異なる無差別曲線は交わらない。」</p></li>
+</ul>
+<p>もし異なる無差別曲線同士が交わったのなら矛盾が発生する。異なる無差別曲線では効用水準が異なる。しかし交差する点の消費プランでは異なる二つの効用水準があることになってしまうのである。
+したがって、無差別曲線同士は交わらない。</p>
+<ul class="simple">
+<li><p>「無差別曲線は原点に対して凸になる。」</p></li>
+</ul>
+<p>これはより中間の消費をしたほうが望ましい、ということを意味している。財<span class="math notranslate nohighlight">\(x\)</span>ばかり、や財<span class="math notranslate nohighlight">\(y\)</span>ばかりというような消費よりも財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>を半分づつ、という方が望ましいという仮定である。</p>
+<p>一般に曲線の傾きはどこで測るかによって異なる。</p>
+<p>財<span class="math notranslate nohighlight">\(y\)</span>の消費量を縦軸、財<span class="math notranslate nohighlight">\(x\)</span>の消費量を横軸にとったとき、無差別曲線の傾きのことを<strong>財<span class="math notranslate nohighlight">\(x\)</span>の財<span class="math notranslate nohighlight">\(y\)</span>に対する限界代替率</strong>と呼ぶ。
+数学的には偏微分を用いて定義する。</p>
+<p><span class="math notranslate nohighlight">\(u(q_x,q_y)\)</span>と書けるとき、<span class="math notranslate nohighlight">\(\frac{\partial u(q_x,q_y)}{\partial q_x}\)</span>を<strong>財<span class="math notranslate nohighlight">\(x\)</span>の限界効用</strong>と呼ぶ (<span class="math notranslate nohighlight">\(MU_x\)</span>と書くことが多い)。
+これは他の財の消費量が変わらないとき, 財<span class="math notranslate nohighlight">\(x\)</span>の消費量.だ.けをほんの少し増やしたとき, 効用がどれだけ増えるかを示している。
+同様に<span class="math notranslate nohighlight">\(\frac{\partial u(q_x,q_y)}{\partial q_y}\)</span>を**<span class="math notranslate nohighlight">\(y\)</span>の限界効用**と呼ぶ(<span class="math notranslate nohighlight">\(MU_y\)</span>と書くことが多い)。
+基本的には効用の値そのものと同様に限界効用そのものの値には意味がない[^note]:プラスマイナスが変わるなら別だが…。
+他の財の限界効用と比べることで初めて意味がある.</p>
+<p>財<span class="math notranslate nohighlight">\(x\)</span>の財<span class="math notranslate nohighlight">\(y\)</span>に対する限界代替率とは言葉の原義的には「財<span class="math notranslate nohighlight">\(x\)</span>をほんの少し(<span class="math notranslate nohighlight">\(\Delta x\)</span>だけ)増やした時に 効用を一定に保つためには財<span class="math notranslate nohighlight">\(y\)</span>をどれだけ減らさなければいけないかという交換比率」である。
+減らすべき量を<span class="math notranslate nohighlight">\(\Delta y\)</span>としよう。
+すると以下のような式が成り立つ。</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial u(q_x,q_y)}{\partial q_x}\Delta x-\frac{\partial u(q_x,q_y)}{\partial q_y}\Delta y=0\]</div>
+<p><span class="math notranslate nohighlight">\(\frac{\partial u(q_x,q_y)}{\partial q_x}\Delta x\)</span>は財<span class="math notranslate nohighlight">\(x\)</span>の消費量だけをほんの少し(<span class="math notranslate nohighlight">\(\Delta x\)</span>だけ)増やしたとき、どれだけ効用が増えるかを示し,
+<span class="math notranslate nohighlight">\(-\frac{\partial u(q_x,q_y)}{\partial q_y}\Delta y\)</span>は財<span class="math notranslate nohighlight">\(y\)</span>の消費量だけをほんの少し(<span class="math notranslate nohighlight">\(\Delta y\)</span>だけ)減らしたとき、どれだけ効用が減るかを示している。
+効用が変わらないためにはここの増減がちょうど打ち消しあって<span class="math notranslate nohighlight">\(0\)</span>にならなくてはいけない。</p>
+<p>したがってその交換比率 <span class="math notranslate nohighlight">\(\frac{\Delta y}{\Delta x}\)</span>は以下のように計算できる。</p>
+<div class="math notranslate nohighlight">
+\[\frac{\Delta y}{\Delta x}= \frac{\frac{\partial u(q_x,q_y)}{\partial q_x}}{\frac{\partial u(q_x,q_y)}{\partial q_y}}\]</div>
+<p>これを「財<span class="math notranslate nohighlight">\(x\)</span>の財<span class="math notranslate nohighlight">\(y\)</span>に対する限界代替率」とよび、<span class="math notranslate nohighlight">\(\textit{MRS}_{xy}\)</span>と書く。これが無差別曲線の傾きとなるのである。
+ただし注意点として、限界代替率は消費量によって変わるため, どこの点で測ったかを意識する必要があるということである。また、単に限界代替率と呼ぶと財<span class="math notranslate nohighlight">\(x\)</span>で測ったものなのか財<span class="math notranslate nohighlight">\(y\)</span>で測ったものなのかがわからなくなるので「財<span class="math notranslate nohighlight">\(x\)</span>の財<span class="math notranslate nohighlight">\(y\)</span>に対する限界代替率」ときちんと書くことが必要である。</p>
+<p>例として次の効用関数の財<span class="math notranslate nohighlight">\(x\)</span>の財<span class="math notranslate nohighlight">\(y\)</span>に対する限界代替率を計算してみよう。<span class="math notranslate nohighlight">\(u(q_x,q_y)= (q_x)^{1/3} \times (q_y)^{2/3}\)</span>であるとする。
+まず、<span class="math notranslate nohighlight">\(\frac{\partial u(q_x,q_y)}{\partial q_x}\)</span>および<span class="math notranslate nohighlight">\(\frac{\partial u(q_x,q_y)}{\partial q_y}\)</span>を求めよう。それぞれ以下のように計算できる。</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial u(q_x,q_y)}{\partial q_x}= \frac{1}{3}(q_{x})^{-2/3}(q_{y})^{2/3}, \quad
+\frac{\partial u(q_x,q_y)}{\partial q_y}=\frac{2}{3}(q_{x})^{1/3}(q_{y})^{-1/3}\]</div>
+<p><span class="math notranslate nohighlight">\(x\)</span>の<span class="math notranslate nohighlight">\(y\)</span>に対する限界代替率, <span class="math notranslate nohighlight">\(MRS_{xy}\)</span>とは<span class="math notranslate nohighlight">\(\frac{\partial u(q_x,q_y)}{\partial q_x}\)</span>を<span class="math notranslate nohighlight">\(\frac{\partial u(q_x,q_y)}{\partial q_y}\)</span>で割ったものであるので</p>
+<div class="math notranslate nohighlight">
+\[MRS_{xy}=\frac{1}{2} \frac{(q_{x})^{-2/3}(q_{y})^{2/3}}{(q_{x})^{1/3}(q_{y})^{-1/3}}=\frac{1}{2} \frac{q_{y}}{q_{x}}\]</div>
+<p>と計算できる。</p>
+<p>無差別曲線の湾曲度（曲がり具合）にも意味がある。次の例を見てみよう。</p>
+<ul class="simple">
+<li><p>ほぼ垂直な無差別曲線、湾曲が少ない（代替性が高い）。</p></li>
+</ul>
+<figure class="align-default">
+<img alt="../_images/indifferent1.svg" src="../_images/indifferent1.svg" /></figure>
+<p>この無差別曲線を見てみるとほとんど真っ直ぐな直線である。（水平な無差別曲線でも意味合いは同じである。）
+これは限界代替率がどこで測ってもほぼ一定の無差別曲線で、「財<span class="math notranslate nohighlight">\(x\)</span>は財<span class="math notranslate nohighlight">\(y\)</span>いくら分の価値がある」といったことがほぼ決まっているような財の組み合わせである。例えば米1俵と米1斗の組み合わせなどである。米4斗<span class="math notranslate nohighlight">\(=\)</span>米1俵であるので、米1俵減らしたときに同じ効用を保つには米4斗増やさなければならない[^note]:大きい袋だと管理に困るので小さい単位のほうがいいという細かい事情はあるかもしれないが。。それは一俵袋と一斗缶をどの組み合わせでどれだけ買おうと同じことである。</p>
+<p>極端な例だと下図のように真っ直ぐな線となる。
+こういう場合、財同士に<strong>代替性</strong>があるといえる。片方の財がなければもう片方の財を用意すれば十分事足りるからである。</p>
+<figure class="align-default">
+<img alt="../_images/indifferent2.svg" src="../_images/indifferent2.svg" /></figure>
+<ul class="simple">
+<li><p>かなり湾曲度が高い、代替性が低い (補完性が高い)。</p></li>
+</ul>
+<figure class="align-default">
+<img alt="../_images/indifferent3.svg" src="../_images/indifferent3.svg" /></figure>
+<p>先程の例とは逆に湾曲度が高い場合では限界代替率はどこで測るかでかなり異なる。例えば財<span class="math notranslate nohighlight">\(x\)</span>の消費量が多いような消費プランでは限界代替率である無差別曲線の傾きは大きい。つまり僅かな財<span class="math notranslate nohighlight">\(y\)</span>の増加のためならかなりの量の財<span class="math notranslate nohighlight">\(x\)</span>を犠牲にしてよい。逆に財<span class="math notranslate nohighlight">\(y\)</span>の消費量が多い消費プランではその真逆が起きる。
+例えば財<span class="math notranslate nohighlight">\(x\)</span>をケーキ、財<span class="math notranslate nohighlight">\(y\)</span>を紅茶としよう。紅茶一杯をもらう代わりにケーキをいくらあげれるかということを考えてみよう。ケーキが手元にワンホールあるのなら、ひと切れふた切れあげても良いかもしれない。しかし、手元にひと切れしかないときには、そんなにはあげられないはずだ。
+このような財の間には<strong>補完性</strong>があるといえる。つまり片方の財だけ一方的に消費するよりもその中間を消費するほうがずっと良いのでそれらの財はペアで消費することが多い。</p>
+<p>下図のように極端な例では財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>を同じ量だけ消費しないと、片方の財がたくさんあっても効用は全く増加しない。例えば右の靴と左の靴のようなものである。</p>
+<figure class="align-default">
+<img alt="../_images/indifferent4.svg" src="../_images/indifferent4.svg" /></figure>
+<ul class="simple">
+<li><p>飽和点がある。</p></li>
+</ul>
+<figure class="align-default">
+<img alt="../_images/indifferent5.svg" src="../_images/indifferent5.svg" /></figure>
+<p>この無差別曲線は他と違って、財の消費量を増やせば増やすほどよいというわけではない。中心の点Aの消費プランで消費するのが最も良いのである。例としては複数種類の薬などである。これは最適な服用量が決まっていて、それ以上消費しても意味がないしそれ以下でも意味がない。最適な点から遠ざかれば遠ざかるほど薬の効き目は小さい（または害悪になる）。</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ch3_03.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">予算制約</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ch3_05.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">効用最大化問題</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 多鹿 智哉 (https://tomoyatajika.notion.site/)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
