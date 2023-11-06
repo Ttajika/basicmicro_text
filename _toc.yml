@@ -19,5 +19,12 @@ chapters:
   - file: ch2/ch2_3
   - file: ch2/ch2_4
   - file: ch2/ch2_5
-
+- file: ch3/ch3
+  sections:
+  - file: ch3/ch3_01
+  - file: ch3/ch3_02
+  - file: ch3/ch3_03
+  - file: ch3/ch3_04
+  - file: ch3/ch3_05
+  - file: ch3/ch3_06
 

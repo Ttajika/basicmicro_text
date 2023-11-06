@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: 基礎ミクロ経済学
-author: 多鹿 智哉
+author: 多鹿 智哉 (https://tomoyatajika.notion.site/)
 logo: miclogo.png
 
 # Force re-execution of notebooks on each build.
