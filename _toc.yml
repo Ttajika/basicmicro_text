@@ -12,4 +12,12 @@ chapters:
   - file: ch1/ch1.5
   - file: ch1/ch1.6
   - file: ch1/ch1.7
+- file: ch2/ch2_0
+  sections:
+  - file: ch2/ch2_1
+  - file: ch2/ch2_2
+  - file: ch2/ch2_3
+  - file: ch2/ch2_4
+  - file: ch2/ch2_5
+
 

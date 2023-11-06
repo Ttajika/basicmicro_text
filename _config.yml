@@ -3,7 +3,7 @@
 
 title: 基礎ミクロ経済学
 author: 多鹿 智哉
-logo: logo.png
+logo: miclogo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
