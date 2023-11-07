@@ -400,7 +400,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">エッジワースボックス</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">厚生定理</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">厚生定理</a></li>
 </ul>
 
             </nav>
@@ -420,25 +420,32 @@ document.write(`
 財の種類は二種類、財<span class="math notranslate nohighlight">\(x\)</span>と財<span class="math notranslate nohighlight">\(y\)</span>であるとしよう。レオンの財<span class="math notranslate nohighlight">\(x\)</span>の消費量を<span class="math notranslate nohighlight">\(q_{Lx}\)</span>、財<span class="math notranslate nohighlight">\(y\)</span>の消費量を<span class="math notranslate nohighlight">\(q_{Ly}\)</span>、ケネスの財<span class="math notranslate nohighlight">\(x\)</span>の消費量を<span class="math notranslate nohighlight">\(q_{Kx}\)</span>、財<span class="math notranslate nohighlight">\(y\)</span>の消費量を<span class="math notranslate nohighlight">\(q_{Ky}\)</span>であるとする。
 また単純化のため、企業は存在しないとする。その代わり、各消費者はそれぞれ財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>を一定量保有しているとする。これを記号で<span class="math notranslate nohighlight">\(e_{Kx}\)</span>などと表現する。また、これを初期賦存量や初期保有量と呼ぶ。こう言った形の経済を<strong>純粋交換経済</strong>と呼ぶ。</p>
 <p>純粋交換経済における均衡（<strong>市場均衡</strong>、<strong>完全競争均衡</strong>、あるいは<strong>ワルラス均衡</strong>と呼ばれる）は次の通りに定義される。</p>
-<ul class="simple">
-<li><p>各消費者は与えられた価格<span class="math notranslate nohighlight">\(p_{x}, p_{y}\)</span>と初期保有<span class="math notranslate nohighlight">\(e\)</span>のもと効用を最大化するように消費量<span class="math notranslate nohighlight">\(q_{ix},q_{iy}\)</span>を決める。ここで消費者<span class="math notranslate nohighlight">\(i\)</span>の予算制約は</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[p_{x}q_{ix}+p_{y}q_{iy}=p_{x}e_{ix}+p_{y}e_{iy}.\]</div>
-<ul class="simple">
-<li><p>各財の需要量の和は各財の初期保有量の和に等しい。つまり</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\begin{split}q_{Lx}+q_{Kx}=e_{Lx}+e_{Kx}\\
- q_{Ly}+q_{Ky}=e_{Ly}+e_{Ky}\end{split}\]</div>
-<p>1.の条件は与えられた価格の下、初期保有を売って得たお金を所得とみなして効用最大化問題を解くということである。2. の条件は各財の需給が一致しているということである。ここでは供給量は初期保有量ということである。</p>
+<ol class="arabic">
+<li><p>各消費者は与えられた価格<span class="math notranslate nohighlight">\(p_{x}, p_{y}\)</span>と初期保有<span class="math notranslate nohighlight">\(e\)</span>のもと効用を最大化するように消費量<span class="math notranslate nohighlight">\(q_{ix},q_{iy}\)</span>を決める。ここで消費者<span class="math notranslate nohighlight">\(i\)</span>の予算制約は以下の通りである．</p>
+<div class="math notranslate nohighlight" id="equation-condi1">
+<span class="eqno">(3)<a class="headerlink" href="#equation-condi1" title="Permalink to this equation">#</a></span>\[   p_{x}q_{ix}+p_{y}q_{iy}=p_{x}e_{ix}+p_{y}e_{iy}.\]</div>
+</li>
+<li><p>各財の需要量の和は各財の初期保有量の和に等しい。つまり</p>
+<div class="math notranslate nohighlight" id="equation-condi2">
+<span class="eqno">(4)<a class="headerlink" href="#equation-condi2" title="Permalink to this equation">#</a></span>\[\begin{split}q_{Lx}+q_{Kx}=e_{Lx}+e_{Kx}\\
+q_{Ly}+q_{Ky}=e_{Ly}+e_{Ky}\end{split}\]</div>
+</li>
+</ol>
+<p>1の条件は与えられた価格<span class="math notranslate nohighlight">\(p_x,p_y\)</span>の下、各消費者<span class="math notranslate nohighlight">\(i\)</span>が初期保有<span class="math notranslate nohighlight">\((e_{ix},e_{iy})\)</span>を売って得たお金を所得とみなして効用最大化問題を解くということである。</p>
+<p>2の条件は各財の需給が一致しているということである。ここでは供給量は初期保有量ということで<a class="reference internal" href="#equation-condi2">(4)</a>の右辺である。需要は<a class="reference internal" href="#equation-condi2">(4)</a>の左辺である．つまりはどれだけ消費したいかと言う量の合計量である．ここで，財<span class="math notranslate nohighlight">\(x\)</span>はその間で需給が一致し, 財<span class="math notranslate nohighlight">\(y\)</span>もその間で需給が一致していると言うことに注意である．</p>
 <section id="id2">
 <h2>エッジワースボックス<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>財の配分（各消費者がどの財をどれだけ消費するかの組）を図に表してみよう。<a class="reference internal" href="#edgeworth"><span class="std std-numref">Fig. 32</span></a>
-はそれを図示したものであり、<strong>エッジワースボックス</strong>と呼ばれる。</p>
+<p>財の配分（各消費者がどの財をどれだけ消費するかの組）を図に表してみよう。<code class="xref std std-numref docutils literal notranslate"><span class="pre">edgeworth</span></code>はそれを図示したものであり、<strong>エッジワースボックス</strong>と呼ばれる。</p>
 <figure class="align-default" id="edgeworth">
 <img alt="../_images/edgeworth.svg" src="../_images/edgeworth.svg" /><figcaption>
 <p><span class="caption-number">Fig. 32 </span><span class="caption-text">エッジワースボックス</span><a class="headerlink" href="#edgeworth" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>エッジワースボックスは二人の予算制約の図を以下のように合体させて作る. 二人の初期保有の点が一致するように合体させていることに注意する．</p>
+<figure class="align-default" id="id3">
+<img alt="../_images/edgeworth_anime.gif" src="../_images/edgeworth_anime.gif" />
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">エッジワースボックス</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>経済全体で消費できる財<span class="math notranslate nohighlight">\(x\)</span>の量は<span class="math notranslate nohighlight">\(e_{Lx}+e_{Kx}\)</span>であり、それは図の横軸で表されている。同様に経済全体で消費できる財<span class="math notranslate nohighlight">\(y\)</span>の量は<span class="math notranslate nohighlight">\(e_{Ly}+e_{Ky}\)</span>であり、それは図の縦軸で表されている。
@@ -446,12 +453,12 @@ document.write(`
 <p>各消費者の消費量の組み合わせを<strong>配分</strong>と呼ぶ。以下ではパレート効率的な配分やワルラス均衡における配分がどのような性質を持つかということについて議論する。</p>
 </section>
 </section>
-<section id="id3">
-<h1>厚生定理<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h1>
-<p>さて、エッジワースボックスをつかってパレート効率的な配分を描いてみよう。<a class="reference internal" href="#pareto"><span class="std std-numref">Fig. 33</span></a>を見てみよう。図中の実線がレオンの無差別曲線で点線がケネスの無差別曲線である。レオンは右上に行けば行くほど効用が改善し、逆にケネスは左下に行けば行くほど効用が改善する。今、消費点Aを考える。この点はパレート効率的であろうか？</p>
+<section id="id4">
+<h1>厚生定理<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h1>
+<p>さて、エッジワースボックスをつかってパレート効率的な配分を描いてみよう。<a class="reference internal" href="#pareto"><span class="std std-numref">Fig. 34</span></a>を見てみよう。図中の実線がレオンの無差別曲線で点線がケネスの無差別曲線である。レオンは右上に行けば行くほど効用が改善し、逆にケネスは左下に行けば行くほど効用が改善する。今、消費点Aを考える。この点はパレート効率的であろうか？</p>
 <figure class="align-default" id="pareto">
 <img alt="../_images/pareto.svg" src="../_images/pareto.svg" /><figcaption>
-<p><span class="caption-number">Fig. 33 </span><span class="caption-text">パレート効率的な配分</span><a class="headerlink" href="#pareto" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">パレート効率的な配分</span><a class="headerlink" href="#pareto" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>点Aは残念ながらパレート効率的ではない。点Cと比較してみよう。点CではケネスにとってはAより良い。Aを通るケネスの無差別曲線より左下側にあるからだ。レオンにとってはどうだろうか。これもCの方が良い。Aを通るレオンの無差別曲線よりも点Cは右上側にあるからである。したがって点AからCに移動すればレオンとケネス両方の効用を改善することができる。これは点Aがパレート効率であることに反する。</p>
@@ -459,29 +466,29 @@ document.write(`
 <p>パレート効率的な配分自体は無数にある。パレート効率的な配分を結んだ曲線を<strong>消費契約曲線</strong>という。</p>
 <p>さて、パレート効率的な配分と市場均衡における配分の関係を見ていこう。実際には次の二つの定理が成り立つ。</p>
 <p><strong>第一厚生定理</strong> 市場均衡配分はパレート効率的である。</p>
-<p>第一厚生定理は市場均衡の効率性を示している。市場に任せていれば自然にパレート効率的な配分に行き着くので外野は何もする必要がないというものである。この定理の成立をエッジワースボックスをつかって確かめてみよう。<code class="xref std std-numref docutils literal notranslate"><span class="pre">FWT</span></code>を見てみる。</p>
+<p>第一厚生定理は市場均衡の効率性を示している。市場に任せていれば自然にパレート効率的な配分に行き着くので外野は何もする必要がないというものである。この定理の成立をエッジワースボックスをつかって確かめてみよう。<a class="reference internal" href="#fwt"><span class="std std-numref">Fig. 35</span></a>を見てみる。</p>
 <p>まず、初期保有の配分（図中のE）と市場均衡の配分（図中のQ）は同じ予算線上にあることに注意する。まず、初期保有を売って得たお金が所得であるので、その所得で初期保有の分をいつでも買い戻せることに注意する。また市場均衡では各人の効用が最大化されているので予算を使い尽くすはずである。したがって各人の予算制約の上に消費点がある。</p>
 <p>レオンは点Qを通る予算線で効用最大化を行う。したがって、点Qで彼の無差別曲線（図中の赤実線）と予算線は接している。
 ケネスも同様である。点Qにおいて彼の無差別曲線（図中の青点線）と予算線が接している。レオンとケネスの予算線は共通である。なぜならば初期保有の配分と市場均衡の配分を通る直線はただひとつしかないからである。したがって彼らの無差別曲線は共通の予算線を通じてお互いに接している。これは配分がパレート効率的であるための条件であったので、点Qはパレート効率的であることが確認できた。</p>
-<figure class="align-default" id="ftw">
+<figure class="align-default" id="fwt">
 <img alt="../_images/FWT.svg" src="../_images/FWT.svg" /><figcaption>
-<p><span class="caption-number">Fig. 34 </span><span class="caption-text">第一厚生定理</span><a class="headerlink" href="#ftw" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">第一厚生定理</span><a class="headerlink" href="#fwt" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>第一厚生定理とは逆に任意のパレート効率的な点を市場均衡を通じて達成することができる。これは第二厚生定理と呼ばれる。</p>
 <p><strong>第二厚生定理</strong> パレート効率的な配分（のほとんど）は初期保有量を調整することで市場均衡を通じて達成できる。</p>
-<p>これも図を使ってみてみよう。<code class="xref std std-numref docutils literal notranslate"><span class="pre">SWT</span></code>をみてみる。いまパレート効率的な点Qを適当に取ってくる。この点では両者の無差別曲線が接している。
-すると点Qを通り、二つの無差別曲線に同時に接する直線を描くことができる<a class="footnote-reference brackets" href="#note3" id="id4">1</a>。
+<p>これも図を使ってみてみよう。<a class="reference internal" href="#swt"><span class="std std-numref">Fig. 36</span></a>をみてみる。いまパレート効率的な点Qを適当に取ってくる。この点では両者の無差別曲線が接している。
+すると点Qを通り、二つの無差別曲線に同時に接する直線を描くことができる<a class="footnote-reference brackets" href="#note3" id="id5">1</a>。
 この直線上の適当な点に初期保有の配分（点E）を通れば点Qが市場均衡の点になっている。</p>
 <p>このように市場均衡とパレート効率的な点には密接な関係がある。</p>
-<figure class="align-default" id="stw">
+<figure class="align-default" id="swt">
 <img alt="../_images/SWT.svg" src="../_images/SWT.svg" /><figcaption>
-<p><span class="caption-number">Fig. 35 </span><span class="caption-text">第二厚生定理</span><a class="headerlink" href="#stw" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">第二厚生定理</span><a class="headerlink" href="#swt" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="note3"><span class="brackets"><a class="fn-backref" href="#id4">1</a></span></dt>
+<dt class="label" id="note3"><span class="brackets"><a class="fn-backref" href="#id5">1</a></span></dt>
 <dd><p>分離超平面定理という位相数学の定理がこれを保証する。</p>
 </dd>
 </dl>
@@ -545,7 +552,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">エッジワースボックス</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">厚生定理</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">厚生定理</a></li>
 </ul>
 
   </nav></div>
