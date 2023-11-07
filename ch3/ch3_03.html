@@ -194,13 +194,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">予算制約</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_04.html">無差別曲線</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_05.html">効用最大化問題</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="ch3_06.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch3_06.html">所得効果と代替効果</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">一般均衡理論とは</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">社会厚生関数</a></li>
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
@@ -375,7 +374,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -391,6 +392,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">予算制約の変化</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -407,20 +416,60 @@ document.write(`
 <p>日常生活における明らかな事実として、消費者が購入するものには<strong>価格</strong>がついていて、タダでは買えない。
 さらに消費者が使えるお金には限りがある。その人の<strong>所得</strong>を超えてはものを購入することができないのである。</p>
 <p>さらに議論を単純化するために次の仮定を置こう。
-それぞれの財には定価があり、どの消費者も所得に収まる範囲内であればその価格でいくらでも購入することができる。これは<strong>価格受容者の仮定</strong>と呼ばれる。消費者自身は「直接価格をコントロールできる」とは思っていないということである。
-さらに、消費者は貯金や借金ができないとする。ただし、貯金や借金を含むケースも解釈によってこのモデルで表現できる。</p>
+それぞれの財には定価があり、どの消費者も所得に収まる範囲内であればその価格でいくらでも購入することができる。これは<strong>価格受容者の仮定</strong>と呼ばれる。消費者自身は『「直接価格をコントロールできる」と思って<strong>いない</strong>』ということである。
+さらに、消費者はお金を余らせても意味がないとする<a class="footnote-reference brackets" href="#note0" id="id2">1</a>。</p>
 <p>ふたたび2財モデルで考えよう. ここで二種類の財を <span class="math notranslate nohighlight">\(x\)</span> と <span class="math notranslate nohighlight">\(y\)</span> と表現する. それぞれの購入量を<span class="math notranslate nohighlight">\(q_x\)</span>, <span class="math notranslate nohighlight">\(q_y\)</span> と書くとする。(quantityの<span class="math notranslate nohighlight">\(q\)</span>である。それぞれ財<span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>の量であるので添字<span class="math notranslate nohighlight">\(x\)</span>,<span class="math notranslate nohighlight">\(y\)</span>をつける。)
 価格についてもそれぞれ <span class="math notranslate nohighlight">\(p_x\)</span>, <span class="math notranslate nohighlight">\(p_y\)</span> と書く。
 さらに所得を <span class="math notranslate nohighlight">\(I\)</span> で書こう。 すると予算制約は次の数式で書ける。</p>
 <div class="math notranslate nohighlight">
 \[I=p_x \times q_x+p_y\times q_y\]</div>
-<p>図で書くと<a class="reference internal" href="#budget"><span class="std std-numref">Fig. 20</span></a>の通りである。上の予算式を<span class="math notranslate nohighlight">\(q_{y}=\cdots\)</span>の形に直せば<span class="math notranslate nohighlight">\(q_{x}\)</span>の一次関数の形で書ける。これは傾き<span class="math notranslate nohighlight">\(-p_{x}/p_{y}\)</span>の直線になる。
-図中の赤線を<strong>予算制約線</strong>と呼ぶ。</p>
+<p>図で書くと<a class="reference internal" href="#budget"><span class="std std-numref">Fig. 20</span></a>の通りである。上の予算式を<span class="math notranslate nohighlight">\(q_{y}=\cdots\)</span>の形に直せば<span class="math notranslate nohighlight">\(q_{x}\)</span>の一次関数の形で書ける。これは傾き<span class="math notranslate nohighlight">\(-p_{x}/p_{y}\)</span>の直線になる。</p>
+<p>式変形は以下の通り</p>
+<div class="toggle docutils container">
+<ul class="simple">
+<li><p>元の式:
+<span class="math notranslate nohighlight">\(I=p_x \times q_x+p_y\times q_y\)</span></p></li>
+<li><p>左辺と右辺を入れ替える:
+<span class="math notranslate nohighlight">\(p_x \times q_x+p_y\times q_y=I\)</span></p></li>
+<li><p>両辺から<span class="math notranslate nohighlight">\(p_x \times q_x\)</span>を引く:
+<span class="math notranslate nohighlight">\(p_y\times q_y=I-p_x \times q_x\)</span></p></li>
+<li><p>両辺を<span class="math notranslate nohighlight">\(p_y\)</span>で割る:
+<span class="math notranslate nohighlight">\(q_y=\frac{I}{p_y}-\frac{p_x}{p_y} \times q_x\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(q_x\)</span>を<span class="math notranslate nohighlight">\(x\)</span>，<span class="math notranslate nohighlight">\(q_y\)</span>を<span class="math notranslate nohighlight">\(y\)</span>とおけばこれは<span class="math notranslate nohighlight">\(y=-\frac{p_x}{p_y}x+\frac{I}{p_y}\)</span>, つまり傾き<span class="math notranslate nohighlight">\(-\frac{p_x}{p_y}\)</span>, 縦軸の切片<span class="math notranslate nohighlight">\(\frac{I}{p_y}\)</span>となる直線の方程式になる.</p>
+</div>
+<p>図中の赤線を<strong>予算制約線</strong>と呼ぶ。</p>
 <figure class="align-default" id="budget">
 <img alt="../_images/budget.svg" src="../_images/budget.svg" /><figcaption>
 <p><span class="caption-number">Fig. 20 </span><span class="caption-text">予算制約</span><a class="headerlink" href="#budget" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<section id="id3">
+<h2>予算制約の変化<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>予算制約線は<span class="math notranslate nohighlight">\(p_x\)</span>や<span class="math notranslate nohighlight">\(I\)</span>が変化したときに予算制約線がどのように変化するのかを見てみよう．例えば以下の例は財<span class="math notranslate nohighlight">\(x\)</span>の価格が<span class="math notranslate nohighlight">\(p_x\)</span>から<span class="math notranslate nohighlight">\(p_x'\)</span>に増加したときの予算制約線の変化である．</p>
+<figure class="align-default" id="budget2">
+<img alt="../_images/budget2.svg" src="../_images/budget2.svg" /><figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">予算制約の変化（財<span class="math notranslate nohighlight">\(x\)</span>価格の増加）</span><a class="headerlink" href="#budget2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>これはどのように考えればいいだろうか．まず，縦軸切片である<span class="math notranslate nohighlight">\(I/p_y\)</span>は変化しない．そもそもここは<span class="math notranslate nohighlight">\(x\)</span>の消費量が0，つまり予算を全て<span class="math notranslate nohighlight">\(y\)</span>に使ったときにどれだけ消費できるかと言う量を指している．したがって，<span class="math notranslate nohighlight">\(x\)</span>の価格が変化してもこの量は変わらない．</p>
+<p>一方で横軸の切片<span class="math notranslate nohighlight">\(I/p_x\)</span>は<span class="math notranslate nohighlight">\(x\)</span>の価格が増加すると減少する．<span class="math notranslate nohighlight">\(I/p_x\)</span>はすべての予算を<span class="math notranslate nohighlight">\(x\)</span>に使うときの<span class="math notranslate nohighlight">\(x\)</span>の消費量なので，<span class="math notranslate nohighlight">\(x\)</span>価格が増加すればその量は減ってしまう．</p>
+<p>予算制約線は直線なので，変化しなかった<span class="math notranslate nohighlight">\(I/p_y\)</span>と変化した後の<span class="math notranslate nohighlight">\(I/p_x'\)</span>を結べば変化後の予算制約線を書くことができる．</p>
+<p>次に<span class="math notranslate nohighlight">\(I\)</span>が変化したときの影響を見てみよう．今，所得が<span class="math notranslate nohighlight">\(I\)</span>から<span class="math notranslate nohighlight">\(I'\)</span>に減少したとする．
+このとき，予算制約線は以下の図の通りに変化する．</p>
+<figure class="align-default" id="budget3">
+<img alt="../_images/budget3.svg" src="../_images/budget3.svg" /><figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">予算制約の変化（所得の減少）</span><a class="headerlink" href="#budget3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>価格が変化しないので，傾き(<span class="math notranslate nohighlight">\(-p_x/p_y\)</span>)は変化せず，また，所得が減るので買える量が減少し，予算制約は左下に平行移動する．</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="note0"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>貯金や借金ができないという想定に見えるが、貯金や借金を含むケースも解釈によってこのモデルで表現できる. 例えば，<span class="math notranslate nohighlight">\(q_1\)</span>を今日の消費，<span class="math notranslate nohighlight">\(q_2\)</span>を明日の消費と考え，<span class="math notranslate nohighlight">\(m_1\)</span>を今日の全財産（そして<span class="math notranslate nohighlight">\(m_2\)</span>を明日の給与）とすれば，今日消費しなかった分の<span class="math notranslate nohighlight">\(m_1-p_1q_1\)</span>は貯蓄（マイナスなら借金）と考えられる．この場合の予算は<span class="math notranslate nohighlight">\(I=m_1+m_2\)</span>である（いまは利子のことを考えていない）．</p>
+</dd>
+</dl>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -477,6 +526,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">予算制約の変化</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
