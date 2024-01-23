@@ -399,9 +399,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">企業の活動</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">生産関数と費用関数</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">短期</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">長期</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">生産関数と費用関数</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">短期</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">長期</a></li>
 </ul>
 </li>
 </ul>
@@ -421,8 +421,7 @@ document.write(`
 <section id="id2">
 <h2>企業の活動<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <p>まず（初歩的な）経済学における企業行動について復習しよう.
-企業は「利潤」を最大にするように行動する.[^note0]　利潤とは売上金額から費用を引いたものである．
-[note0]: 企業が本当に利潤を最大化するのか，については色々研究がなされている．実際，利潤ではなく売上を最大にした方が実際利潤は良くなるなどの結果が知られている．戦略的委任の研究などがその一例である．</p>
+企業は「利潤」を最大にするように行動する.<a class="footnote-reference brackets" href="#note0" id="id3">1</a>　利潤とは売上金額から費用を引いたものである．</p>
 <p>ではこの利潤を最大化するために企業が選べるものはなんだろうか．企業が供給しようとする商品の種類，生産量(どれだけ作るか) ， 商品の価格，従業員の採用数， 事業のための投資・研究開発 その他諸々，決めるべきことは色々ある．これを最初から全て分析するのは不可能なのでまず単純なケースに限定してやってみよう．そのために以下を仮定する．</p>
 <ul class="simple">
 <li><p>a. 商品は決まっている（１種類だけつくる）
@@ -434,14 +433,13 @@ document.write(`
 <li><p>d. 選べるのは1どれだけ作るか，2どれだけ人を雇うか，3どれだけ機械を導入するか…</p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>生産関数と費用関数<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<p>単一財の生産者理論の章ではどれだけ作れるかのケースのみを考えた．その際，費用は謎のブラックボックスであった．100 万個作りたいと言ったら「200 億円かかります」とだけ言われるようなものである．この総費用関数はどこから出てくるのかが疑問となる．それを考えるために<strong>生産関数</strong>なるものを考えてみる．生産要素なるものを投入したら生産物が出てくる関数のことである．[^note2] この生産関数から総費用関数を作るということをかんがえよう．</p>
-<p>その生産要素とは何かといえば，財を作るために必要な材料，労力，機械などの資本などのことをいう．ここでは単純化のため，二つの要素，資本と労働によって財を生産できるものとしよう．資本の量を<span class="math notranslate nohighlight">\(K\)</span> (capital)[^note1], 労働の量を<span class="math notranslate nohighlight">\(L\)</span> (labor)とする．
-[note1]: capitalが資本であるが，頭文字cが費用のコスト(cost)と被るので，ドイツ語のKapitalで考える，マルクスの有名な著書，資本論はドイツ語でDas Kapital である．</p>
-<p>そして生産関数を<span class="math notranslate nohighlight">\(f\)</span>とする．つまり<span class="math notranslate nohighlight">\(f(K,L)\)</span>が資本と労働の組み合わせをそれぞれ<span class="math notranslate nohighlight">\(K\)</span>と<span class="math notranslate nohighlight">\(L\)</span>だけ投入した時にできる財の量である．</p>
 <section id="id4">
-<h3>短期<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<h2>生産関数と費用関数<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<p>単一財の生産者理論の章ではどれだけ作れるかのケースのみを考えた．その際，費用は謎のブラックボックスであった．100 万個作りたいと言ったら「200 億円かかります」とだけ言われるようなものである．この総費用関数はどこから出てくるのかが疑問となる．それを考えるために<strong>生産関数</strong>なるものを考えてみる．生産要素なるものを投入したら生産物が出てくる関数のことである．<a class="footnote-reference brackets" href="#note2" id="id5">2</a> この生産関数から総費用関数を作るということをかんがえよう．</p>
+<p>その生産要素とは何かといえば，財を作るために必要な材料，労力，機械などの資本などのことをいう．ここでは単純化のため，二つの要素，資本と労働によって財を生産できるものとしよう．資本の量を<span class="math notranslate nohighlight">\(K\)</span> (capital)<a class="footnote-reference brackets" href="#note1" id="id6">3</a>, 労働の量を<span class="math notranslate nohighlight">\(L\)</span> (labor)とする．</p>
+<p>そして生産関数を<span class="math notranslate nohighlight">\(f\)</span>とする．つまり<span class="math notranslate nohighlight">\(f(K,L)\)</span>が資本と労働の組み合わせをそれぞれ<span class="math notranslate nohighlight">\(K\)</span>と<span class="math notranslate nohighlight">\(L\)</span>だけ投入した時にできる財の量である．</p>
+<section id="id7">
+<h3>短期<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
 <p>さて，ではそれぞれどれだけ投入すべきかが問題になる．そのためにまずは，労働だけ調整できる場合を考えてみる．このように，一部の生産要素のみが調整できる状態のことを<strong>短期</strong>と呼ぶ．例えば，ケーキ屋は12月末に忙しくなるが，その度にケーキを作る機会を新たに購入したりしない．そんなことをすれば，暇なときに無駄になるからである．ではそういった時期にはどうするかというとアルバイトなどの人を増やしたりして対応する．ここでいう機械などが調整できない生産要素で助っ人で雇うアルバイトなどが調整できる生産要素である．ここでは労働が調整でき，資本が調整できないとしてみよう．ここでは<span class="math notranslate nohighlight">\(K=\bar K\)</span>の水準で固定されているとする．</p>
 <p>ではこのような短期では財を<span class="math notranslate nohighlight">\(q\)</span>だけ作るにはどうしたら良いだろうか．これは<span class="math notranslate nohighlight">\(q=f(\bar K,L)\)</span>となるような<span class="math notranslate nohighlight">\(L\)</span>を考える．これを<span class="math notranslate nohighlight">\(L^*(q,\bar K)\)</span>と書いておく．こう書くのは<span class="math notranslate nohighlight">\(q\)</span>や<span class="math notranslate nohighlight">\(\bar K\)</span>によって必要な労働量が違うからである．機械がたくさんあれば労働量は少なくて済むし，作るべき量がたくさんあれば，労働量は多くなる．
 このときの費用はどうなるかといえば</p>
@@ -450,8 +448,8 @@ document.write(`
 <p>となる．ここで<span class="math notranslate nohighlight">\(w\)</span>は労働の価格で，<span class="math notranslate nohighlight">\(r\)</span>は資本の価格である．労働の価格は賃金率と呼ばれる．つまり時給みたいなものである．資本の価格はレンタル率と呼ばれる．イメージ的には機械を借りてきてそのレンタル料を払う感じである．多くの企業では機械はリース品（借りてきたもの）であることが多いという点を考えれば自然である．</p>
 <p>さて，これで短期の費用関数を作ることができたわけである．ちなみに<span class="math notranslate nohighlight">\( w \cdot L^*(q,\bar K)\)</span>の部分が可変費用，<span class="math notranslate nohighlight">\(r\cdot \bar K\)</span>が固定費用となっていることに注意する．短期的に動かせないものが固定費用という扱いなのである．</p>
 </section>
-<section id="id5">
-<h3>長期<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<section id="id8">
+<h3>長期<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
 <p>次に，労働も資本も調整できるような状況を考えよう．このような状況は<strong>長期</strong>と呼ばれる，すべての生産要素が調整できる世界である．このとき，<span class="math notranslate nohighlight">\(q=f(K,L)を達成するような\)</span>K,L<span class="math notranslate nohighlight">\(の中で費用が最小になるものを考える．それを\)</span>K^<em>(q),L^</em>(q)$とすれば，総費用関数は</p>
 <div class="math notranslate nohighlight">
 \[C(q)= w \cdot L^*(q,)+r\cdot  K^*(q)\]</div>
@@ -490,6 +488,18 @@ document.write(`
 </figcaption>
 </figure>
 <p>つまり，等費用曲線と等量曲線が接するところである．もし，接しないとしたらどうだろうか．そもそも等量曲線上にない<span class="math notranslate nohighlight">\((K,L)\)</span>の組み合わせでは生産量<span class="math notranslate nohighlight">\(f(K,L)=q\)</span>を達成できないので論外である．したがって，等量曲線の上の組み合わせを考える．もし等費用曲線と交わっているとしよう．そうすると，等量曲線が原点に向かって凸であれば，等費用曲線と等量曲線が交わる点が二つできる．すると，等量曲線は下に出っ張っているので，それよりもほんの少し低い費用を達成し，なおかつ等量曲線と交わる等費用曲線を描くことができる．そうであるなら元々の組み合わせでは費用は最小できていないことになるのである．したがって，費用を最小にするところでは等量曲線と等費用曲線は接することになる．</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="note0"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>企業が本当に利潤を最大化するのか，については色々研究がなされている．実際，利潤ではなく売上を最大にした方が実際利潤は良くなるなどの結果が知られている．戦略的委任の研究などがその一例である．</p>
+</dd>
+<dt class="label" id="note2"><span class="brackets"><a class="fn-backref" href="#id5">2</a></span></dt>
+<dd><p>結局これもブラックボックスじゃないか，と思われるかもしれない．しかしこれはデータなどを用いて逆算することもできる．この辺りは実証産業組織論という分野が詳しいので興味ある方は参照せよ．</p>
+</dd>
+<dt class="label" id="note1"><span class="brackets"><a class="fn-backref" href="#id6">3</a></span></dt>
+<dd><p>capitalが資本であるが，頭文字cが費用のコスト(cost)と被るので，ドイツ語のKapitalで考える，マルクスの有名な著書，資本論はドイツ語でDas Kapital である．</p>
+</dd>
+</dl>
 </section>
 </section>
 </section>
@@ -549,9 +559,9 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">企業の活動</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">生産関数と費用関数</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">短期</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">長期</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">生産関数と費用関数</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">短期</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">長期</a></li>
 </ul>
 </li>
 </ul>
