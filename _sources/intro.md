@@ -8,4 +8,4 @@
 
 この講義ノートでは微分を学んでいることを前提とします．必要な数学については以下の書籍の知識があれば十分です．
 
-https://www.saiensu.co.jp/search/?isbn=978-4-88384-371-8&y=2023
+https://www.saiensu.co.jp/search/?isbn=978-4-88384-371-8&y=2023#index

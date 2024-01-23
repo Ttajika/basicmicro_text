@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>市場均衡分析の応用 &#8212; 基礎ミクロ経済学</title>
+    <title>調整過程と安定性 &#8212; 基礎ミクロ経済学</title>
   
   
   
@@ -65,11 +65,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch1/ch1.6';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch1/ch1.8';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="課税と死荷重損失" href="ch1.7.html" />
-    <link rel="prev" title="市場均衡と余剰" href="ch1.5.html" />
+    <link rel="next" title="市場の失敗" href="../ch2/ch2_0.html" />
+    <link rel="prev" title="課税と死荷重損失" href="ch1.7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -176,9 +176,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="ch1.3.html">単一財の消費者理論</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch1.4.html">単一財の生産者理論</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch1.5.html">市場均衡と余剰</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">市場均衡分析の応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1.6.html">市場均衡分析の応用</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch1.7.html">課税と死荷重損失</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch1.8.html">調整過程と安定性</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">調整過程と安定性</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch2/ch2_0.html">市場の失敗</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -276,7 +276,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch1/ch1.6.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch1/ch1.8.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -306,7 +306,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/ch1/ch1.6.md" target="_blank"
+      <li><a href="../_sources/ch1/ch1.8.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -388,7 +388,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>市場均衡分析の応用</h1>
+    <h1>調整過程と安定性</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -398,10 +398,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">需要曲線・供給曲線のシフト</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">需要法則の検証</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">豊作貧乏</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">価格規制</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ワルラス安定とマーシャル安定</a></li>
 </ul>
             </nav>
         </div>
@@ -414,82 +411,32 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="id1">
-<h1>市場均衡分析の応用<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>本節では市場均衡を用いた分析を紹介する．</p>
+<h1>調整過程と安定性<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>この章では，なぜ均衡価格を考えるべきなのか，という問いについて考える．</p>
 <section id="id2">
-<h2>需要曲線・供給曲線のシフト<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>はじめに紹介するのは，経済環境が変わったときに，市場均衡における価格や取引量がどのように変化するのか，である．
-ある財の需要量や供給量は，その財の価格以外の要因によって変化することがある．例えば，消費者の面からすると，所得が増加する，製品の改良によってもっと消費したくなる，逆に不祥事等によってその財を使うことの嫌悪感がでてきてしまう，などがある．生産者の方も同様にものを作るための材料費が高騰する，技術革新によって安く作れるようになる，などである．</p>
-<p>こういった場合，需要曲線や供給曲線そのものが変化する．需要曲線は「価格」と「需要量」の関係を示すものであり，それ以外の要因はグラフには出てこない．したがって，価格以外の要因によって需要量が変化するのであれば，需要曲線そのものが変化するのである．例えば，ある財が人気が出て，需要量が増えたとしてみよう．このとき，同じ価格だったとしても需要量はそれまでと比べ，増えているに違いない．その場合，需要曲線は<a class="reference internal" href="#demand-shift"><span class="std std-numref">Fig. 11</span></a>のように<strong>右にシフトする</strong>.</p>
-<figure class="align-default" id="demand-shift">
-<img alt="../_images/demand_shift.svg" src="../_images/demand_shift.svg" /><figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">需要曲線のシフト</span><a class="headerlink" href="#demand-shift" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>上の図を見ればわかる通り，需要曲線が<span class="math notranslate nohighlight">\(D^{\text{前}}\)</span>から<span class="math notranslate nohighlight">\(D^{\text{後}}\)</span>に変化すると，同じ価格<span class="math notranslate nohighlight">\(p\)</span>のときの需要量は<span class="math notranslate nohighlight">\(q^\text{前}\)</span>から<span class="math notranslate nohighlight">\(q^\text{後}\)</span>に変換する．この図であれば，どの価格でもそうなっていることを確かめてみよう．</p>
-<p>さて，このとき，市場均衡における価格はどうなるだろうか．これは図を見ればわかる．
-<a class="reference internal" href="#demand-shift-eq"><span class="std std-numref">Fig. 12</span></a>にあるように，取引量は<span class="math notranslate nohighlight">\({q^*}^\text{前}\)</span>から<span class="math notranslate nohighlight">\({q^*}^\text{後}\)</span>に，価格は<span class="math notranslate nohighlight">\({p^*}^\text{前}\)</span>から<span class="math notranslate nohighlight">\({p^*}^\text{後}\)</span>に両方とも上昇することになる．</p>
-<figure class="align-default" id="demand-shift-eq">
-<img alt="../_images/demand_shift_eq.svg" src="../_images/demand_shift_eq.svg" /><figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text">需要曲線のシフトと市場均衡の変化</span><a class="headerlink" href="#demand-shift-eq" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>このように図に描くことで，需要曲線の変化が市場均衡にどのように影響を与えるかを理解することができる．需要曲線が左にシフトする場合や，供給曲線が左や右にシフトする場合も同様に考えることができるので，実際に図を描いて確かめてみよう．</p>
-</section>
-<section id="id3">
-<h2>需要法則の検証<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<p>需要曲線や供給曲線のシフトのアイデアは需要曲線が右下がりであるかどうか（あるいは供給曲線が右上がりであるかどうか）を検証することができる．</p>
-<p>例えば次のような状況を考えてみよう.</p>
-<blockquote>
-<div><p>1月15日に鳥インフルエンザにより大量の鶏の殺処分が行われ，3月15日には鶏の餌代の価格が上昇したというニュースがあった．鶏卵の価格と取引量は次のようになっていたという.</p>
-<ul class="simple">
-<li><p>1月1日: 価格100, 取引量140</p></li>
-<li><p>3月1日: 価格120, 取引量100</p></li>
-<li><p>5月1日: 価格200, 取引量80</p></li>
-</ul>
-</div></blockquote>
-<p>ニュースの内容から，生産者にとっての費用上昇，つまり，供給曲線の左シフト（価格が同じでも供給したくなくなる）が起きたと考えられる．そして，価格が増加する一方で取引量が減少している．</p>
-<p>さて，これを用いて，需要曲線が右下がりであるはずだと言うことが導かれることを示そう．需要曲線と供給曲線のありうるパターンは次の<a class="reference internal" href="#patterns"><span class="std std-numref">Fig. 13</span></a>のとおりであろう．</p>
-<figure class="align-default" id="patterns">
-<img alt="../_images/patterns.svg" src="../_images/patterns.svg" /><figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">需要曲線と供給曲線のパターン</span><a class="headerlink" href="#patterns" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>ここで，供給曲線の左シフトが起きたとすれば，それぞれのパターンにおいて取引量と価格は次の<a class="reference internal" href="#patterns2"><span class="std std-numref">Fig. 14</span></a>のようになる（新しい供給曲線を<span class="math notranslate nohighlight">\(S'\)</span>で示している）．</p>
-<figure class="align-default" id="patterns2">
-<img alt="../_images/patterns2.svg" src="../_images/patterns2.svg" /><figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">供給曲線の左シフト後の需要曲線と供給曲線のパターン</span><a class="headerlink" href="#patterns2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>このうち，価格が上昇し，取引量が減少するパターンは(a)と(f)のみであり，いずれにおいても需要曲線は右下がりとなる．つまり，右上がりであるような需要曲線は実際の現象から否定されることになるのである．なお，(f)も許容されるので，供給曲線が右下がりであることは否定できないことに注意である.</p>
-</section>
-<section id="id4">
-<h2>豊作貧乏<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
-<p>次に曲線のシフトが消費者や生産者に与える影響について考えてみよう．ここでは供給曲線のシフトについて考える．
-供給曲線の右シフトは生産費用の低下などによって引き起こされる．これは一見，生産者にとって常に良いように見える．しかしながら，価格の影響を考えるとそうは限らない．今，次の図のような供給曲線を考えてみよう．</p>
-<figure class="align-default" id="hosaku">
-<img alt="../_images/hosaku.svg" src="../_images/hosaku.svg" /></figure>
-<p>この図の供給曲線は青線で表されている，折れ線である．
-これは<span class="math notranslate nohighlight">\(Q\)</span>という点まで生産費用が<span class="math notranslate nohighlight">\(0\)</span>で，それ以上の量を生産しようとすると生産費用が無限大になるような費用関数を考えればこのような供給曲線になる．つまり，どんな価格でも<span class="math notranslate nohighlight">\(Q\)</span>までしか作れないようなものである．このときの企業の利潤がどうなるかというと，<span class="math notranslate nohighlight">\(P\times Q\)</span>になる．なぜなら，<span class="math notranslate nohighlight">\(Q\)</span>だけ作る分には生産費用が一切かからないからであり，また，<span class="math notranslate nohighlight">\(Q\)</span>個以上の財を作ることができないからである．したがって，図中の斜線部の面積が企業の利潤，生産者余剰となる．</p>
-<p>このような供給曲線が例えば右シフトするとどうなるだろうか？このとき，実は生産者余剰が減ることがある．次の図を見てみよう．</p>
-<figure class="align-default" id="hosaku2">
-<img alt="../_images/hosaku2.svg" src="../_images/hosaku2.svg" /></figure>
-<p>この図では供給曲線が<span class="math notranslate nohighlight">\(S\)</span>から<span class="math notranslate nohighlight">\(S'\)</span>にシフトしている．これはタダで作れる量が<span class="math notranslate nohighlight">\(Q\)</span>から<span class="math notranslate nohighlight">\(Q'\)</span>に増えたわけなので，お得に見えるかもしれない．しかしこの量を愚直に供給してしまえば市場にたくさん財が溢れることになるので，市場価格は低下する．図で言えば<span class="math notranslate nohighlight">\(P\)</span>から<span class="math notranslate nohighlight">\(P'\)</span>に低下する．すると，生産者余剰が増えるか減るかはわからなくなる．実際上の図では生産者余剰が斜線部の面積から紫の長方形の面積に変化している．この場合の面積は明らかに減っている．</p>
-<p>このように今日曲線のシフトが価格の低下を引き起こし，結果的に生産者余剰が減少してしまうようなケースを<strong>豊作貧乏</strong>と呼ぶ．</p>
-<p>一点だけ注意だが，豊作貧乏は常に起こるわけではない．作れる量が増えると生産者余剰が増えるケースももちろんある．むしろそれが普通だが，価格の低下が大きくなりすぎると逆の生産者余剰が減ってしまうようなケースも起こってしまうということがここで言いたいことである．</p>
-<p>このようなときには現実では出荷調整が行われる．つまり，作れすぎた財を破棄するようなことである．実際の映像が下記のニュースにある．
-<a class="reference external" href="https://www.youtube.com/watch?v=HMIVlvWZg5o&amp;amp;t=105s">https://www.youtube.com/watch?v=HMIVlvWZg5o&amp;t=105s</a></p>
-<p>これは勿体無いと思うかもしれないが，価格を維持するためには重要なことである．この点は市場の失敗の章で解説する独占の話と共通点がある．</p>
-</section>
-<section id="id5">
-<h2>価格規制<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
-<p>最後に，価格を規制したらどうなるか，を考える．これは単純な話だが，価格が規制される分，ベストではない価格に落ち着く．例えば，次の図を見てみよう．</p>
-<figure class="align-default" id="price-cap">
-<img alt="../_images/price_cap.svg" src="../_images/price_cap.svg" /></figure>
-<p>本来の市場均衡価格は需要曲線と供給曲線の交差する<span class="math notranslate nohighlight">\(P\)</span>である．しかし価格規制があると，それは実現できないかもしれない．例えば現実の価格が高すぎると<span class="math notranslate nohighlight">\(\bar P\)</span>までしか価格をつけてはいけないという規制があったとしよう．そうすれば，供給側としては，<span class="math notranslate nohighlight">\(Q'\)</span>までしか生産してくれないので，取引量は<span class="math notranslate nohighlight">\(Q'\)</span>，価格は<span class="math notranslate nohighlight">\(\bar P\)</span>となる．このときの社会的総余剰は青い領域の面積になり，本来の社会的総余剰よりも減ってしまう．</p>
-<p>生産者余剰を無視して，消費者余剰だけを重視するならばその意味では増えて良いという立場もあるかもしれない．しかしそれには慎重にならなくてはいけない．第一に生産者余剰が減ることは企業の利潤が減ることであり，その結果家計の収入が減る可能性もある．それはこの図では表現しきれないことである．第二に，<span class="math notranslate nohighlight">\(Q'\)</span>がものすごく小さくなるのならば，財がとても希少になり消費者余剰も十分に減る可能性がある．以下のような供給曲線がその例になる．</p>
-<figure class="align-default" id="price-cap2">
-<img alt="../_images/price_cap2.svg" src="../_images/price_cap2.svg" /></figure>
+<h2>ワルラス安定とマーシャル安定<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>なぜ市場均衡を考えるかと言えば，「市場均衡でなければ，需要量と供給量が一致していないので，価格や取引量はそこから変わっていってしまう，それゆえそうでないような状態は考える意味がない」というのが一般的な説明である．しかし，そうでないような状態から放っておいて市場均衡に辿り着くのか，といえばそれは明らかではない．これを考えてみよう．
+需要関数を<span class="math notranslate nohighlight">\(D\)</span>, 供給関数を<span class="math notranslate nohighlight">\(S\)</span>とする. まず最初にワルラス的調整過程という，不均衡状態における価格調整である次の仕組みを考える．</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡 <strong>ワルラス過程</strong>：もし<span class="math notranslate nohighlight">\(D(p)&gt;S(p)\)</span>である（超過需要）ならば価格を上げなさい．もし<span class="math notranslate nohighlight">\(D(p)&lt; S(p)\)</span>である（超過供給）ならば価格を下げなさい．</p>
+</div>
+<p>つまり，均衡価格より高い価格で超過供給になっていれば，価格が低下し，価格は均衡価格に向かい，低い価格で超過需要になっていれば価格が上昇し，やはり価格は均衡価格に向かう．
+この仕組みによって，価格が均衡価格より少しズレたときでも均衡価格に戻ってくれるとき，その均衡は<strong>ワルラス安定</strong>と呼ぶ．つまり市場均衡より高い価格で超過供給が発生し，逆に市場均衡より低い価格では超過需要が発生しているような状態である．逆にもし均衡価格より高い価格で超過需要になっていたり，低い価格で超過供給になっていれば価格が均衡価格から離れていく．この場合はワルラス安定ではない．</p>
+<p>ワルラス過程を何故考えるか，という正当化としては<strong>ワルラスの競り人</strong>という考え方がある．つまり，競り人が価格を宣言し，そのもとで消費者と生産者が需要量および供給量を宣言し，それに則ってワルラス過程に従い価格を調整していくというものである．</p>
+<p>価格を調整するワルラス過程に対して次のマーシャル過程という仕組みもある．<span class="math notranslate nohighlight">\(P_D\)</span>を逆需要関数，<span class="math notranslate nohighlight">\(P_S\)</span>を逆供給関数であるとする．</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡 <strong>マーシャル過程</strong>：もし<span class="math notranslate nohighlight">\(P_D(q)&gt;P_S(q)\)</span>であるならば取引量を増やしなさい．もし<span class="math notranslate nohighlight">\(P_D(q)&lt; P_S(q)\)</span>であるならば取引量を減らしなさい．</p>
+</div>
+<p>それではマーシャル過程はどういう形で実現するものだろうか．色々な考え方があるが，その一つとしては，消費者と生産者の自発的な取引を考えるというものである．逆需要関数を消費者の（追加的な１単位の消費に対する）支払意思額とする．そして逆供給関数を生産者の限界費用と考える．このとき，<span class="math notranslate nohighlight">\(P_D(q)&gt;P_S(q)\)</span>であれば支払意思額のほうが限界費用より高いので新たな取引が成立し取引量が増えるのである．逆に<span class="math notranslate nohighlight">\(P_D(q)&lt; P_S(q)\)</span>であれば支払意思額のほうが限界費用より低いので取引量が減る．</p>
+<p>さて，上記の理解で行くとワルラス安定もマーシャル安定もよくある需要曲線と供給曲線の図では何も問題ない．右下がりの支払意思額と右上がりの限界費用であれば，それがそのまま需要曲線と供給曲線の図になるからである．問題は右上がりの需要曲線や，右下がりの供給曲線を考えるときである．こういった場合，支払意思額が右上がりとか，限界費用が右下がりだということはできない．右上がりの支払意思額から需要曲線を作ると，一定以上の価格では需要量が0でそれ以下では需要量が無限大になるような需要曲線になる．限界費用が右下がりでも同様に，一定の価格以下では供給量が０でそれ以上だと無限大になるような供給曲線が描ける．したがって，右上がりの需要曲線や右下がりの供給曲線を考えるときは需要曲線を支払意思額と，限界費用を供給曲線と対応させることはできない．このケースでは消費者と生産者の自発的な取引としてマーシャル過程を考えることは短絡的にはできないのである．</p>
+<p>マーシャル過程のもう一つの理解は次のような考え方もある．まず，生産者が供給量を提示する．消費者がそれに応答してその量を買う価格を提示する．そして，その価格で生産者がもしもっと作りたくなれば生産量を増やし，そうでなければ生産量を減らす．均衡価格に近づくためには，もし，最初に提示した量が均衡価格より大きければ，次に提示する量が下がり，逆に最初に提示した量が均衡価格より小さければ，次に提示する量が上がるということである．</p>
+<p>しかしこの考え方で，安定的であることと，マーシャル安定の定義では齟齬が生じる．以下の図に描かれた例を見てみると，供給曲線（逆供給関数）の傾きのほうが需要曲線（逆需要関数）の傾きより大きいので定義上はマーシャル安定である．しかし上記のシステムで考えれば，生産者が<span class="math notranslate nohighlight">\(Q\)</span>という生産量を提示して，その下で消費者がその量を需要する価格を提示すると，その価格のもとで生産したい量は<span class="math notranslate nohighlight">\(Q'\)</span>になる．この生産者は価格が低いほうがたくさん作りたいという人なのでそうなるのである．そうすると，このシステムのもとでは均衡取引量から遠ざかっていくので安定ではない．</p>
+<figure class="align-default" id="taton">
+<img alt="../_images/taton.svg" src="../_images/taton.svg" /></figure>
+<p>上の図はマーシャル安定で，ワルラス安定でない図として描かれがち（実際，傾きで定義すると正しい）であるが，よくよく考えると論理が通っていないのである．</p>
+<p>最後の仮説として，ワルラスの競り人を真似て，マーシャルの調整者というものを作ってみよう．この調整者はまず，取引量を宣言する．次に，消費者と生産者にそれぞれ，その量を買いたくなる価格，その量を売りたくなる価格を尋ねる．もし，買いたくなる価格が売りたくなる価格より高ければ，取引量を増やし，そうでなければ取引量を減らす．これはこれでマーシャル安定と整合的になる．しかし，これだと，消費者や生産者が複数いた場合には対応できない可能性がある．全体の需要は市場にいる全員の消費者の需要の合計だからである．したがって，取引量でそのときに解体価格を聞いてもバラバラであるし，市場の逆需要曲線の値とも対応しない．やはりこれにも無理がある．</p>
 </section>
 </section>
 
@@ -524,20 +471,20 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="ch1.5.html"
+       href="ch1.7.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">市場均衡と余剰</p>
+        <p class="prev-next-title">課税と死荷重損失</p>
       </div>
     </a>
     <a class="right-next"
-       href="ch1.7.html"
+       href="../ch2/ch2_0.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">課税と死荷重損失</p>
+        <p class="prev-next-title">市場の失敗</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -556,10 +503,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">需要曲線・供給曲線のシフト</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">需要法則の検証</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">豊作貧乏</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">価格規制</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ワルラス安定とマーシャル安定</a></li>
 </ul>
   </nav></div>
 
