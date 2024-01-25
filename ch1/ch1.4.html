@@ -178,6 +178,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="ch1.5.html">市場均衡と余剰</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch1.6.html">市場均衡分析の応用</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch1.7.html">課税と死荷重損失</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch1.8.html">調整過程と安定性</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch2/ch2_0.html">市場の失敗</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -204,6 +205,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -441,7 +443,7 @@ document.write(`
 <section id="id4">
 <h2>費用の構造<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <p>さて前節では生産にかかる費用を<span class="math notranslate nohighlight">\(C\)</span>という関数で置き、ブラックボックス的に扱ってきたが、では現実ではどのようなものが費用に当たるのかを考えて見よう。</p>
-<p>まず思い当たるのは原材料費、燃料代、電気代や人件費といったものである。これは生産量を増やせば増やすほど増大していくものだと考えられる。こういった生産量を変化させれば変えられる費用のことを<em>可変費用</em>と呼ぶ。</p>
+<p>まず思い当たるのは原材料費、燃料代、電気代や人件費といったものである。これは生産量を増やせば増やすほど増大していくものだと考えられる。こういった生産量を変化させれば変えられる費用のことを<strong>可変費用</strong>と呼ぶ。</p>
 <p>可変費用に対して、工場や機械など一度導入してしまえば（管理費や消耗による修繕費などはかかるものの）生産量によらず一定でかかる費用もある。こういった費用を<strong>固定費用</strong>と呼ぶ。</p>
 <p>工場や機械などを固定費用と呼ぶことには次の批判がありそうだ。「本当に生産するつもりがないんだったらそもそも工場なんか建てなければいいのでは？」実際、長い目で見てみれば、生産する気がないのであれば工場や機械などは売却してしまえば費用（の一部）は回収できる。しかし短い目で見てみればこれらは融通性がない。こういうものは一日二日で売れるものではないし、速やかに現金に変えたいのだとしたらそれこそ二束三文で売ることになり、建てるのにかかった費用のほんの一部しか回収できない。結果生産を一切しないのに費用だけがかかるということになりかねない。</p>
 <p>この議論で言えることは何が固定費用かは時間の長さによるということだ。人件費だって雇用調整がうまくいかなければ生産量を少なくしても余分な人員を抱えることになるが、その分給与も払わなければいけないので生産量に関係なく費用がかかることになる。
