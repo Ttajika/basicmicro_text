@@ -53,3 +53,9 @@ v'(q)=p+t>p=C'(q)
 
 死荷重損失の比較
 ```
+
+```{figure} ./ch1_img/tax.gif
+:name: tax
+
+動画で見る死荷重損失の比較
+```
