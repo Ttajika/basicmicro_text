@@ -54,8 +54,10 @@ v'(q)=p+t>p=C'(q)
 死荷重損失の比較
 ```
 
+以下の動画で確認するとよりわかりやすい．
+
 ```{figure} ./ch1_img/tax.gif
-:name: tax
+:name: taxgif
 
 動画で見る死荷重損失の比較
 ```
