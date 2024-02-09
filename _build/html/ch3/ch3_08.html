@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>複数財市場の消費者問題 &#8212; 基礎ミクロ経済学</title>
+    <title>消費者問題の応用 &#8212; 基礎ミクロ経済学</title>
   
   
   
@@ -63,11 +63,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch3/ch3';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch3/ch3_08';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="消費者の問題" href="ch3_01.html" />
-    <link rel="prev" title="複数企業の競争" href="../ch2/ch2_5.html" />
+    <link rel="next" title="複数財市場の市場均衡" href="../ch4/ch4_01.html" />
+    <link rel="prev" title="補償需要関数とスルツキー方程式*" href="ch3_07.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -187,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch2/ch2_5.html">複数企業の競争</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">複数財市場の消費者問題</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ch3.html">複数財市場の消費者問題</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="ch3_01.html">消費者の問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_02.html">消費財と消費者の選好</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_03.html">予算制約</a></li>
@@ -195,7 +197,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch3_08.html">消費者問題の応用</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">消費者問題の応用</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -276,7 +278,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch3/ch3.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch3/ch3_08.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -306,7 +308,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/ch3/ch3.md" target="_blank"
+      <li><a href="../_sources/ch3/ch3_08.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -375,7 +377,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -386,11 +390,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>複数財市場の消費者問題</h1>
+    <h1>消費者問題の応用</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">貯蓄（異時点間の消費決定）</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">労働供給</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">物々交換</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -400,11 +414,59 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>複数財市場の消費者問題<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>前章までは財がひとつしかない市場の分析を行った。このような分析は<strong>部分均衡分析</strong>と呼ばれる。一方で、現実の消費者は複数の財を購入し、一方の財の消費が他方の財の購入に影響を与えることが少なくない。この章では消費者が複数種類の財をどれだけ購入するかという理論を組み立てる。</p>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="id1">
+<h1>消費者問題の応用<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>前節までは二つの財をどれだけ組み合わせて購入するかを決めようとする消費者を考えた．この章ではこの「財」にはいろいろな捉え方があることを示す．</p>
+<section id="id2">
+<h2>貯蓄（異時点間の消費決定）<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>ふたつの財として，今日の消費と明日の消費を考える．具体的には二日間しか生きない人を考える．三日以上でも生きる日数が決まっていれば話は全く同じなので考えやすいように二日間にしている．</p>
+<p>今日の消費金額を<span class="math notranslate nohighlight">\(C_1\)</span>，明日の消費金額を<span class="math notranslate nohighlight">\(C_2\)</span>とする．この消費の組み合わせから得られる効用を <span class="math notranslate nohighlight">\(u(C_1,C_2)\)</span> とする．効用の方は大して違わないが，予算制約の方に少し工夫がいる．まず，今日もらえる所得を <span class="math notranslate nohighlight">\(I_1\)</span>，明日もらえる所得を <span class="math notranslate nohighlight">\(I_2\)</span> とする．<a class="footnote-reference brackets" href="#note1" id="id3">1</a></p>
+<p>この消費者は貯蓄も借金も可能だとする．この貯蓄とは，今日消費に使わなかったお金のことである．つまり，<span class="math notranslate nohighlight">\(I_1-C_1\)</span> が貯蓄である．貯蓄に利子がつくものとすると，貯蓄は明日には<span class="math notranslate nohighlight">\((1+r)\)</span>倍になる．<span class="math notranslate nohighlight">\(r\)</span>は利子率である．つまり，貯蓄した丸々の金額 <span class="math notranslate nohighlight">\(I_1-C_1\)</span> とそれにつく利子の金額， <span class="math notranslate nohighlight">\(r\times (I_1-C_1)\)</span> を足したものである．銀行にお金を預けるとは銀行にお金を貸しているとも同じなので，貸した分の代金が利子である．
+すると，明日使えるお金の総額は <span class="math notranslate nohighlight">\((1+r)\times (I_1-C_1) + I_2 \)</span> となる．明日までしか生きないのでお金を残しても仕方ないことから，明日の消費は <span class="math notranslate nohighlight">\(C_2= (1+r)\times (I_1-C_1) + I_2 \)</span>である.
+これを整理すると以下の式が，<span class="math notranslate nohighlight">\(C_1, C_2\)</span> が満たさなければいけない式となる．</p>
+<div class="math notranslate nohighlight">
+\[C_2+(1+r) C_1 = I_2 +(1+r) I_1\]</div>
+<p>これが予算制約と考えられる．</p>
+<p>さっきは貯蓄の話しかしていなかったが，借金の場合も同じである．借金とは今日の所得以上に消費した金額のこと，つまり<span class="math notranslate nohighlight">\(C_1-I_1\)</span>である．これに利子をつけた金額<a class="footnote-reference brackets" href="#note2" id="id4">2</a>，<span class="math notranslate nohighlight">\((1+r)(C_1-I_1)\)</span> を返さないといけないので，明日消費できる金額は <span class="math notranslate nohighlight">\(I_2- (1+r)(C_1-I_1)\)</span> であるので，明日の消費は<span class="math notranslate nohighlight">\(C_2 = I_2- (1+r)(C_1-I_1)\)</span>となる．これを整理すると</p>
+<div class="math notranslate nohighlight">
+\[C_2+(1+r) C_1 = I_2 +(1+r) I_1\]</div>
+<p>となるので全く同じ式である．これは<span class="math notranslate nohighlight">\((1+r)(C_1-I_1)=-(1+r)(I_1-C)\)</span>となり，これはマイナスの貯蓄と考えても良い．</p>
+<p>結論としては貯蓄でも借金でも以下の式を予算制約と考えて効用最大化問題を考えれば十分である．</p>
+<div class="math notranslate nohighlight">
+\[C_2+(1+r) C_1 = I_2 +(1+r) I_1\]</div>
+<p>今日の消費の価格を <span class="math notranslate nohighlight">\(1+r\)</span>，明日の消費の価格を<span class="math notranslate nohighlight">\(1\)</span>と捉えても良いが，それには注意が必要である．なぜなら<span class="math notranslate nohighlight">\(r\)</span>が増えれば今日の消費の価格だけではなく，全体の所得 <span class="math notranslate nohighlight">\(I_2 +(1+r) I_1\)</span>も増えるからである．したがって，価格効果の分析として<span class="math notranslate nohighlight">\(r\)</span>の変化を考えるときには注意が必要である．スルツキー分解で出てくる所得効果だけではなく，ダイレクトな所得の効果が追加で入ってくるからである．</p>
+</section>
+<section id="id5">
+<h2>労働供給<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p>二つの財として，物質的な財と休暇を考える．この物質的な財は働かなければ手に入れられないとする．この働くことを明示的にモデルに入れる．まず，物質的な財の消費金額を<span class="math notranslate nohighlight">\(C\)</span>とする．つぎに休暇の時間を<span class="math notranslate nohighlight">\(\ell\)</span>とする. このとき，全体での時間を<span class="math notranslate nohighlight">\(1\)</span>とすると，<span class="math notranslate nohighlight">\(1-\ell\)</span>が働く時間とする．<a class="footnote-reference brackets" href="#note3" id="id6">3</a>
+働いた時間に比例して給与<span class="math notranslate nohighlight">\(w\)</span>がもらえるとすると，得られるお金は<span class="math notranslate nohighlight">\((1-\ell)w\)</span>である．働かずとももらえる所得（不労所得）があればそれを<span class="math notranslate nohighlight">\(I\)</span>と書くとしよう．そうすると消費金額の大きさは以下の通りである．</p>
+<div class="math notranslate nohighlight">
+\[C = w(1-\ell) + I\]</div>
+<p>式変形をすれば</p>
+<div class="math notranslate nohighlight">
+\[C+w\ell = w+I\]</div>
+<p>となる．<span class="math notranslate nohighlight">\(w\)</span>は休暇の価格とも考えても良いが，所得にも影響するところは注意である．</p>
+</section>
+<section id="id7">
+<h2>物々交換<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<p>貯蓄や労働供給では価格に相当するものが所得にも入ってくる．次に紹介するものではそれがより明確である．いま，財１と財２を<span class="math notranslate nohighlight">\(e_1\)</span>と<span class="math notranslate nohighlight">\(e_2\)</span>だけ持っているとしよう．これを物々交換することを考える．これを表現するには，この最初に持っている財を全て売って所得を得て，その所得を元に財を買い直すと言うものである.
+売ることによって得られる所得は <span class="math notranslate nohighlight">\(p_1 e_1+p_2 e_2\)</span>であり，購入する消費プランを<span class="math notranslate nohighlight">\((x_1,x_2)\)</span>とすれば必要金額は<span class="math notranslate nohighlight">\(p_1 x_1+p_2 x_2\)</span>であるので予算制約は</p>
+<div class="math notranslate nohighlight">
+\[p_1 x_1+p_2 x_2 = p_1 e_1+p_2 e_2\]</div>
+<p>となる．</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="note1"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>物価の変化などは全く無視する．</p>
+</dd>
+<dt class="label" id="note2"><span class="brackets"><a class="fn-backref" href="#id4">2</a></span></dt>
+<dd><p>貯蓄と借金で利子率が同じことが気になるなら，違う利子率が適用されるケースも考えてみれば良い．ただしこの場合には予算制約線はまっすぐな直線にならない．どうなるか考えてみよう．</p>
+</dd>
+<dt class="label" id="note3"><span class="brackets"><a class="fn-backref" href="#id6">3</a></span></dt>
+<dd><p>休暇を働いている以外の時間としている．他にも子育ての時間や介護の時間をモデルに入れる研究などもある．やることは大体同じである.</p>
+</dd>
+</dl>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -438,20 +500,20 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../ch2/ch2_5.html"
+       href="ch3_07.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">複数企業の競争</p>
+        <p class="prev-next-title">補償需要関数とスルツキー方程式*</p>
       </div>
     </a>
     <a class="right-next"
-       href="ch3_01.html"
+       href="../ch4/ch4_01.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">消費者の問題</p>
+        <p class="prev-next-title">複数財市場の市場均衡</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -461,6 +523,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">貯蓄（異時点間の消費決定）</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">労働供給</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">物々交換</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
