@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch3/ch3_07';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="複数財市場の市場均衡" href="../ch4/ch4_01.html" />
+    <link rel="next" title="消費者問題の応用" href="ch3_08.html" />
     <link rel="prev" title="所得効果と代替効果" href="ch3_06.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -197,15 +197,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -399,7 +404,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">需要の価格弾力性</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">需要の価格弾力性</a></li>
 </ul>
             </nav>
         </div>
@@ -414,37 +419,43 @@ document.write(`
   <section id="id1">
 <h1>補償需要関数とスルツキー方程式*<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <p>スルツキー分解のポイントは価格変化後も同じ効用水準を達成する消費プランを用意することである.
-同じ効用水準を達成する消費プランはいくらでもあるが、その中で支出、つまり<span class="math notranslate nohighlight">\(p_{x} q_{x}+p_{y}q_{y}\)</span>を{\large{最小に}}するものを<strong>補償需要</strong>あるいは<strong>ヒックスの需要</strong>と呼ぶ。
-価格組、<span class="math notranslate nohighlight">\(p_{x},p_{y}\)</span>のもとで、効用水準<span class="math notranslate nohighlight">\(u\)</span>を達成するための<span class="math notranslate nohighlight">\(x\)</span>の補償需要を<span class="math notranslate nohighlight">\(h_{x}(p_{x},p_{y},u)\)</span>で書く。
-これは所得の効果を無視できる。</p>
-<p>補償需要関数を使って, スルツキー分解を数式で書くと次のようになる。</p>
+同じ効用水準を達成する消費プランはいくらでもあるが、その中で支出、つまり<span class="math notranslate nohighlight">\(p_{x} q_{x}+p_{y}q_{y}\)</span>を<strong>最小に</strong>するものを<strong>補償需要</strong>あるいは<strong>ヒックスの需要</strong>と呼ぶ．</p>
+<p>例えば，効用水準として，憲法２５条にある「健康で文化的な最低限度の生活」の効用水準が<span class="math notranslate nohighlight">\(u\)</span>という数字で書けたとしてみよう<a class="footnote-reference brackets" href="#note0" id="id2">1</a>．このとき，この効用水準<span class="math notranslate nohighlight">\(u\)</span>に対する補償需要とは，効用の値が<span class="math notranslate nohighlight">\(u\)</span>になるような，最もお金のかからない生活において購入するものと考えれば良い．その購入に必要な費用を生活保護費と考えれば，生活保護下で，「健康で文化的な最低限度の生活」を送れるということになる．</p>
+<p>話を補償需要そのものに戻そう．価格組、<span class="math notranslate nohighlight">\(p_{x},p_{y}\)</span>のもとで、効用水準<span class="math notranslate nohighlight">\(u\)</span>を達成するための<span class="math notranslate nohighlight">\(x\)</span>の補償需要を<span class="math notranslate nohighlight">\(h_{x}(p_{x},p_{y},u)\)</span>で書く． これは所得の効果を無視できる．これはそもそも所得が補償需要の話で出てこないからである．</p>
+<p>補償需要関数を使って, スルツキー分解を数式で書くと次のようになる．</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial d_{x}}{\partial p_{x}}= \underbrace{\frac{\partial h_x }{ \partial p_x }}_{\text{代替効果}}-\underbrace{\frac{\partial d_x }{ \partial I} d_{x}}_{\text{所得効果}}\]</div>
-<p>ただし補償需要で達成する効用水準は、元々の予算制約のもとで最大になっている効用水準である。この等式は<strong>スルツキー方程式</strong>と呼ばれる。
-所得効果に<span class="math notranslate nohighlight">\(-d_{x}\)</span>がついている理由は次の通り。
-財<span class="math notranslate nohighlight">\(x\)</span>の価格を1単位増やすと, 財<span class="math notranslate nohighlight">\(x\)</span>への支出<span class="math notranslate nohighlight">\(p_{x}d_{x}\)</span>は<span class="math notranslate nohighlight">\(d_{x}\)</span>だけ増える。
-その分だけ所得減少となり、所得効果がマイナスに働く。</p>
-<p>財<span class="math notranslate nohighlight">\(y\)</span>価格の変化に対する財<span class="math notranslate nohighlight">\(x\)</span>への影響も同じようにスルツキー方程式で書くことができる。</p>
+<p>ただし補償需要で達成する効用水準は、元々の予算制約のもとで最大になっている効用水準である．この等式は<strong>スルツキー方程式</strong>と呼ばれる．
+所得効果に<span class="math notranslate nohighlight">\(-d_{x}\)</span>がついている理由は次の通り．
+財<span class="math notranslate nohighlight">\(x\)</span>の価格を1単位増やすと, 財<span class="math notranslate nohighlight">\(x\)</span>への支出<span class="math notranslate nohighlight">\(p_{x}d_{x}\)</span>は<span class="math notranslate nohighlight">\(d_{x}\)</span>だけ増える．
+その分だけ所得減少となり、所得効果がマイナスに働く．</p>
+<p>財<span class="math notranslate nohighlight">\(y\)</span>価格の変化に対する財<span class="math notranslate nohighlight">\(x\)</span>への影響も同じようにスルツキー方程式で書くことができる．</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial d_{x}}{\partial p_{y}}= \underbrace{\frac{\partial h_x }{ \partial p_y }}_{\text{代替効果}}-\underbrace{\frac{\partial d_x }{ \partial I} d_{y}}_{\text{所得効果}}\]</div>
-<section id="id2">
-<h2>需要の価格弾力性<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>価格変化にも弾力性が定義できる。
+<section id="id3">
+<h2>需要の価格弾力性<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>価格変化にも弾力性が定義できる．
 財<span class="math notranslate nohighlight">\(x\)</span>の財<span class="math notranslate nohighlight">\(x\)</span>価格の価格弾力性とは</p>
 <div class="math notranslate nohighlight">
 \[\frac{\Delta d_{x}(p_{x},p_{y},I)}{ \Delta p_{x}} \frac{p_{x}}{ d_{x}(p_{x},p_{y},I)} \left( \text{微分を使えば}\frac{\partial d_{x}}{ \partial p_{x}} \frac{p_{x}}{d_{x} }\right)\]</div>
-<p>である。
-これは財<span class="math notranslate nohighlight">\(x\)</span>の価格が<span class="math notranslate nohighlight">\(1\%\)</span>増えたとき, 需要は何%減るかを示した値である。
-なぜ変化量ではなく変化率で測るのかと言うと、変化率なら単位に依存しないからである。
-需要の価格弾力性は価格による売上変化を調べる際に役に立つ。
-売上金額は <span class="math notranslate nohighlight">\(p_{x} d_{x}(p_{x})\)</span>であるので, <span class="math notranslate nohighlight">\(p_{x}\)</span>で微分すると弾力性の項が出てくるのがわかるだろう。</p>
-<p>ここから需要の価格弾力性の絶対値が1より大きいということが値下げをすると売上金額が増えるということを意味する。</p>
-<p>需要の価格弾力性をスルツキー方程式を使って分解しよう。
+<p>である．
+これは財<span class="math notranslate nohighlight">\(x\)</span>の価格が<span class="math notranslate nohighlight">\(1\%\)</span>増えたとき, 需要は何%減るかを示した値である．
+なぜ変化量ではなく変化率で測るのかと言うと、変化率なら単位に依存しないからである．
+需要の価格弾力性は価格による売上変化を調べる際に役に立つ．
+売上金額は <span class="math notranslate nohighlight">\(p_{x} d_{x}(p_{x})\)</span>であるので, <span class="math notranslate nohighlight">\(p_{x}\)</span>で微分すると弾力性の項が出てくるのがわかるだろう．</p>
+<p>ここから需要の価格弾力性の絶対値が1より大きいということが値下げをすると売上金額が増えるということを意味する．</p>
+<p>需要の価格弾力性をスルツキー方程式を使って分解しよう．
 <span class="math notranslate nohighlight">\(\frac{\partial d_{x}}{ \partial p_{x}} \frac{p_{x}}{d_{x} }\)</span>にスルツキー方程式を代入すれば、</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\frac{\partial d_{x}}{ \partial p_{x}} \frac{p_{x}}{d_{x} }&amp;= \frac{\partial h_{x}}{ \partial p_{x}} \frac{p_{x}}{d_{x} }- \frac{\partial d_x }{ \partial I} p_{x}\\
 &amp;=\underbrace{\frac{\partial h_{x}}{ \partial p_{x}}\frac{p_{x}}{d_{x} }}_{\text{補償需要の価格弾力性}} - \underbrace{\frac{\partial d_x }{ \partial I} \frac{I}{ d_{x}}}_{\text{需要の所得弾力性}}\times  \underbrace{\frac{p_{x}d_{x}}{ I} }_{\text{財$x$の支出割合}}\end{split}\]</div>
-<p>この式から、もし財<span class="math notranslate nohighlight">\(x\)</span>の支出割合が極端に低ければ所得効果を無視することができる。</p>
+<p>この式から、もし財<span class="math notranslate nohighlight">\(x\)</span>の支出割合が極端に低ければ所得効果を無視することができる．</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="note0"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>かなり無理のある前提であるが，実際にそれが現実的かどうかはここでは議論しないでおく．哲学的・正義論の議論の題材としては面白いと思う．</p>
+</dd>
+</dl>
 </section>
 </section>
 
@@ -488,11 +499,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../ch4/ch4_01.html"
+       href="ch3_08.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">複数財市場の市場均衡</p>
+        <p class="prev-next-title">消費者問題の応用</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -511,7 +522,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">需要の価格弾力性</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">需要の価格弾力性</a></li>
 </ul>
   </nav></div>
 

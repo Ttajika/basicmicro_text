@@ -30,9 +30,12 @@ chapters:
   - file: ch3/ch3_06
   - file: ch3/ch3_07
   - file: ch3/ch3_08
+- file: ch5/ch5_01
+  sections:
+  - file: ch5/ch5_02
+  - file: ch5/ch5_03
 - file: ch4/ch4_01
   sections: 
   - file: ch4/ch4_02
   - file: ch4/ch4_03
-- file: ch5/ch5_01
 

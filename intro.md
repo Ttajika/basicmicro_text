@@ -6,7 +6,7 @@
 ```{tableofcontents}
 ```
 
-この講義ノートでは微分を学んでいることを前提とします．必要な数学については[このスライド](https://www.dropbox.com/scl/fi/llgt7x93c7vsqmgwo0trw/.pdf?rlkey=y8zpcfvj0z3hie99ij6b0zwox&e=1&dl=0)の内容を前提とします．
+この講義ノートにおいて，必要な数学については[このスライド](https://www.dropbox.com/scl/fi/llgt7x93c7vsqmgwo0trw/.pdf?rlkey=y8zpcfvj0z3hie99ij6b0zwox&e=1&dl=0)の内容を前提とします．
 
 より詳しく数学の知識を身につける書籍としては例えば[これ](https://www.saiensu.co.jp/search/?isbn=978-4-88384-371-8&y=2023)があります．
 
