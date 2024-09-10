@@ -209,6 +209,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
+<li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_04.html">一般均衡理論で言えること言えないこと</a></li>
 </ul>
 </li>
 </ul>
@@ -405,6 +406,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">利潤最大化と一階条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">スケールメリット</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">完全分配定理</a></li>
 </ul>
             </nav>
         </div>
@@ -432,8 +435,56 @@ document.write(`
 p\cdot \frac{\partial f(K,L)}{\partial L} - w=0\end{split}\]</div>
 <p>少し式を変形すれば，以下の通りである．これらは一階条件と呼ばれる．</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}p\cdot \frac{\partial f(K,L)}{\partial K} = r\\
-p\cdot \frac{\partial f(K,L)}{\partial L} = w\end{split}\]</div>
+\[\begin{split} \frac{\partial f(K,L)}{\partial K} &amp;= \frac{r}{p}\\
+  \frac{\partial f(K,L)}{\partial L} &amp;= \frac{w}{p}\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(\frac{r}{p}\)</span>は<strong>実質利子率</strong>，<span class="math notranslate nohighlight">\(\frac{w}{p}\)</span>は<strong>実質賃金率</strong>と呼ばれる．実質という意味は，価格<span class="math notranslate nohighlight">\(p\)</span>で割っていることによる．
+例えば，この世に財が一種類しかないとしよう．このときお金の使い道はその財にしかない．つまりその財がどれだけたくさん買えるかが<strong>実質的な</strong>お金の価値である．
+賃金が<span class="math notranslate nohighlight">\(w\)</span>であれば，その財は<span class="math notranslate nohighlight">\(w/p\)</span>個だけ買える．実質的な賃金の価値は<span class="math notranslate nohighlight">\(w/p\)</span>というわけである．</p>
+<p>一階条件が意味しているところは，労働と資本の限界生産物がそれぞれ実質賃金率と実質利子率と等しいということである．
+これがわかったとてなんだと思われるかもしれないが，後で説明する．しばしの我慢である．</p>
+</section>
+<section id="id3">
+<h2>スケールメリット<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>生産関数の特徴を見る際に，「投入量を<span class="math notranslate nohighlight">\(n\)</span>倍すれば生産量は何倍になるか？」を考えることがある．具体的には次のように分類する.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( f(nK,nL)&gt;n f(K,L)\)</span>となるとき，<strong>規模に関して収穫逓増</strong>という</p></li>
+<li><p><span class="math notranslate nohighlight">\( f(nK,nL)=n f(K,L)\)</span>となるとき，<strong>規模に関して収穫一定</strong>という</p></li>
+<li><p><span class="math notranslate nohighlight">\( f(nK,nL)&lt;n f(K,L)\)</span>となるとき，<strong>規模に関して収穫逓減</strong>という</p></li>
+</ul>
+<p>収穫逓増であれば，投入量を <span class="math notranslate nohighlight">\(n\)</span>倍すれば生産量は<span class="math notranslate nohighlight">\(n\)</span>倍以上になる．このときはスケールメリットが働くとも言える．要するにたくさん作れば作るほど，一つあたりの費用が安くなるということである．例えば，一つ作るのに<span class="math notranslate nohighlight">\(w L+rK\)</span>だけの費用がかかっていたとすれば，<span class="math notranslate nohighlight">\(K,L\)</span>の投入量を三倍にすれば費用も三倍だが，作れる量は３つより多い．もし作れる量が4になっていれば一つあたりの費用は <span class="math notranslate nohighlight">\(\frac{3}{4}(w L+rK)\)</span>であり，一つだけ作るときと比べて単価で75%の費用で作れることになる．言い換えれば作るほど一つあたりの費用が下がっていく状態である<a class="footnote-reference brackets" href="#notekl" id="id4">1</a>．</p>
+<p>収穫逓減はその状況の逆である．作れば作るほど費用は増加していく，つまりスケール・デメリットがある状態である．収穫一定であれば一つあたりの費用は変化しないということである．</p>
+<p>さて，収穫一定であるということは別名では，生産関数が<strong>1次同次</strong>であるともいう<a class="footnote-reference brackets" href="#notehomothetic" id="id5">2</a>.</p>
+<p>1次同次関数には<strong>オイラーの定理</strong>として知られる次の等式が成り立つ<a class="footnote-reference brackets" href="#noteeuler" id="id6">3</a>.
+証明はここでは行わないが，一般的な経済数学の本には載っているのでそちらをご覧いただきたい<a class="footnote-reference brackets" href="#senden" id="id7">4</a>．</p>
+<div class="math notranslate nohighlight">
+\[f(K,L)=\frac{\partial f(K,L)}{\partial K}\cdot K + \frac{\partial f(K,L)}{\partial L}\cdot L\]</div>
+</section>
+<section id="id8">
+<h2>完全分配定理<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<p>さて，オイラーの定理と一階条件を合わせれば次の結果を導くことができる．すなわち，最適な生産量においては</p>
+<div class="math notranslate nohighlight">
+\[f(K,L)=\frac{r}{p}\cdot K + \frac{w}{p}\cdot L\]</div>
+<p>となる．オイラーの定理の限界生産物のところに実質賃金率や実質利子率を代入するだけである．この結果は<strong>完全分配定理</strong>と呼ばれている．なぜならこれを利潤の式に代入すると，</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{利潤}&amp;=p\cdot f(K,L)-r\cdot K-w\cdot L\\
+&amp;=p\left(\frac{r}{p}\cdot K + \frac{w}{p}\cdot L\right) -r\cdot K-w\cdot L\\
+&amp;= r\cdot K+w\cdot L-r\cdot K-w\cdot L=0\end{split}\]</div>
+<p>となる．つまり，利潤は労働者と資本に完全に分配されて企業の手元には一銭も残らないのである．</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="notekl"><span class="brackets"><a class="fn-backref" href="#id4">1</a></span></dt>
+<dd><p>この背後には<span class="math notranslate nohighlight">\(K\)</span>やら<span class="math notranslate nohighlight">\(L\)</span>やらは常に一定の金額で投入できる（つまり賃金や利子率は変わらない，と企業が思い込んでいる）という前提がある．これが現実的かどうかは議論がいるところである．</p>
+</dd>
+<dt class="label" id="notehomothetic"><span class="brackets"><a class="fn-backref" href="#id5">2</a></span></dt>
+<dd><p>一般に，関数<span class="math notranslate nohighlight">\(f\)</span>が<span class="math notranslate nohighlight">\(m\)</span>次同次であるとは<span class="math notranslate nohighlight">\(f(nK,nL)=n^mf(K,L)\)</span>であることを言う．<span class="math notranslate nohighlight">\(m\)</span>は<span class="math notranslate nohighlight">\(n\)</span>の次数である．</p>
+</dd>
+<dt class="label" id="noteeuler"><span class="brackets"><a class="fn-backref" href="#id6">3</a></span></dt>
+<dd><p>逆にこの等式が成り立っている関数は1次同次であることも示すことができる．</p>
+</dd>
+<dt class="label" id="senden"><span class="brackets"><a class="fn-backref" href="#id7">4</a></span></dt>
+<dd><p>例えば，多鹿「読んで理解する経済数学」p.166</p>
+</dd>
+</dl>
 </section>
 </section>
 
@@ -501,6 +552,8 @@ p\cdot \frac{\partial f(K,L)}{\partial L} = w\end{split}\]</div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">利潤最大化と一階条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">スケールメリット</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">完全分配定理</a></li>
 </ul>
   </nav></div>
 

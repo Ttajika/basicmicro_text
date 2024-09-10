@@ -197,15 +197,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
+<li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_04.html">一般均衡理論で言えること言えないこと</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -413,31 +419,31 @@ document.write(`
                   
   <section id="id1">
 <h1>課税と死荷重損失<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>市場取引を通じた均衡では余剰が最大化されることがわかった。一方で我々が普段財を購入する市場では税が課されている。この節では課税がどのような影響をもたらすのかを簡単に見てみよう。</p>
-<p>課税には消費税、所得税、法人税などいろいろあるが、ここでは財の購入に税が課されるものとしよう。一単位購入するごとに<span class="math notranslate nohighlight">\(t\)</span>円を税として支払わなければならないとする。こういったタイプの課税を<strong>従量税</strong>と呼ぶ<a class="footnote-reference brackets" href="#note9" id="id2">1</a>。
-つまり消費者は<span class="math notranslate nohighlight">\(q\)</span>だけ財を購入すると<span class="math notranslate nohighlight">\((p+t)\times q\)</span>だけ支払わなくてはならない。これは価格が実質<span class="math notranslate nohighlight">\(p+t\)</span>になったようなものである。</p>
-<p>一方で生産者の方は<span class="math notranslate nohighlight">\(p\times q\)</span>だけ受け取る。<span class="math notranslate nohighlight">\(t\times q\)</span>の部分は税収となり政府の懐に入る。この事実からわかることは消費に課税すると消費者と生産者が直面する価格が変わるということである<a class="footnote-reference brackets" href="#note10" id="id3">2</a>．</p>
-<p>社会的総余剰の最大化条件は<span class="math notranslate nohighlight">\(v'(q)=C'(q)\)</span>であった。
-いま、課税がなされている状況で消費者の効用最大化条件から導かれるのは<span class="math notranslate nohighlight">\(v'(q)=p+t\)</span>という条件である。消費者にとっての価格は<span class="math notranslate nohighlight">\(p+t\)</span>に変わってしまっているからだ。一方で生産者にとっての条件は<span class="math notranslate nohighlight">\(p=C'(q)\)</span>のままである。したがって</p>
+<p>市場取引を通じた均衡では余剰が最大化されることがわかった．一方で我々が普段財を購入する市場では税が課されている．この節では課税がどのような影響をもたらすのかを簡単に見てみよう．</p>
+<p>課税には消費税、所得税、法人税などいろいろあるが、ここでは財の購入に税が課されるものとしよう．一単位購入するごとに<span class="math notranslate nohighlight">\(t\)</span>円を税として支払わなければならないとする．こういったタイプの課税を<strong>従量税</strong>と呼ぶ<a class="footnote-reference brackets" href="#note9" id="id2">1</a>．
+つまり消費者は<span class="math notranslate nohighlight">\(q\)</span>だけ財を購入すると<span class="math notranslate nohighlight">\((p+t)\times q\)</span>だけ支払わなくてはならない．これは価格が実質<span class="math notranslate nohighlight">\(p+t\)</span>になったようなものである．</p>
+<p>一方で生産者の方は<span class="math notranslate nohighlight">\(p\times q\)</span>だけ受け取る．<span class="math notranslate nohighlight">\(t\times q\)</span>の部分は税収となり政府の懐に入る．この事実からわかることは消費に課税すると消費者と生産者が直面する価格が変わるということである<a class="footnote-reference brackets" href="#note10" id="id3">2</a>．</p>
+<p>社会的総余剰の最大化条件は<span class="math notranslate nohighlight">\(v'(q)=C'(q)\)</span>であった．
+いま、課税がなされている状況で消費者の効用最大化条件から導かれるのは<span class="math notranslate nohighlight">\(v'(q)=p+t\)</span>という条件である．消費者にとっての価格は<span class="math notranslate nohighlight">\(p+t\)</span>に変わってしまっているからだ．一方で生産者にとっての条件は<span class="math notranslate nohighlight">\(p=C'(q)\)</span>のままである．したがって</p>
 <div class="math notranslate nohighlight">
 \[v'(q)=p+t&gt;p=C'(q)\]</div>
-<p>となり、社会的総余剰最大化条件と一致しない。したがって課税があれば市場での余剰最大化はうまく行かない<a class="footnote-reference brackets" href="#note11" id="id4">3</a>．</p>
-<p>このことを図を用いて確かめてみる。
-課税のある場合の均衡を図示すると<a class="reference internal" href="#tax"><span class="std std-numref">Fig. 15</span></a>のようになる。</p>
+<p>となり、社会的総余剰最大化条件と一致しない．したがって課税があれば市場での余剰最大化はうまく行かない<a class="footnote-reference brackets" href="#note11" id="id4">3</a>．</p>
+<p>このことを図を用いて確かめてみる．
+課税のある場合の均衡を図示すると<a class="reference internal" href="#tax"><span class="std std-numref">Fig. 15</span></a>のようになる．</p>
 <figure class="align-default" id="tax">
 <img alt="../_images/tax_ch1.svg" src="../_images/tax_ch1.svg" /><figcaption>
 <p><span class="caption-number">Fig. 15 </span><span class="caption-text">従量税の影響</span><a class="headerlink" href="#tax" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>消費者の直面する価格は<span class="math notranslate nohighlight">\(p^*+t\)</span>であるが、生産者の直面する価格は<span class="math notranslate nohighlight">\(p^*\)</span>である。それらの価格のもとでの需要量と供給量が一致する場合が均衡である。需要関数と供給関数を使って書くと<span class="math notranslate nohighlight">\(D(p^*+t)=S(p^*)\)</span>となる価格が均衡価格になる。<a class="reference internal" href="#tax"><span class="std std-numref">Fig. 15</span></a>における四角形の部分は税収を表している。税収も余剰に含めるとしても余剰の合計は減少している。その減少した余剰のことを課税による<strong>死荷重損失</strong>と呼ぶ。</p>
+<p>消費者の直面する価格は<span class="math notranslate nohighlight">\(p^*+t\)</span>であるが、生産者の直面する価格は<span class="math notranslate nohighlight">\(p^*\)</span>である．それらの価格のもとでの需要量と供給量が一致する場合が均衡である．需要関数と供給関数を使って書くと<span class="math notranslate nohighlight">\(D(p^*+t)=S(p^*)\)</span>となる価格が均衡価格になる．<a class="reference internal" href="#tax"><span class="std std-numref">Fig. 15</span></a>における四角形の部分は税収を表している．税収も余剰に含めるとしても余剰の合計は減少している．その減少した余剰のことを課税による<strong>死荷重損失</strong>と呼ぶ．</p>
 <section id="id5">
 <h2>どのような財に課税すべきか<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
-<p>従量税を課すと死荷重損失が出ることは見てきた。これは課税が社会にどれだけ悪さをしているかを表す一つの指標となる。では課税（一定額の税収）がどうしても必要なとき、そしてそれが従量税でなくてはならないとき、どのような財に課税するのが良いのだろうか。この問題は<strong>最適課税理論</strong>という財政学の一分野で研究されている問題である<a class="footnote-reference brackets" href="#note12" id="id6">4</a>。
-ここでは極めて簡単な場合を考えよう。</p>
-<p>まず、供給曲線を水平にする。そして均衡点を基準に需要曲線を回転させて、傾きの異なる需要曲線を比較する。これを見たのが<a class="reference internal" href="#optax1"><span class="std std-numref">Fig. 16</span></a>である。一段目左図を基準に需要曲線を水平にしたものが右の図であり、より傾きを急にしたのが二段目の図である。これを見ると、傾きを水平にしたものは死荷重損失が税収に比べてはるかに多い。一方、傾きを急にした図では死荷重損失は税収と比べてみても少ない。したがって同じだけ従量税を課すならば税収に比べて死荷重が少ない、傾きが急な財に課税すべきであるということだ。</p>
-<p>では需要曲線の傾きが急な財とはどのような財であろうか。これは価格が変化しても需要量の減りが少ない財である。<a class="reference internal" href="#optax1"><span class="std std-numref">Fig. 16</span></a>をみてもわかるように傾きが急な需要曲線をみた図では課税前の均衡取引量<span class="math notranslate nohighlight">\(q^{\text{前}}\)</span>と課税後の取引量<span class="math notranslate nohighlight">\(q^{*}\)</span>の差は比較的小さいが、傾きが水平に近い需要曲線の場合にはその差ははるかに大きい。このように価格の変化に対して需要量が変化しにくい財、つまり傾きが急な需要曲線を持つは<strong>必需財</strong>と呼ばれている。一方で、価格の変化に対して需要量が大きく変化しやすい、水平に近い需要曲線を持つ財は<strong>奢侈財</strong>と呼ばれる。
+<p>従量税を課すと死荷重損失が出ることは見てきた．これは課税が社会にどれだけ悪さをしているかを表す一つの指標となる．では課税（一定額の税収）がどうしても必要なとき、そしてそれが従量税でなくてはならないとき、どのような財に課税するのが良いのだろうか．この問題は<strong>最適課税理論</strong>という財政学の一分野で研究されている問題である<a class="footnote-reference brackets" href="#note12" id="id6">4</a>．
+ここでは極めて簡単な場合を考えよう．</p>
+<p>まず、供給曲線を水平にする．そして均衡点を基準に需要曲線を回転させて、傾きの異なる需要曲線を比較する．これを見たのが<a class="reference internal" href="#optax1"><span class="std std-numref">Fig. 16</span></a>である．一段目左図を基準に需要曲線を水平にしたものが右の図であり、より傾きを急にしたのが二段目の図である．これを見ると、傾きを水平にしたものは死荷重損失が税収に比べてはるかに多い．一方、傾きを急にした図では死荷重損失は税収と比べてみても少ない．したがって同じだけ従量税を課すならば税収に比べて死荷重が少ない、傾きが急な財に課税すべきであるということだ．</p>
+<p>では需要曲線の傾きが急な財とはどのような財であろうか．これは価格が変化しても需要量の減りが少ない財である．<a class="reference internal" href="#optax1"><span class="std std-numref">Fig. 16</span></a>をみてもわかるように傾きが急な需要曲線をみた図では課税前の均衡取引量<span class="math notranslate nohighlight">\(q^{\text{前}}\)</span>と課税後の取引量<span class="math notranslate nohighlight">\(q^{*}\)</span>の差は比較的小さいが、傾きが水平に近い需要曲線の場合にはその差ははるかに大きい．このように価格の変化に対して需要量が変化しにくい財、つまり傾きが急な需要曲線を持つは<strong>必需財</strong>と呼ばれている．一方で、価格の変化に対して需要量が大きく変化しやすい、水平に近い需要曲線を持つ財は<strong>奢侈財</strong>と呼ばれる．
 この分析が示すことは、奢侈財よりも必需財に課税すべきであるということだ<a class="footnote-reference brackets" href="#note4" id="id7">5</a>.</p>
-<p>もちろんこの分析は考慮すべき要素をいくつも省いている。ここで考慮しなかったことを含めればどのような財に課税すべきという結論になるかは最適課税論の重大な論題のひとつである。</p>
+<p>もちろんこの分析は考慮すべき要素をいくつも省いている．ここで考慮しなかったことを含めればどのような財に課税すべきという結論になるかは最適課税論の重大な論題のひとつである．</p>
 <figure class="align-default" id="optax1">
 <img alt="../_images/optax1_ch1.svg" src="../_images/optax1_ch1.svg" /><figcaption>
 <p><span class="caption-number">Fig. 16 </span><span class="caption-text">死荷重損失の比較</span><a class="headerlink" href="#optax1" title="Permalink to this image">#</a></p>
@@ -453,19 +459,19 @@ document.write(`
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note9"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
-<dd><p>日本の消費税は価格に比例するタイプの税である。つまり消費者の支払額は<span class="math notranslate nohighlight">\((1+\tau)\times p\times q\)</span>となる。（<span class="math notranslate nohighlight">\(\tau\)</span>は税率）こういうタイプの税を<strong>従価税</strong>と呼ぶ。</p>
+<dd><p>日本の消費税は価格に比例するタイプの税である．つまり消費者の支払額は<span class="math notranslate nohighlight">\((1+\tau)\times p\times q\)</span>となる．（<span class="math notranslate nohighlight">\(\tau\)</span>は税率）こういうタイプの税を<strong>従価税</strong>と呼ぶ．</p>
 </dd>
 <dt class="label" id="note10"><span class="brackets"><a class="fn-backref" href="#id3">2</a></span></dt>
-<dd><p>生産に課税しても同じ。</p>
+<dd><p>生産に課税しても同じ．</p>
 </dd>
 <dt class="label" id="note11"><span class="brackets"><a class="fn-backref" href="#id4">3</a></span></dt>
-<dd><p>この場合、生産量が過少になる。これはなぜか確かめてみよ。(少し難)</p>
+<dd><p>この場合、生産量が過少になる．これはなぜか確かめてみよ．(少し難)</p>
 </dd>
 <dt class="label" id="note12"><span class="brackets"><a class="fn-backref" href="#id6">4</a></span></dt>
-<dd><p>詳しくは財政学や公共経済学の教科書を参照せよ。最適課税論の教科書としては洋書であるが、Salanié (2011) <em>the Economics of Taxation</em>, 2nd ed., MIT press がある。</p>
+<dd><p>詳しくは財政学や公共経済学の教科書を参照せよ．最適課税論の教科書としては洋書であるが、Salanié (2011) <em>the Economics of Taxation</em>, 2nd ed., MIT press がある．</p>
 </dd>
 <dt class="label" id="note4"><span class="brackets"><a class="fn-backref" href="#id7">5</a></span></dt>
-<dd><p>これを考案者の名前をとってラムジールールと呼ぶ。</p>
+<dd><p>これを考案者の名前をとってラムジールールと呼ぶ．</p>
 </dd>
 </dl>
 </section>

@@ -195,15 +195,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
+<li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_04.html">一般均衡理論で言えること言えないこと</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -413,21 +419,21 @@ document.write(`
 <h1>市場の失敗<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <section id="id2">
 <h2>市場は万能？<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>前章では市場均衡での取引が余剰を最大化すること、課税などをすることによって余剰が減少することを見てきた。この事実は政府は余計なことをせず、全て市場に任せておけばうまくいく、ということを意味しているだろうか？</p>
-<p>必ずしもそうではない。市場がうまく働くためにはいくつもの仮定が必要である。代表的なのは次の三つである。（これらの仮定が満たされる市場は<strong>完全競争市場</strong>と呼ばれる。）</p>
+<p>前章では市場均衡での取引が余剰を最大化すること、課税などをすることによって余剰が減少することを見てきた．この事実は政府は余計なことをせず、全て市場に任せておけばうまくいく、ということを意味しているだろうか？</p>
+<p>必ずしもそうではない．市場がうまく働くためにはいくつもの仮定が必要である．代表的なのは次の三つである．（これらの仮定が満たされる市場は<strong>完全競争市場</strong>と呼ばれる．）</p>
 <ul class="simple">
-<li><p>《消費者も生産者もすべての市場の参加者のもっている情報が同じ。⇒ <strong>対称情報の仮定</strong>》</p></li>
+<li><p>《消費者も生産者もすべての市場の参加者のもっている情報が同じ．⇒ <strong>対称情報の仮定</strong>》</p></li>
 </ul>
-<p>この仮定には次のような批判があるだろう。「今売っている製品の質は企業は知っているかもしれないが消費者は知らない」</p>
+<p>この仮定には次のような批判があるだろう．「今売っている製品の質は企業は知っているかもしれないが消費者は知らない」</p>
 <ul class="simple">
-<li><p>《自分の消費行動そのものは他者に直接影響しないし逆も然り。生産者の生産行動も同様に直接他者に影響を及ぼさない。⇒ <strong>私的消費・私的生産の仮定</strong>》</p></li>
+<li><p>《自分の消費行動そのものは他者に直接影響しないし逆も然り．生産者の生産行動も同様に直接他者に影響を及ぼさない．⇒ <strong>私的消費・私的生産の仮定</strong>》</p></li>
 </ul>
-<p>これに対して以下の意見もあるかもしれない。「誰かに贈り物をして喜んでもらえば僕も嬉しい。」「工場の排水は我々の健康を直接害している！」</p>
+<p>これに対して以下の意見もあるかもしれない．「誰かに贈り物をして喜んでもらえば僕も嬉しい．」「工場の排水は我々の健康を直接害している！」</p>
 <ul class="simple">
 <li><p>《消費者も生産者も価格を与えられたものとして行動している ⇒ <strong>価格受容者の仮定</strong>》</p></li>
 </ul>
-<p>これも批判として「企業などは価格を直接決めてくるのが普通ではないだろうか？」があるだろう。これらの仮定が満たされなければ市場がうまく働くとは限らない。このような状況は<strong>市場の失敗</strong>、<strong>市場の機能不全</strong>と言われている。</p>
-<p>次節以降これらの仮定が満たされない場合どのように市場がうまく機能しないかを見ていく。</p>
+<p>これも批判として「企業などは価格を直接決めてくるのが普通ではないだろうか？」があるだろう．これらの仮定が満たされなければ市場がうまく働くとは限らない．このような状況は<strong>市場の失敗</strong>、<strong>市場の機能不全</strong>と言われている．</p>
+<p>次節以降これらの仮定が満たされない場合どのように市場がうまく機能しないかを見ていく．</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>

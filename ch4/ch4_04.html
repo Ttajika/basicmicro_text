@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>純粋交換経済とエッジワースボックス &#8212; 基礎ミクロ経済学</title>
+    <title>一般均衡理論で言えること言えないこと &#8212; 基礎ミクロ経済学</title>
   
   
   
@@ -63,13 +63,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch4/ch4_03';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch4/ch4_04';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="一般均衡理論で言えること言えないこと" href="ch4_04.html" />
-    <link rel="prev" title="価値判断の基準" href="ch4_02.html" />
+    <link rel="prev" title="純粋交換経済とエッジワースボックス" href="ch4_03.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -207,9 +204,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="ch4_01.html">複数財市場の市場均衡</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="ch4_02.html">価値判断の基準</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">純粋交換経済とエッジワースボックス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="ch4_04.html">一般均衡理論で言えること言えないこと</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">一般均衡理論で言えること言えないこと</a></li>
 </ul>
 </li>
 </ul>
@@ -283,7 +280,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch4/ch4_03.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch4/ch4_04.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -313,7 +310,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/ch4/ch4_03.md" target="_blank"
+      <li><a href="../_sources/ch4/ch4_04.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -395,7 +392,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>純粋交換経済とエッジワースボックス</h1>
+    <h1>一般均衡理論で言えること言えないこと</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -405,13 +402,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">純粋交換経済とエッジワースボックス</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">エッジワースボックス</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">窮乏化成長</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ワルラス均衡とコア</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">厚生定理</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -423,112 +416,44 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="id1">
-<h1>純粋交換経済とエッジワースボックス<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>さて、前節で学んだパレート効率性という道具を用いて市場の効率性を検証する．
-単純化のために、この経済には二人の登場人物、レオンとケネスしかいないとしよう．
-財の種類は二種類、財<span class="math notranslate nohighlight">\(x\)</span>と財<span class="math notranslate nohighlight">\(y\)</span>であるとしよう．レオンの財<span class="math notranslate nohighlight">\(x\)</span>の消費量を<span class="math notranslate nohighlight">\(q_{Lx}\)</span>、財<span class="math notranslate nohighlight">\(y\)</span>の消費量を<span class="math notranslate nohighlight">\(q_{Ly}\)</span>、ケネスの財<span class="math notranslate nohighlight">\(x\)</span>の消費量を<span class="math notranslate nohighlight">\(q_{Kx}\)</span>、財<span class="math notranslate nohighlight">\(y\)</span>の消費量を<span class="math notranslate nohighlight">\(q_{Ky}\)</span>であるとする．
-また単純化のため、企業は存在しないとする．その代わり、各消費者はそれぞれ財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>を一定量保有しているとする．これを記号で<span class="math notranslate nohighlight">\(e_{Kx}\)</span>などと表現する．また、これを初期賦存量や初期保有量と呼ぶ．こう言った形の経済を<strong>純粋交換経済</strong>と呼ぶ．</p>
-<p>純粋交換経済における均衡（<strong>市場均衡</strong>、<strong>完全競争均衡</strong>、あるいは<strong>ワルラス均衡</strong>と呼ばれる）は次の通りに定義される．</p>
-<ol class="arabic">
-<li><p>各消費者は与えられた価格<span class="math notranslate nohighlight">\(p_{x}, p_{y}\)</span>と初期保有<span class="math notranslate nohighlight">\(e\)</span>のもと効用を最大化するように消費量<span class="math notranslate nohighlight">\(q_{ix},q_{iy}\)</span>を決める．ここで消費者<span class="math notranslate nohighlight">\(i\)</span>の予算制約は以下の通りである．</p>
-<div class="math notranslate nohighlight" id="equation-condi1">
-<span class="eqno">(3)<a class="headerlink" href="#equation-condi1" title="Permalink to this equation">#</a></span>\[   p_{x}q_{ix}+p_{y}q_{iy}=p_{x}e_{ix}+p_{y}e_{iy}.\]</div>
-</li>
-<li><p>各財の需要量の和は各財の初期保有量の和に等しい．つまり</p>
-<div class="math notranslate nohighlight" id="equation-condi2">
-<span class="eqno">(4)<a class="headerlink" href="#equation-condi2" title="Permalink to this equation">#</a></span>\[\begin{split}q_{Lx}+q_{Kx}=e_{Lx}+e_{Kx}\\
-q_{Ly}+q_{Ky}=e_{Ly}+e_{Ky}\end{split}\]</div>
-</li>
-</ol>
-<p>1の条件は与えられた価格<span class="math notranslate nohighlight">\(p_x,p_y\)</span>の下、各消費者<span class="math notranslate nohighlight">\(i\)</span>が初期保有<span class="math notranslate nohighlight">\((e_{ix},e_{iy})\)</span>を売って得たお金を所得とみなして効用最大化問題を解くということである．</p>
-<p>2の条件は各財の需給が一致しているということである．ここでは供給量は初期保有量ということで<a class="reference internal" href="#equation-condi2">(4)</a>の右辺である．需要は<a class="reference internal" href="#equation-condi2">(4)</a>の左辺である．つまりはどれだけ消費したいかと言う量の合計量である．ここで，財<span class="math notranslate nohighlight">\(x\)</span>はその間で需給が一致し, 財<span class="math notranslate nohighlight">\(y\)</span>もその間で需給が一致していると言うことに注意である．</p>
+<h1>一般均衡理論で言えること言えないこと<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>この章では，厚生定理を除いたワルラス均衡の様々な性質について紹介する．</p>
 <section id="id2">
-<h2>エッジワースボックス<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>財の配分（各消費者がどの財をどれだけ消費するかの組）を図に表してみよう．二人の予算制約の図を以下のように合体させた図を作る. 二人の初期保有の点が一致するように合体させていることに注意する．二人が直面している価格が同じであれば，予算制約線も傾きが同じなのでぴったり一致する．</p>
-<figure class="align-default" id="edgeworth-2">
-<img alt="../_images/GE_edgeworth_anime.gif" src="../_images/GE_edgeworth_anime.gif" />
-<figcaption>
-<p><span class="caption-number">Fig. 36 </span><span class="caption-text">エッジワースボックスの作り方</span><a class="headerlink" href="#edgeworth-2" title="Permalink to this image">#</a></p>
+<h2>窮乏化成長<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p><span class="xref myst">市場均衡分析の応用</span>では豊作貧乏というものを学習した．いわばたくさん財が取れたとしても生産者の利益は減るかもしれないということである．これの一般均衡バージョンとも言えるのが<strong>窮乏化成長</strong>である．ここでは純粋交換経済バージョンを紹介しよう．</p>
+<p>（純粋交換経済バージョンの）窮乏化成長とは，簡単に言えば，初期保有が増加したときに，市場均衡において，その消費者の効用が減少するかもしれないということである．</p>
+<figure class="align-default" id="bhag">
+<img alt="../_images/bhag.svg" src="../_images/bhag.svg" /><figcaption>
+<p><span class="caption-number">Fig. 44 </span><span class="caption-text">窮乏化成長の図解</span><a class="headerlink" href="#bhag" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>こうして作られた図は<strong>エッジワースボックス</strong>と呼ばれる．</p>
-<p>エッジワースボックスが何を表しているかをみるため<a class="reference internal" href="#edgeworth"><span class="std std-numref">Fig. 37</span></a>はを見てみよう．</p>
-<figure class="align-default" id="edgeworth">
-<img alt="../_images/edgeworth.svg" src="../_images/edgeworth.svg" /><figcaption>
-<p><span class="caption-number">Fig. 37 </span><span class="caption-text">エッジワースボックス</span><a class="headerlink" href="#edgeworth" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>経済全体で消費できる財<span class="math notranslate nohighlight">\(x\)</span>の量は<span class="math notranslate nohighlight">\(e_{Lx}+e_{Kx}\)</span>であり、それは図の横軸で表されている．同様に経済全体で消費できる財<span class="math notranslate nohighlight">\(y\)</span>の量は<span class="math notranslate nohighlight">\(e_{Ly}+e_{Ky}\)</span>であり、それは図の縦軸で表されている．
-点Aではレオンは財<span class="math notranslate nohighlight">\(x\)</span>を<span class="math notranslate nohighlight">\(\tilde q_{x}\)</span>だけ消費し、財<span class="math notranslate nohighlight">\(y\)</span>を<span class="math notranslate nohighlight">\(\tilde q_{y}\)</span>だけ消費する．一方ケネスはその残りの量を消費する．残りの量はちょうどケネスの消費空間の座標を回転させたもので対応できる．消費点Aは右上に行けば行くほどレオンの消費量が多くなるのに対し、ケネスの消費量はそれだけ少なくなる．</p>
-<p>各消費者の消費量の組み合わせを<strong>配分</strong>と呼ぶ．要するに，ケネスとレオンの各財の消費プランの組み合わせ<span class="math notranslate nohighlight">\((q_{Kx}, q_{Ky},q_{Lx}, q_{Ly})\)</span>のことである．以下ではパレート効率的な配分やワルラス均衡における配分がどのような性質を持つかということについて議論する．</p>
-</section>
+<p>このロジックは豊作貧乏と同じである．純粋交換経済とは簡単に言えばいらない財を売って，いる財を買うことである．その人の所得はいらない財をどれだけ持っているかとそのいらない財の価格で決まる．いらない財がものすごく増えた場合には，いらない財の価格が下がってしまうので，結果としてその人の所得が減少することがある．そうするといらない財なのでたくさん消費しても嬉しくない一方，売っても大したお金にならない．その結果として効用が下がってしまうのである．</p>
 </section>
 <section id="id3">
-<h1>厚生定理<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h1>
-<p>さて、エッジワースボックスをつかってパレート効率的な配分を描いてみよう．<a class="reference internal" href="#pareto"><span class="std std-numref">Fig. 38</span></a>を見てみよう．図中の実線がレオンの無差別曲線で点線がケネスの無差別曲線である．レオンは右上に行けば行くほど効用が改善し、逆にケネスは左下に行けば行くほど効用が改善する．今、消費点Aを考える．この点はパレート効率的であろうか？</p>
-<figure class="align-default" id="pareto">
-<img alt="../_images/pareto.svg" src="../_images/pareto.svg" /><figcaption>
-<p><span class="caption-number">Fig. 38 </span><span class="caption-text">パレート効率的な配分</span><a class="headerlink" href="#pareto" title="Permalink to this image">#</a></p>
+<h2>ワルラス均衡とコア<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>ワルラス均衡にはパレート効率的という性質があった．これを言い換えると，ワルラス均衡の配分からどこか別の配分へ変えると誰かが損するということである．
+ワルラス均衡は市場均衡とも呼ばれるので，非常に分権的（つまり人が好き勝手に行動する）もののように聞こえる．一方で，厚生定理によって社会主義の観点からもワルラス均衡は評価できる．</p>
+<p>例えば社会が全国民による会議で社会を運営していたとしよう．つまり会議で誰がどれだけものを買うかを決めるのである．
+会議の決め方ルールは全会一致ルールであるとしよう．
+このとき，この会議で決まる配分として，ワルラス均衡の配分は申し分ない．ワルラス均衡の配分からどこか別の配分へ変えようとしても，誰かが損してしまうので，その損する人が反対することになる．よって，一度配分がワルラス均衡の配分として会議で決まってしまえば，これ以上は変わらない．</p>
+<p>さて，全会一致ルールだとしても，不満がある人がいるかもしれない．そういった場合，不満がある人同士で連れあって新しい独立国を作ってそこの経済の中だけで取引するかもしれない．パレート効率的な配分にはこういうものが存在する．例えば，AさんとBさんとCさんの３人がいて，Cさんだけが全てを独占するような配分はパレート効率的だが，AさんとBさんには不満が溜まる．そうなら，Cさんをハブって，AさんとBさんだけで彼らの初期保有を持ち寄って独立経済を作る．そうすると，彼らの効用は改善する．このような元の配分から離脱して独立し，彼らの初期保有だけで新しい経済を作ることが離脱する全員にとって得になるようなことがない（残される側のことは考えない）とき，元の配分を<strong>コア配分</strong>と呼ぶ．コア配分の集合を<strong>コア</strong>という．</p>
+<figure class="align-default" id="core">
+<img alt="../_images/core.svg" src="../_images/core.svg" /><figcaption>
+<p><span class="caption-number">Fig. 45 </span><span class="caption-text">コア（図中の紫の線）の図解</span><a class="headerlink" href="#core" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>点Aは残念ながらパレート効率的ではない．点Cと比較してみよう．点CではケネスにとってはAより良い．Aを通るケネスの無差別曲線より左下側にあるからだ．レオンにとってはどうだろうか．これもCの方が良い．Aを通るレオンの無差別曲線よりも点Cは右上側にあるからである．したがって点AからCに移動すればレオンとケネス両方の効用を改善することができる．これは点Aがパレート効率であることに反する．</p>
-<p>では点Bはどうだろうか．点Bでは無差別曲線同士が接している．この場合、レオンの効用を改善する領域とケネスの効用を改善する領域が重ならない．そうしたとき、両者の効用を同時に改善するような点を見つけることはできない．したがって点Bはパレート効率的な配分である．</p>
-<p>パレート効率的な配分自体は無数にある．パレート効率的な配分を結んだ曲線を<strong>消費契約曲線</strong>という．</p>
-<p>さて、パレート効率的な配分と市場均衡における配分の関係を見ていこう．実際には次の二つの定理が成り立つ．<a class="footnote-reference brackets" href="#note" id="id4">1</a></p>
-<p><strong>第一厚生定理</strong> 市場均衡配分はパレート効率的である．</p>
-<p>第一厚生定理は市場均衡の効率性を示している．市場に任せていれば自然にパレート効率的な配分に行き着くので外野は何もする必要がないというものである．この定理の成立をエッジワースボックスをつかって確かめてみよう．<a class="reference internal" href="#fwt"><span class="std std-numref">Fig. 39</span></a>を見てみる．</p>
-<p>まず、初期保有の配分（図中のE）と市場均衡の配分（図中のQ）は同じ予算線上にあることに注意する．まず、初期保有を売って得たお金が所得であるので、その所得で初期保有の分をいつでも買い戻せることに注意する．また市場均衡では各人の効用が最大化されているので予算を使い尽くすはずである．したがって各人の予算制約の上に消費点がある．</p>
-<p>レオンは点Qを通る予算線で効用最大化を行う．したがって、点Qで彼の無差別曲線（図中の赤実線）と予算線は接している．
-ケネスも同様である．点Qにおいて彼の無差別曲線（図中の青点線）と予算線が接している．レオンとケネスの予算線は共通である．なぜならば初期保有の配分と市場均衡の配分を通る直線はただひとつしかないからである．したがって彼らの無差別曲線は共通の予算線を通じてお互いに接している．これは配分がパレート効率的であるための条件であったので、点Qはパレート効率的であることが確認できた．</p>
-<figure class="align-default" id="fwt">
-<img alt="../_images/FWT.svg" src="../_images/FWT.svg" /><figcaption>
-<p><span class="caption-number">Fig. 39 </span><span class="caption-text">第一厚生定理</span><a class="headerlink" href="#fwt" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>これを動画でも確認してみよう.</p>
-<figure class="align-default" id="fwt2">
-<img alt="../_images/GE_FWT.gif" src="../_images/GE_FWT.gif" />
-<figcaption>
-<p><span class="caption-number">Fig. 40 </span><span class="caption-text">第一厚生定理の動画による図解</span><a class="headerlink" href="#fwt2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>第一厚生定理とは逆に任意のパレート効率的な点を市場均衡を通じて達成することができる．これは第二厚生定理と呼ばれる．</p>
-<p><strong>第二厚生定理</strong> パレート効率的な配分（のほとんど）は初期保有量を調整することで市場均衡を通じて達成できる．</p>
-<p>これも図を使ってみてみよう．<a class="reference internal" href="#swt"><span class="std std-numref">Fig. 41</span></a>をみてみる．いまパレート効率的な点Qを適当に取ってくる．この点では両者の無差別曲線が接している．
-すると点Qを通り、二つの無差別曲線に同時に接する直線を描くことができる<a class="footnote-reference brackets" href="#note3" id="id5">2</a>．</p>
-<p>この直線上の適当な点に初期保有の配分（点E）を通れば点Qが市場均衡の点になっている．</p>
-<figure class="align-default" id="swt">
-<img alt="../_images/SWT.svg" src="../_images/SWT.svg" /><figcaption>
-<p><span class="caption-number">Fig. 41 </span><span class="caption-text">第二厚生定理</span><a class="headerlink" href="#swt" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>これも動画で確認してみよう．こう見ると第二厚生定理は第一厚生定理の逆再生とも言えるだろう．<a class="footnote-reference brackets" href="#note4" id="id6">3</a></p>
-<figure class="align-default" id="swt2">
-<img alt="../_images/GE_SWT.gif" src="../_images/GE_SWT.gif" />
-<figcaption>
-<p><span class="caption-number">Fig. 42 </span><span class="caption-text">第二厚生定理の動画による図解</span><a class="headerlink" href="#swt2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>このように市場均衡とパレート効率的な点には密接な関係がある．</p>
-<p>ただし，第二厚生定理が成立しないような例を作ることもできる．例えば<a class="reference internal" href="#swt-c"><span class="std std-numref">Fig. 43</span></a>の中の点Aはパレート効率的であるが，どのように予算制約線を引いても市場均衡にはならない．財<span class="math notranslate nohighlight">\(x\)</span>の価格を0にすれば，A点で無差別曲線と予算制約線が接するようにできるが，そのときは財<span class="math notranslate nohighlight">\(x\)</span>を無限に買おうとしてしまうので，A点で効用最大化がなされない．</p>
-<figure class="align-default" id="swt-c">
-<img alt="../_images/SWT_c.svg" src="../_images/SWT_c.svg" /><figcaption>
-<p><span class="caption-number">Fig. 43 </span><span class="caption-text">第二厚生定理が成り立たない例</span><a class="headerlink" href="#swt-c" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>厚生定理の注意すべき点としては，市場均衡の状態はパレート効率的であるが，市場均衡ではない配分から市場均衡に移動したとして，パレート改善するわけではないということである．</p>
+<p>実は，ワルラス均衡の配分は<strong>コア配分</strong>である．これを見るために二人のケースで考えてみよう．ワルラス均衡の配分から離脱する人がいるとすれば一人だけによる離脱である．なぜなら，ワルラス均衡の配分はパレート効率的なので，二人で離脱しようとしてももう一人は必ず反対するからである．さて，一人で離脱したところで，持っているのは元々自分の持っていた初期保有である．ワルラス均衡では初期保有をそのまま消費するよりも良い生活ができる．なぜなら，初期保有は純粋交換経済でいつでも消費できる配分だからである．誰とも財を交換しないのは市場経済の中でもできるのである．ワルラス均衡では市場経済でベストを尽くしている．ベストを尽くしているということは，誰とも財を交換したくなければできるし，ワルラス均衡で誰かと財を交換しているなら誰とも財を交換しないのはその人にとってベストではないのである．よって，一人だけで独立してもワルラス均衡の配分からよくはならない．よってワルラス均衡配分はコア配分と言える<a class="footnote-reference brackets" href="#notecore" id="id4">1</a>．</p>
+<p>というわけで，ワルラス均衡配分はただ会議で決まる配分であるということ以上に，その配分では誰も，どんな連合を組んでも独立したくならないという性質を持つ．独立経済を作るというのはある意味で鎖国するということに等しい．自分たちで自給自足でやる，そんな連合を組むということなのだから．
+したがって，一度開国すれば，（もし鎖国するかどうかの決定がその人たちの全会一致で決まるというなら）再び鎖国することはないということが言える．</p>
+<p>さて，ワルラス均衡の配分はコア配分であるが，逆は必ずしもそうとは言えない．しかし，人口が十分に大きければ，コアが一点に収束し，そこがワルラス均衡の配分になるということが知られている．これは<strong>コア収束定理</strong>と呼ばれる結果である．こちらも，詳細な内容は上級の教科書を参照せよ．</p>
+<p>コア配分はある意味安定した社会の配分である．引きこもって外界との交流を断つようなグループがあったとしたら，その人たちの誰かは経済的に損をするということである．そうなのであれば，（そのグループに強制力がなければ）引きこもり集団は現れない．コア収束定理が意味することは，人の数が十分に大きければ，そのような配分はワルラス均衡配分であるということである．（過言であるが）安定した社会ではワルラス均衡配分が成立していると言えば，そういった配分を分析することは理に適うのである．</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="note"><span class="brackets"><a class="fn-backref" href="#id4">1</a></span></dt>
-<dd><p>標準的な教科書では第一厚生定理は厚生経済学の第一基本定理，第二厚生定理は厚生経済学の第二基本定理という名前がついているが，長ったらしいので本資料では短く呼ぶ．</p>
-</dd>
-<dt class="label" id="note3"><span class="brackets"><a class="fn-backref" href="#id5">2</a></span></dt>
-<dd><p>分離超平面定理という位相数学の定理がこれを保証する．</p>
-</dd>
-<dt class="label" id="note4"><span class="brackets"><a class="fn-backref" href="#id6">3</a></span></dt>
-<dd><p>もちろんいくつかの仮定がないと必ずしもそうは言えない</p>
+<dt class="label" id="notecore"><span class="brackets"><a class="fn-backref" href="#id4">1</a></span></dt>
+<dd><p>人が３人以上いた場合は多少分析が複雑にはなるが，実は厚生定理の証明とほとんど変わらない．より上級の教科書を参照せよ．</p>
 </dd>
 </dl>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -562,22 +487,13 @@ q_{Ly}+q_{Ky}=e_{Ly}+e_{Ky}\end{split}\]</div>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="ch4_02.html"
+       href="ch4_03.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">価値判断の基準</p>
+        <p class="prev-next-title">純粋交換経済とエッジワースボックス</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="ch4_04.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">一般均衡理論で言えること言えないこと</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -594,13 +510,9 @@ q_{Ly}+q_{Ky}=e_{Ly}+e_{Ky}\end{split}\]</div>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">純粋交換経済とエッジワースボックス</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">エッジワースボックス</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">窮乏化成長</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ワルラス均衡とコア</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">厚生定理</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>

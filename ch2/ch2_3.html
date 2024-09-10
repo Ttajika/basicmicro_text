@@ -197,15 +197,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
+<li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_04.html">一般均衡理論で言えること言えないこと</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -414,26 +420,26 @@ document.write(`
                   
   <section id="id1">
 <h1>外部性<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>公共財が市場で扱ってもうまく行かないことはすでに述べたが、私的財でも市場ではうまく行かない場合がある。例えばある財を生産するのに工場が必要であるが、 その工場排水は河川を汚染する。それは他者にも影響を与える。同様に、温室効果ガスは温暖化を促進し、世界的な問題となる。身近には騒音は周辺の住民を不快にするという場合もそうである。逆に他者に利益になることもある。例えば果樹園をつくることは蜂蜜の収穫に役立つ。</p>
-<p>このようにある人の行動（財の消費、生産など）が他の人の効用に直接影響を及ぼすとき、その行動には<strong>外部性</strong>があるという<a class="footnote-reference brackets" href="#note2" id="id2">1</a>。</p>
-<p>正の影響があるときは正の外部性、負の影響があるときは負の外部性があるという。</p>
-<p>外部性があるとき、市場の取引ではうまく行かない。
-なぜなら人々は自身の効用最大化のみを考えて行動する。
-標準的な経済学における市場取引では他人の(迷惑/嬉しさ)を考えないので外部性の分は勘定されない。</p>
-<p>このことを見るために簡単なモデルを考えてみよう。
-消費者はある財の消費<span class="math notranslate nohighlight">\(d\)</span>から効用<span class="math notranslate nohighlight">\(v(d)\)</span>を得る。
-生産者は財を<span class="math notranslate nohighlight">\(s\)</span>単位生産するには費用<span class="math notranslate nohighlight">\(C(s)\)</span>がかかる。
-財を<span class="math notranslate nohighlight">\(d\)</span>だけ消費/生産すると社会的に費用が<span class="math notranslate nohighlight">\(\textit{SC}(d)\)</span>だけかかる。
+<p>公共財が市場で扱ってもうまく行かないことはすでに述べたが、私的財でも市場ではうまく行かない場合がある．例えばある財を生産するのに工場が必要であるが、 その工場排水は河川を汚染する．それは他者にも影響を与える．同様に、温室効果ガスは温暖化を促進し、世界的な問題となる．身近には騒音は周辺の住民を不快にするという場合もそうである．逆に他者に利益になることもある．例えば果樹園をつくることは蜂蜜の収穫に役立つ．</p>
+<p>このようにある人の行動（財の消費、生産など）が他の人の効用に直接影響を及ぼすとき、その行動には<strong>外部性</strong>があるという<a class="footnote-reference brackets" href="#note2" id="id2">1</a>．</p>
+<p>正の影響があるときは正の外部性、負の影響があるときは負の外部性があるという．</p>
+<p>外部性があるとき、市場の取引ではうまく行かない．
+なぜなら人々は自身の効用最大化のみを考えて行動する．
+標準的な経済学における市場取引では他人の(迷惑/嬉しさ)を考えないので外部性の分は勘定されない．</p>
+<p>このことを見るために簡単なモデルを考えてみよう．
+消費者はある財の消費<span class="math notranslate nohighlight">\(d\)</span>から効用<span class="math notranslate nohighlight">\(v(d)\)</span>を得る．
+生産者は財を<span class="math notranslate nohighlight">\(s\)</span>単位生産するには費用<span class="math notranslate nohighlight">\(C(s)\)</span>がかかる．
+財を<span class="math notranslate nohighlight">\(d\)</span>だけ消費/生産すると社会的に費用が<span class="math notranslate nohighlight">\(\textit{SC}(d)\)</span>だけかかる．
 <span class="math notranslate nohighlight">\(q\)</span>だけ取引するときの社会的総余剰は</p>
 <div class="math notranslate nohighlight">
 \[\text{社会的総余剰}=v(q)-\textit{SC}(q)-C(q)\]</div>
-<p>最大化条件は以下の通りである。</p>
+<p>最大化条件は以下の通りである．</p>
 <div class="math notranslate nohighlight">
 \[v'(q^*)=\textit{SC}'(q^*)+C'(q^*).\]</div>
-<p>一方で、市場取引では以下の条件が成立する。</p>
+<p>一方で、市場取引では以下の条件が成立する．</p>
 <div class="math notranslate nohighlight">
 \[v'(d)=p, \quad \&amp; \quad p=C'(s), \quad \&amp; \quad d=s=q \Rightarrow v'(q)=C'(q)\]</div>
-<p>見てわかるように市場での取引量では社会余剰最大化条件を満たさない。これを図示したものが<a class="reference internal" href="#externality"><span class="std std-numref">Fig. 18</span></a>である。</p>
+<p>見てわかるように市場での取引量では社会余剰最大化条件を満たさない．これを図示したものが<a class="reference internal" href="#externality"><span class="std std-numref">Fig. 18</span></a>である．</p>
 <figure class="align-default" id="externality">
 <img alt="../_images/externality.svg" src="../_images/externality.svg" /><figcaption>
 <p><span class="caption-number">Fig. 18 </span><span class="caption-text">外部性</span><a class="headerlink" href="#externality" title="Permalink to this image">#</a></p>
@@ -441,9 +447,9 @@ document.write(`
 </figure>
 <section id="id3">
 <h2>外部性の内部化<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<p>では外部性の問題を解決するにはどうするべきだろうか?ひとつの解決策は課税（あるいは補助金）をして過剰消費（あるいは生産）を抑えるという考え方である。こういった税を<strong>ピグー税</strong>と呼ぶ。こういうように何らかの政策によって
-今、<span class="math notranslate nohighlight">\(t\)</span>だけの従量税を {消費}（あるいは {生産}）に課してみる。
-すると<a class="reference internal" href="#pigou"><span class="std std-numref">Fig. 19</span></a>のように社会的総余剰の最大化条件と市場均衡条件が一致する。</p>
+<p>では外部性の問題を解決するにはどうするべきだろうか?ひとつの解決策は課税（あるいは補助金）をして過剰消費（あるいは生産）を抑えるという考え方である．こういった税を<strong>ピグー税</strong>と呼ぶ．こういうように何らかの政策によって
+今、<span class="math notranslate nohighlight">\(t\)</span>だけの従量税を {消費}（あるいは {生産}）に課してみる．
+すると<a class="reference internal" href="#pigou"><span class="std std-numref">Fig. 19</span></a>のように社会的総余剰の最大化条件と市場均衡条件が一致する．</p>
 <figure class="align-default" id="pigou">
 <img alt="../_images/pigou.svg" src="../_images/pigou.svg" /><figcaption>
 <p><span class="caption-number">Fig. 19 </span><span class="caption-text">ピグー税による内部化</span><a class="headerlink" href="#pigou" title="Permalink to this image">#</a></p>
@@ -452,36 +458,36 @@ document.write(`
 </section>
 <section id="id4">
 <h2>権利の配分とコースの定理<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
-<p>政府の介入を経ずに外部性を解決できることもある。環境汚染の例で考える。
-当事者同士（汚染者と被汚染者）の交渉で解決するという手段である。
-この場合、二つ可能性がある。
-被汚染者に汚染されない権利を認める。汚染者は被汚染者に汚染分だけ賠償金を払う。
-汚染者に汚染する権利を認める。被汚染者は汚染者に汚染しない分だけ補償金を払う。
+<p>政府の介入を経ずに外部性を解決できることもある．環境汚染の例で考える．
+当事者同士（汚染者と被汚染者）の交渉で解決するという手段である．
+この場合、二つ可能性がある．
+被汚染者に汚染されない権利を認める．汚染者は被汚染者に汚染分だけ賠償金を払う．
+汚染者に汚染する権利を認める．被汚染者は汚染者に汚染しない分だけ補償金を払う．
 どちらに権利を認めるか、で、汚染の量は変わるだろうか？
-<strong>変わらない</strong>というのが<strong>コースの定理</strong>の主張である。</p>
-<p>簡単なモデルを考えてみる。
+<strong>変わらない</strong>というのが<strong>コースの定理</strong>の主張である．</p>
+<p>簡単なモデルを考えてみる．
 汚染者が<span class="math notranslate nohighlight">\(p\)</span>だけ汚染することの効用（つまりは汚染してでも何か作りたい or 消費したい）は<span class="math notranslate nohighlight">\(v(p)\)</span>、
 被汚染者が<span class="math notranslate nohighlight">\(p\)</span>だけ汚染されることの不効用は<span class="math notranslate nohighlight">\(C(p)\)</span>、
-汚染水準<span class="math notranslate nohighlight">\(p\)</span>による社会的総余剰は<span class="math notranslate nohighlight">\(v(p)-C(p)\)</span>であるとする。
-簡単のため、汚染者は<span class="math notranslate nohighlight">\(p=\infty\)</span>だけ汚染したい、被汚染者は<span class="math notranslate nohighlight">\(p=0\)</span>が望ましい、としよう。</p>
-<p>汚染者に汚染する権利を認めたとしてみよう。
-社会的総余剰を最大化する汚染水準を<span class="math notranslate nohighlight">\(p^{*}\)</span>とし、交渉結果の汚染水準を<span class="math notranslate nohighlight">\(p\)</span>とする。
-<span class="math notranslate nohighlight">\(p&gt;p^{*}\)</span>とする。被汚染者は汚染水準を<span class="math notranslate nohighlight">\(p^{*}\)</span>に留めておけば<span class="math notranslate nohighlight">\(v(p)-v(p^{*})\)</span>だけ汚染者に支払うという交渉を持ちかける。このとき汚染者の効用は変化しないので、この案を断ることはない。
+汚染水準<span class="math notranslate nohighlight">\(p\)</span>による社会的総余剰は<span class="math notranslate nohighlight">\(v(p)-C(p)\)</span>であるとする．
+簡単のため、汚染者は<span class="math notranslate nohighlight">\(p=\infty\)</span>だけ汚染したい、被汚染者は<span class="math notranslate nohighlight">\(p=0\)</span>が望ましい、としよう．</p>
+<p>汚染者に汚染する権利を認めたとしてみよう．
+社会的総余剰を最大化する汚染水準を<span class="math notranslate nohighlight">\(p^{*}\)</span>とし、交渉結果の汚染水準を<span class="math notranslate nohighlight">\(p\)</span>とする．
+<span class="math notranslate nohighlight">\(p&gt;p^{*}\)</span>とする．被汚染者は汚染水準を<span class="math notranslate nohighlight">\(p^{*}\)</span>に留めておけば<span class="math notranslate nohighlight">\(v(p)-v(p^{*})\)</span>だけ汚染者に支払うという交渉を持ちかける．このとき汚染者の効用は変化しないので、この案を断ることはない．
 被汚染者の効用の差し引きは <span class="math notranslate nohighlight">\(-(C(p^{*})-C(p))-(v(p)-v(p^{*}))\)</span>となるがこれを計算すると</p>
 <div class="math notranslate nohighlight">
 \[v(p^{*})-C(p^{*})-(v(p)-C(p))&gt;0\]</div>
-<p>となる。これは被汚染者の効用が改善したことを意味する。この交渉結果は汚染者と被汚染者双方にとって合意可能なものであり、結果実現する汚染水準は<span class="math notranslate nohighlight">\(p^{*}\)</span>である。</p>
-<p>逆に<span class="math notranslate nohighlight">\(p&lt;p^{*}\)</span>であればどうだろうか。
-このとき、汚染者には汚染する権利があるので<span class="math notranslate nohighlight">\(p^{*}\)</span>だけ汚染するとしてみる。
-この汚染を差し止めるには<span class="math notranslate nohighlight">\(v(p^{*})-v(p)\)</span>だけ汚染者に支払わなければならない。
-一方でこの汚染を差し止めることによる効用の改善は<span class="math notranslate nohighlight">\(-(C(p)-C(p^{*}))\)</span>にとどまる。
-結果差し引きは <span class="math notranslate nohighlight">\(-(C(p)-C(p^{*}))-(v(p^{*})-v(p))&lt;0\)</span>となる。したがって被汚染者はこういった交渉を持ちかけることはない。したがって、実現する汚染水準はやはり<span class="math notranslate nohighlight">\(p^{*}\)</span>である。</p>
-<p>被汚染者に権利がある場合を考えても同じである。</p>
-<p>コースの定理のポイントは「交渉費用がなければ」というところである。現実には交渉や訴訟などの諸取引には費用がかかるものであり、コースの定理の仮定は満たされない。このときは権利の配分によって結果が変わってくるのは自明である。</p>
+<p>となる．これは被汚染者の効用が改善したことを意味する．この交渉結果は汚染者と被汚染者双方にとって合意可能なものであり、結果実現する汚染水準は<span class="math notranslate nohighlight">\(p^{*}\)</span>である．</p>
+<p>逆に<span class="math notranslate nohighlight">\(p&lt;p^{*}\)</span>であればどうだろうか．
+このとき、汚染者には汚染する権利があるので<span class="math notranslate nohighlight">\(p^{*}\)</span>だけ汚染するとしてみる．
+この汚染を差し止めるには<span class="math notranslate nohighlight">\(v(p^{*})-v(p)\)</span>だけ汚染者に支払わなければならない．
+一方でこの汚染を差し止めることによる効用の改善は<span class="math notranslate nohighlight">\(-(C(p)-C(p^{*}))\)</span>にとどまる．
+結果差し引きは <span class="math notranslate nohighlight">\(-(C(p)-C(p^{*}))-(v(p^{*})-v(p))&lt;0\)</span>となる．したがって被汚染者はこういった交渉を持ちかけることはない．したがって、実現する汚染水準はやはり<span class="math notranslate nohighlight">\(p^{*}\)</span>である．</p>
+<p>被汚染者に権利がある場合を考えても同じである．</p>
+<p>コースの定理のポイントは「交渉費用がなければ」というところである．現実には交渉や訴訟などの諸取引には費用がかかるものであり、コースの定理の仮定は満たされない．このときは権利の配分によって結果が変わってくるのは自明である．</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note2"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
-<dd><p>市場メカニズムを介して価格が変化したことにより効用に影響が生じた場合は金銭的外部性と呼ばれ、外部生とは異なる。あくまで市場メカニズムが働く範疇での出来事なので非効率性などは生じない。</p>
+<dd><p>市場メカニズムを介して価格が変化したことにより効用に影響が生じた場合は金銭的外部性と呼ばれ、外部性とは異なる．あくまで市場メカニズムが働く範疇での出来事なので非効率性などは生じない．</p>
 </dd>
 </dl>
 </section>
