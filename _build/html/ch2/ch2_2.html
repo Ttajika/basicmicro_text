@@ -197,15 +197,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -403,39 +408,26 @@ document.write(`
                   
   <section id="id1">
 <h1>公共財市場<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>完全市場の第2の仮定は私的消費・私的生産の仮定である。これが満たされない典型的な財として<strong>公共財</strong>がある。公共財とは次の性質を持つ財のことである。</p>
+<p>完全市場の第2の仮定は私的消費・私的生産の仮定である．これが満たされない典型的な財として<strong>公共財</strong>がある．公共財とは次の性質を持つ財のことである．</p>
 <ul>
-<li><p><strong>非排除性</strong>：利用を物理的に排除できない。</p>
+<li><p><strong>非排除性</strong>：利用を物理的に排除できない．</p>
 <ul class="simple">
-<li><p>例としては漁場、公園、道路などがある。</p></li>
+<li><p>例としては漁場、公園、道路などがある．</p></li>
 </ul>
 </li>
-<li><p><strong>非競合性</strong>：複数の人が同時に利用できる。</p>
+<li><p><strong>非競合性</strong>：複数の人が同時に利用できる．</p>
 <ul class="simple">
-<li><p>例としては環境、ネット上の情報、研究成果などがある。</p></li>
+<li><p>例としては環境、ネット上の情報、研究成果などがある．</p></li>
 </ul>
-<p>非排除性だけ満たすものを<strong>共有地</strong>、非競合性だけ満たすものを<strong>クラブ財</strong>、両方とも満たすものを<strong>純公共財</strong>と呼ぶ。
-基本的に公共財を市場に任せると、その価値は過小評価されることとなる。</p>
+<p>非排除性だけ満たすものを<strong>共有地</strong>、非競合性だけ満たすものを<strong>クラブ財</strong>、両方とも満たすものを<strong>純公共財</strong>と呼ぶ．分類は細かいことだが，これらに共通する点は，自分一人が公共財を買ってきても，他の人までそれを使えてしまうことである．この性質によって，基本的に公共財を市場に任せると、その価値は過小評価されることとなる．</p>
 </li>
 </ul>
-<p>それを説明しよう。簡単のため、次のモデルを考える。
-各消費者（アダムとイヴ）<span class="math notranslate nohighlight">\(i\)</span>は公共財を<span class="math notranslate nohighlight">\(q_{i}\)</span>だけ購入する。その費用は価格を<span class="math notranslate nohighlight">\(p\)</span>としたとき、<span class="math notranslate nohighlight">\(p\times q_{i}\)</span>である。
-各消費者が公共財から得る効用は<span class="math notranslate nohighlight">\(v(q_{\text{ア}}+q_{\text{イ}})\)</span>である<a class="footnote-reference brackets" href="#note4" id="id2">1</a>。</p>
-<p>市場において各消費者<span class="math notranslate nohighlight">\(i\)</span>は効用を最大化するように公共財の購入量<span class="math notranslate nohighlight">\(q_{i}\)</span>を選ぶ。
-一階条件より</p>
-<div class="math notranslate nohighlight">
-\[v'(q_{\text{ア}}+q_{\text{イ}})=p\]</div>
-<p>これを満たすような公共財の量<span class="math notranslate nohighlight">\(q_{\text{ア}}+q_{\text{イ}}\)</span>を<span class="math notranslate nohighlight">\(q^{*}\)</span>と置く。</p>
-<p>このとき、<span class="math notranslate nohighlight">\(\Delta \)</span>だけ公共財の生産量を増やすことを考えてみよう。このとき費用の増加<span class="math notranslate nohighlight">\(p\times\Delta \)</span>だけである。一方で効用の増加はそれぞれの消費者について<span class="math notranslate nohighlight">\(v(q^{*}+\Delta)-v(q^{*})\approx v'(q^{*})\times  \Delta =p\times\Delta \)</span>だけである。</p>
-<p>したがってアダムとイブが増えた分の公共財の費用を均等に分け合えば彼らの効用は<span class="math notranslate nohighlight">\(p\Delta/2\)</span>だけ増える。つまり両者の効用が改善したので市場で生産される公共財の量は社会的に最適な水準ではないということになる。増やせば両者の効用が改善したという事実から公共財の購入量は社会的に最適な水準よりも少ないということになる。なぜそうなるかの直感は単純である。相手が購入した公共財は自分も使えるので自分が購入しなくてもよく相手頼みになってしまうという。これを<strong>フリーライダー問題</strong>と呼ぶ。この問題を解決するには当事者同士がよく話し合い、共同で公共財の購入量を決定するなどが重要である。</p>
-<p>一方、公共財が国家規模になると、当事者は全国民となるので話し合いはほぼ不可能である。この場合政府による解決が望まれることになる。</p>
-<hr class="footnotes docutils" />
-<dl class="footnote brackets">
-<dt class="label" id="note4"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
-<dd><p>これも<span class="math notranslate nohighlight">\(v\times (q_{{\text{ア}}}+q_{{\text{イ}}})\)</span>という意味では<strong>ない</strong>。<span class="math notranslate nohighlight">\(v\)</span>は<span class="math notranslate nohighlight">\(q_{\text{ア}}+q_{\text{イ}}\)</span>というひとつの実数の関数であるということである。例としては<span class="math notranslate nohighlight">\(v(q_{\text{ア}}+q_{\text{イ}})=\sqrt{q_{\text{ア}}+q_{\text{イ}}}\)</span>などである。
-これは他人の購入した公共財も利用できるからで、二人の購入量の和を消費できるという意味である。したがって消費者<span class="math notranslate nohighlight">\(i\)</span>の効用関数は<span class="math notranslate nohighlight">\(u_{i}(q_{{\text{ア}}},q_{{\text{イ}}})=v(q_{\text{ア}}+q_{\text{イ}})-p\times q_{i}\)</span>である。</p>
-</dd>
-</dl>
+<p>それを説明しよう．簡単のため、次の話を考える．</p>
+<p>ある地域に街灯のない街があり夜は真っ暗である．住民は10人おり，街灯が<span class="math notranslate nohighlight">\(q\)</span>個あれば，彼らの効用はそれぞれ<span class="math notranslate nohighlight">\(q\)</span>となるとしよう．街灯の数は<span class="math notranslate nohighlight">\(1\)</span>基まで設置可能である．街灯の価格はひとつあたり３であるとしよう．街灯の価格が3である一方で，街灯が1基ふえたところで，効用の増加分は1でしかない．
+したがって，この住民の誰もが街灯を購入して設置しようとは思わない．したがって，この住民の効用はすべて０である．</p>
+<p>一方で，街灯を１基購入して，その費用を住民全てで割り勘するとしよう．そうすると，一人当たりの負担額は0.3である．その一方紅葉の増加分は全ての住民が１であるので，トータルで全ての住民の効用は<span class="math notranslate nohighlight">\(1-0.3=0.7\)</span>増加することになる．</p>
+<p>つまりすべての住民の効用が改善したので市場で生産される公共財の量は社会的に最適な水準ではないということになる．増やせば両者の効用が改善したという事実から公共財の購入量は社会的に最適な水準よりも少ないということになる．なぜそうなるかの直感は単純である．相手が購入した公共財は自分も使えるので自分が購入しなくてもよく相手頼みになってしまうという．これを<strong>フリーライダー問題</strong>と呼ぶ．この問題を解決するには当事者同士がよく話し合い、共同で公共財の購入量を決定するなどが重要である．</p>
+<p>一方、公共財が国家規模になると、当事者は全国民となるので話し合いはほぼ不可能である．この場合政府による解決が望まれることになる．</p>
 </section>
 
     <script type="text/x-thebe-config">

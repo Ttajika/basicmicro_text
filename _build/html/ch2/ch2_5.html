@@ -197,15 +197,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -403,39 +408,39 @@ document.write(`
                   
   <section id="id1">
 <h1>複数企業の競争<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>価格の影響を気にするのは独占企業だけではない。
-同一の製品を生産する企業が二社あるいは数社等非常に少ないとき、それを <strong>寡占市場</strong> と呼ぶ。特に二社の場合を複占市場と呼ぶ。寡占市場においてでも各々の企業が価格に影響を与えられる。
-複数社による寡占市場で生産量調整による競争を <strong>クールノー競争</strong> と呼ぶ。</p>
-<p>数社の企業が同一の財を生産するとき、独占市場のときよりも一社の生産量の影響が小さい。
-例えば個々の農家がコメを生産することを考えよう。
-全国のコメの生産量は782万トン（平成29年度、農林水産省作物統計）である。一方農家一戸あたりの生産量は6トンほど。農家一人が個人でできる範囲でいくら生産量を調整しても生産量は殆ど変わらずそれゆえ価格はほとんど変わらないのである。</p>
-<p>しかしながら、コメだとたくさん農家がいるが、清涼飲料水、鉄鋼や石油精製、自動車などは数社しかいないので各社にもう少し価格に影響力がある。寡占市場では独占のときより生産による価格低下の影響が少なく、より多く生産するようになる。しかし完全競争よりは気にするので完全競争と比べると少ない。</p>
-<p>この議論を数式を使って確かめよう。企業の数は二社であるとしよう。それぞれを「コ社」と「ペ社」とする。  それぞれの生産量を <span class="math notranslate nohighlight">\(q_{\text{コ}}\)</span> と <span class="math notranslate nohighlight">\(q_{\text{ペ}}\)</span> とする。この二社は全く同一の製品を生産するので、市場で供給される製品の量はコ社とペ社の生産量の合計 <span class="math notranslate nohighlight">\(q=q_{\text{コ}}+q_{\text{ペ}}\)</span> である。  したがって、需要関数を <span class="math notranslate nohighlight">\(D(p)=d-p\)</span> とすると均衡価格は需要と市場供給量が一致するように決まる。すなわち、以下のように決定される。</p>
+<p>価格の影響を気にするのは独占企業だけではない．
+同一の製品を生産する企業が二社あるいは数社等非常に少ないとき、それを <strong>寡占市場</strong> と呼ぶ．特に二社の場合を複占市場と呼ぶ．寡占市場においてでも各々の企業が価格に影響を与えられる．
+複数社による寡占市場で生産量調整による競争を <strong>クールノー競争</strong> と呼ぶ．</p>
+<p>数社の企業が同一の財を生産するとき、独占市場のときよりも一社の生産量の影響が小さい．
+例えば個々の農家がコメを生産することを考えよう．
+全国のコメの生産量は782万トン（平成29年度、農林水産省作物統計）である．一方農家一戸あたりの生産量は6トンほど．農家一人が個人でできる範囲でいくら生産量を調整しても生産量は殆ど変わらずそれゆえ価格はほとんど変わらないのである．</p>
+<p>しかしながら、コメだとたくさん農家がいるが、清涼飲料水、鉄鋼や石油精製、自動車などは数社しかいないので各社にもう少し価格に影響力がある．寡占市場では独占のときより生産による価格低下の影響が少なく、より多く生産するようになる．しかし完全競争よりは気にするので完全競争と比べると少ない．</p>
+<p>この議論を数式を使って確かめよう．企業の数は二社であるとしよう．それぞれを「コ社」と「ペ社」とする．  それぞれの生産量を <span class="math notranslate nohighlight">\(q_{\text{コ}}\)</span> と <span class="math notranslate nohighlight">\(q_{\text{ペ}}\)</span> とする．この二社は全く同一の製品を生産するので、市場で供給される製品の量はコ社とペ社の生産量の合計 <span class="math notranslate nohighlight">\(q=q_{\text{コ}}+q_{\text{ペ}}\)</span> である．  したがって、需要関数を <span class="math notranslate nohighlight">\(D(p)=d-p\)</span> とすると均衡価格は需要と市場供給量が一致するように決まる．すなわち、以下のように決定される．</p>
 <div class="math notranslate nohighlight">
 \[D(p) = \underbrace{q_{\text{コ}}+q_{\text{ペ}}}_{\text{市場供給量}} \iff
 p = d-(q_{\text{コ}}+q_{\text{ペ}} )\]</div>
-<p>これを逆需要関数<span class="math notranslate nohighlight">\(P(q)\)</span>として考える<a class="footnote-reference brackets" href="#note6" id="id2">1</a>。</p>
-<p>コ社の利潤を考えよう。これは以下の通りである。</p>
+<p>これを逆需要関数<span class="math notranslate nohighlight">\(P(q)\)</span>として考える<a class="footnote-reference brackets" href="#note6" id="id2">1</a>．</p>
+<p>コ社の利潤を考えよう．これは以下の通りである．</p>
 <div class="math notranslate nohighlight">
 \[P(q)q_{\text{コ}}-C(q_{\text{コ}})=(d-(q_{\text{コ}}+q_{\text{ペ}} ))\times  q_{\text{コ}} - c\times q_{\text{コ}}\]</div>
-<p>注意されたいのは価格は合計生産量<span class="math notranslate nohighlight">\(q=q_{\text{コ}}+q_{\text{ペ}}\)</span>で決まる一方、売上金額はその価格にコ社生産量を掛けたものということである。コ社の利潤を考えるのでコ社の生産量を基準に考えないといけないのである。</p>
-<p>いま、コ社はペ社の生産量を与えられたものとして、自社の利潤を最大化しようとしている。利潤最大化の条件は利潤を <span class="math notranslate nohighlight">\(q_{\text{コ}}\)</span> で微分することにより以下のように計算できる。</p>
+<p>注意されたいのは価格は合計生産量<span class="math notranslate nohighlight">\(q=q_{\text{コ}}+q_{\text{ペ}}\)</span>で決まる一方、売上金額はその価格にコ社生産量を掛けたものということである．コ社の利潤を考えるのでコ社の生産量を基準に考えないといけないのである．</p>
+<p>いま、コ社はペ社の生産量を与えられたものとして、自社の利潤を最大化しようとしている．利潤最大化の条件は利潤を <span class="math notranslate nohighlight">\(q_{\text{コ}}\)</span> で微分することにより以下のように計算できる．</p>
 <div class="math notranslate nohighlight" id="equation-cofoc">
 <span class="eqno">(1)<a class="headerlink" href="#equation-cofoc" title="Permalink to this equation">#</a></span>\[P(q)+P'(q)q_{\text{コ}}-C'(q_{\text{コ}})=d-c-2q_{\text{コ}}-q_{\text{ペ}} =0\]</div>
 <p>これを解けばコ社の生産すべき量は</p>
 <div class="math notranslate nohighlight">
 \[q_{\text{コ}}=\frac{d-c-q_{\text{ペ}}}{2}\]</div>
-<p>であるということになる。  このように、他社の生産量を前提として、自社の利潤を最大化するように決めた生産量をその企業の<strong>最適応答</strong>と呼ぶ。</p>
-<p>ペ社の利潤最大化の条件も同様に以下のように求めることができる。</p>
+<p>であるということになる．  このように、他社の生産量を前提として、自社の利潤を最大化するように決めた生産量をその企業の<strong>最適応答</strong>と呼ぶ．</p>
+<p>ペ社の利潤最大化の条件も同様に以下のように求めることができる．</p>
 <div class="math notranslate nohighlight" id="equation-pefoc">
 <span class="eqno">(2)<a class="headerlink" href="#equation-pefoc" title="Permalink to this equation">#</a></span>\[d-c-2q_{\text{ペ}}-q_{\text{コ}} =0\]</div>
-<p>市場均衡ではこの二社ともが利潤最大化をしていなければならない。そのための条件は方程式<a class="reference internal" href="#equation-cofoc">(1)</a>、および<a class="reference internal" href="#equation-pefoc">(2)</a>の両方を生産量<span class="math notranslate nohighlight">\(q_{\text{コ}}\)</span>と<span class="math notranslate nohighlight">\(q_{\text{ペ}}\)</span>が満たしていなければならないということである。
+<p>市場均衡ではこの二社ともが利潤最大化をしていなければならない．そのための条件は方程式<a class="reference internal" href="#equation-cofoc">(1)</a>、および<a class="reference internal" href="#equation-pefoc">(2)</a>の両方を生産量<span class="math notranslate nohighlight">\(q_{\text{コ}}\)</span>と<span class="math notranslate nohighlight">\(q_{\text{ペ}}\)</span>が満たしていなければならないということである．
 したがって、<a class="reference internal" href="#equation-cofoc">(1)</a>、および<a class="reference internal" href="#equation-pefoc">(2)</a>を連立させて解くと</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}%d-(2+c)d+(2+c)^2y_{\text{コ}}-y_{\text{コ}}=0\\
 q_{\text{コ}}=q_{\text{ペ}}= \frac{d-c}{3}\end{split}\]</div>
-<p>という結果を得る。
-このとき、各企業の生産量が相手の生産量の最適応答になっている。この状態を<strong>クールノー均衡</strong>（または寡占均衡、二社の場合は複占均衡、クールノー・ナッシュ均衡とも）と呼ぶ。</p>
+<p>という結果を得る．
+このとき、各企業の生産量が相手の生産量の最適応答になっている．この状態を<strong>クールノー均衡</strong>（または寡占均衡、二社の場合は複占均衡、クールノー・ナッシュ均衡とも）と呼ぶ．</p>
 <table class="colwidths-auto table" id="comparemop">
 <caption><span class="caption-number">Table 4 </span><span class="caption-text">独占・寡占・完全競争の比較</span><a class="headerlink" href="#comparemop" title="Permalink to this table">#</a></caption>
 <thead>
@@ -459,17 +464,17 @@ q_{\text{コ}}=q_{\text{ペ}}= \frac{d-c}{3}\end{split}\]</div>
 </tr>
 </tbody>
 </table>
-<p>さて、それぞれの均衡での生産量を比較してみよう。
-上記の例ではクールノー均衡における総生産量は <span class="math notranslate nohighlight">\(q_{\text{コ}}+q_{\text{ペ}}=  \frac{2(d-c)}{3}\)</span>、価格は <span class="math notranslate nohighlight">\( \frac{d+2c}{3}\)</span>となる。<a class="reference internal" href="#comparemop"><span class="std std-numref">Table 4</span></a>において生産量を比較してみる。
-<span class="math notranslate nohighlight">\(d&gt;c\)</span> であることに注意する。
+<p>さて、それぞれの均衡での生産量を比較してみよう．
+上記の例ではクールノー均衡における総生産量は <span class="math notranslate nohighlight">\(q_{\text{コ}}+q_{\text{ペ}}=  \frac{2(d-c)}{3}\)</span>、価格は <span class="math notranslate nohighlight">\( \frac{d+2c}{3}\)</span>となる．<a class="reference internal" href="#comparemop"><span class="std std-numref">Table 4</span></a>において生産量を比較してみる．
+<span class="math notranslate nohighlight">\(d&gt;c\)</span> であることに注意する．
 表を見ればわかるようにクールノー均衡では完全競争均衡と比べると生産量が少なく、価格も高いが
-独占均衡のときよりは生産量が増え、価格が下がっている。</p>
-<p>寡占競争において企業の数が増えれば二社の場合と同様に均衡を計算できる。このとき企業数の増加によって価格は低下する。しかしそれは競争均衡における価格よりは高い。ただし企業の数が増えれば増えるほどクールノー均衡価格は競争均衡価格に近づく。何故ならば企業の数が増えれば増えるほど一社あたりの価格への影響力が小さくなっていき、企業の数が無限になれば企業一社の価格への影響力は皆無である。
-これは価格受容者の仮定が想定するところである。  つまり完全競争均衡とは企業が無限にたくさんある世界で正当化される。</p>
+独占均衡のときよりは生産量が増え、価格が下がっている．</p>
+<p>寡占競争において企業の数が増えれば二社の場合と同様に均衡を計算できる．このとき企業数の増加によって価格は低下する．しかしそれは競争均衡における価格よりは高い．ただし企業の数が増えれば増えるほどクールノー均衡価格は競争均衡価格に近づく．何故ならば企業の数が増えれば増えるほど一社あたりの価格への影響力が小さくなっていき、企業の数が無限になれば企業一社の価格への影響力は皆無である．
+これは価格受容者の仮定が想定するところである．  つまり完全競争均衡とは企業が無限にたくさんある世界で正当化される．</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note6"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
-<dd><p>もちろん需要関数が変われば逆需要関数も変化する。需要関数が<span class="math notranslate nohighlight">\(D(p)=d-3p\)</span>ならば逆需要関数は<span class="math notranslate nohighlight">\(p=\left(d-(q_{\text{コ}}+q_{\text{ペ}})\right)/3\)</span>である。</p>
+<dd><p>もちろん需要関数が変われば逆需要関数も変化する．需要関数が<span class="math notranslate nohighlight">\(D(p)=d-3p\)</span>ならば逆需要関数は<span class="math notranslate nohighlight">\(p=\left(d-(q_{\text{コ}}+q_{\text{ペ}})\right)/3\)</span>である．</p>
 </dd>
 </dl>
 </section>

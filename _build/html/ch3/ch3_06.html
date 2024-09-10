@@ -197,15 +197,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -415,11 +420,11 @@ document.write(`
                   
   <section id="id1">
 <h1>所得効果と代替効果<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>需要の分析で役に立つのは所得や価格が変化したら個々の財の需要がどのように変化するかを調べることができることである。</p>
+<p>需要の分析で役に立つのは所得や価格が変化したら個々の財の需要がどのように変化するかを調べることができることである．</p>
 <section id="id2">
 <h2>所得による影響<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>まず所得が変化すると需要がどう変化するかを考えよう。これを図で見てみる。<a class="reference internal" href="#normalgoods"><span class="std std-numref">Fig. 26</span></a>では所得の上昇（予算線が右上に行く）によって最適な消費プランが<span class="math notranslate nohighlight">\(w\)</span>から<span class="math notranslate nohighlight">\(w'\)</span>に変化し，財<span class="math notranslate nohighlight">\(x\)</span>も財<span class="math notranslate nohighlight">\(y\)</span>も消費量が増加している。
-このように所得が増えると需要が増える財を<strong>正常財</strong>（または上級財）と呼ぶ。</p>
+<p>まず所得が変化すると需要がどう変化するかを考えよう．これを図で見てみる．<a class="reference internal" href="#normalgoods"><span class="std std-numref">Fig. 26</span></a>では所得の上昇（予算線が右上に行く）によって最適な消費プランが<span class="math notranslate nohighlight">\(w\)</span>から<span class="math notranslate nohighlight">\(w'\)</span>に変化し，財<span class="math notranslate nohighlight">\(x\)</span>も財<span class="math notranslate nohighlight">\(y\)</span>も消費量が増加している．
+このように所得が増えると需要が増える財を<strong>正常財</strong>（または上級財）と呼ぶ．</p>
 <figure class="align-default" id="normalgoods">
 <img alt="../_images/normalgoods.svg" src="../_images/normalgoods.svg" /><figcaption>
 <p><span class="caption-number">Fig. 26 </span><span class="caption-text">正常財</span><a class="headerlink" href="#normalgoods" title="Permalink to this image">#</a></p>
@@ -430,37 +435,37 @@ document.write(`
 <p><span class="caption-number">Fig. 27 </span><span class="caption-text">下級財</span><a class="headerlink" href="#inferiorgoods" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>一方で、<a class="reference internal" href="#inferiorgoods"><span class="std std-numref">Fig. 27</span></a>では所得の増加に伴って、最適な消費プランが<span class="math notranslate nohighlight">\(w\)</span>から<span class="math notranslate nohighlight">\(w'\)</span>に変化し，財<span class="math notranslate nohighlight">\(y\)</span>の消費量は増加しているが、財<span class="math notranslate nohighlight">\(x\)</span>の消費量は減少している。
-この場合の財<span class="math notranslate nohighlight">\(x\)</span>のように所得が増えると需要が減る財を<strong>下級財</strong>（または劣等財）と呼ぶ<a class="footnote-reference brackets" href="#note3" id="id3">1</a>。</p>
-<p>価格比を変えずに，所得の変化によって変化する最適な消費プランをつないだ曲線を<strong>所得消費曲線</strong>と呼ぶ。<a class="reference internal" href="#iccurve"><span class="std std-numref">Fig. 28</span></a>の赤い線がそれである．</p>
+<p>一方で、<a class="reference internal" href="#inferiorgoods"><span class="std std-numref">Fig. 27</span></a>では所得の増加に伴って、最適な消費プランが<span class="math notranslate nohighlight">\(w\)</span>から<span class="math notranslate nohighlight">\(w'\)</span>に変化し，財<span class="math notranslate nohighlight">\(y\)</span>の消費量は増加しているが、財<span class="math notranslate nohighlight">\(x\)</span>の消費量は減少している．
+この場合の財<span class="math notranslate nohighlight">\(x\)</span>のように所得が増えると需要が減る財を<strong>下級財</strong>（または劣等財）と呼ぶ<a class="footnote-reference brackets" href="#note3" id="id3">1</a>．</p>
+<p>価格比を変えずに，所得の変化によって変化する最適な消費プランをつないだ曲線を<strong>所得消費曲線</strong>と呼ぶ．<a class="reference internal" href="#iccurve"><span class="std std-numref">Fig. 28</span></a>の赤い線がそれである．</p>
 <figure class="align-default" id="iccurve">
 <img alt="../_images/iccurve.svg" src="../_images/iccurve.svg" /><figcaption>
 <p><span class="caption-number">Fig. 28 </span><span class="caption-text">所得消費曲線</span><a class="headerlink" href="#iccurve" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>また個々の財の最適消費量が所得の増加にしたがってどのように変化するかをプロットした曲線を<strong>エンゲル曲線</strong>と呼ぶ。</p>
-<p>需要の所得による変動がどれほどのものかを示す基準として、<strong>需要の所得弾力性</strong>と呼ばれるものがある。所得が<span class="math notranslate nohighlight">\(I_{\text{前}}\)</span>から<span class="math notranslate nohighlight">\(I_{\text{後}}\)</span>に変化したとき、財<span class="math notranslate nohighlight">\( x\)</span>の需要の所得弾力性は次のように定義される。</p>
+<p>また個々の財の最適消費量が所得の増加にしたがってどのように変化するかをプロットした曲線を<strong>エンゲル曲線</strong>と呼ぶ．</p>
+<p>需要の所得による変動がどれほどのものかを示す基準として、<strong>需要の所得弾力性</strong>と呼ばれるものがある．所得が<span class="math notranslate nohighlight">\(I_{\text{前}}\)</span>から<span class="math notranslate nohighlight">\(I_{\text{後}}\)</span>に変化したとき、財<span class="math notranslate nohighlight">\( x\)</span>の需要の所得弾力性は次のように定義される．</p>
 <div class="math notranslate nohighlight">
 \[ \frac{ \frac{ d _x(p _x,p _y,I_{\text{後}})-d _x(p _x,p _y,I_{\text{前}})} {d _x(p _x,p _y,I_{\text{前}})}}{\frac{I_{\text{後}}-I_{\text{前}}}{I_{\text{前}}}}\]</div>
 <p>あるいは式変形しただけであるが、</p>
 <div class="math notranslate nohighlight">
 \[   \frac{  d _x(p _x,p _y,I_{\text{後}})-d _x(p _x,p _y,I_{\text{前}})}{I_{\text{後}}-I_{\text{前}}} \frac{{I_{\text{前}}}}{d _x(p _x,p _y,I_{\text{前}})}\]</div>
-<p>これは需要の変化率<span class="math notranslate nohighlight">\(\dfrac{ d _x(p _x,p _y,I_{\text{後}})-d _x(p _x,p _y,I_{\text{前}})} {d _x(p _x,p _y,I_{\text{前}})}\)</span>を所得の変化率<span class="math notranslate nohighlight">\(\dfrac{I_{\text{後}}-I_{\text{前}}}{I_{\text{前}}}\)</span>で割ったものである。
-所得の変動<span class="math notranslate nohighlight">\(I_{\text{後}}-I_{\text{前}}\)</span>が限りなく小さいときには所得弾力性は微分の定義を用いて次のように書くこともできる。</p>
+<p>これは需要の変化率<span class="math notranslate nohighlight">\(\dfrac{ d _x(p _x,p _y,I_{\text{後}})-d _x(p _x,p _y,I_{\text{前}})} {d _x(p _x,p _y,I_{\text{前}})}\)</span>を所得の変化率<span class="math notranslate nohighlight">\(\dfrac{I_{\text{後}}-I_{\text{前}}}{I_{\text{前}}}\)</span>で割ったものである．
+所得の変動<span class="math notranslate nohighlight">\(I_{\text{後}}-I_{\text{前}}\)</span>が限りなく小さいときには所得弾力性は微分の定義を用いて次のように書くこともできる．</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial d _x(p _x,p _y,I_{\text{前}})}{\partial I} \frac{I_{\text{前}}}{ d _x(p _x,p _y,I_{\text{前}})}\]</div>
 <p>正常財ではこの値はプラスとなり、下級財ではマイナスとなる
-正常財をさらに分類する場合がある。
-所得弾力性が<span class="math notranslate nohighlight">\( 0\)</span>から<span class="math notranslate nohighlight">\( 1\)</span>の間の財を<strong>必需財</strong>と呼ぶ。
-このような財は所得の増加によって財の消費量は増えるが、その増える割合は所得の伸びを下回る。つまり支出に占めるその財の割合が減って行くような財のことなのである。電気・水道や住宅費など生活に必要な費用は所得が増加したとしてもあまり増えたりはしないだろうし、所得が減ったとしても大きく減らすことのできるものでもない。所得が増えた分は他への支出に使うようになることが多いであろう。したがってそういった財を必需財と呼ぶのである。</p>
-<p>逆に所得弾力性が<span class="math notranslate nohighlight">\( 1\)</span>より大きい財は<strong>贅沢財</strong>あるいは奢侈財と呼ぶ。所得の伸び以上に消費の伸びが増えていくのである。</p>
+正常財をさらに分類する場合がある．
+所得弾力性が<span class="math notranslate nohighlight">\( 0\)</span>から<span class="math notranslate nohighlight">\( 1\)</span>の間の財を<strong>必需財</strong>と呼ぶ．
+このような財は所得の増加によって財の消費量は増えるが、その増える割合は所得の伸びを下回る．つまり支出に占めるその財の割合が減って行くような財のことなのである．電気・水道や住宅費など生活に必要な費用は所得が増加したとしてもあまり増えたりはしないだろうし、所得が減ったとしても大きく減らすことのできるものでもない．所得が増えた分は他への支出に使うようになることが多いであろう．したがってそういった財を必需財と呼ぶのである．</p>
+<p>逆に所得弾力性が<span class="math notranslate nohighlight">\( 1\)</span>より大きい財は<strong>贅沢財</strong>あるいは奢侈財と呼ぶ．所得の伸び以上に消費の伸びが増えていくのである．</p>
 </section>
 <section id="id4">
 <h2>価格による影響<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
-<p>次に価格の変化による需要の変化を見てみよう。
-一般性を失うことなく財<span class="math notranslate nohighlight">\( x\)</span>の価格が上昇したとしてみよう。
-すると<a class="reference internal" href="#substitute"><span class="std std-numref">Fig. 29</span></a>にあるように予算線の傾きが急になる（赤い線から青い線に移動している）。財<span class="math notranslate nohighlight">\(x\)</span>の価格が増加しているので所得をすべて財<span class="math notranslate nohighlight">\(x\)</span>につかったときに買える財<span class="math notranslate nohighlight">\(x\)</span>の量が減少していると考えれば良い。</p>
-<p>さて、<a class="reference internal" href="#substitute"><span class="std std-numref">Fig. 29</span></a>では財<span class="math notranslate nohighlight">\(x\)</span>価格の上昇により、財<span class="math notranslate nohighlight">\( x\)</span>の需要は減るが財<span class="math notranslate nohighlight">\( y\)</span>の需要は増えている。これは図中の点AからBへの変化である．こういったとき, 財<span class="math notranslate nohighlight">\( y\)</span>は財<span class="math notranslate nohighlight">\( x\)</span>の <strong>（粗）代替財</strong> であるという。高くなった財<span class="math notranslate nohighlight">\(x\)</span>の代わりに財<span class="math notranslate nohighlight">\(y\)</span>の消費量を増やしているのである。財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>がお互いに代替的（どちらを消費してもあまり大差がない）であればこういったことが起きやすい。</p>
+<p>次に価格の変化による需要の変化を見てみよう．
+一般性を失うことなく財<span class="math notranslate nohighlight">\( x\)</span>の価格が上昇したとしてみよう．
+すると<a class="reference internal" href="#substitute"><span class="std std-numref">Fig. 29</span></a>にあるように予算線の傾きが急になる（赤い線から青い線に移動している）．財<span class="math notranslate nohighlight">\(x\)</span>の価格が増加しているので所得をすべて財<span class="math notranslate nohighlight">\(x\)</span>につかったときに買える財<span class="math notranslate nohighlight">\(x\)</span>の量が減少していると考えれば良い．</p>
+<p>さて、<a class="reference internal" href="#substitute"><span class="std std-numref">Fig. 29</span></a>では財<span class="math notranslate nohighlight">\(x\)</span>価格の上昇により、財<span class="math notranslate nohighlight">\( x\)</span>の需要は減るが財<span class="math notranslate nohighlight">\( y\)</span>の需要は増えている．これは図中の点AからBへの変化である．こういったとき, 財<span class="math notranslate nohighlight">\( y\)</span>は財<span class="math notranslate nohighlight">\( x\)</span>の <strong>（粗）代替財</strong> であるという．高くなった財<span class="math notranslate nohighlight">\(x\)</span>の代わりに財<span class="math notranslate nohighlight">\(y\)</span>の消費量を増やしているのである．財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>がお互いに代替的（どちらを消費してもあまり大差がない）であればこういったことが起きやすい．</p>
 <figure class="align-default" id="substitute">
 <img alt="../_images/substitute.svg" src="../_images/substitute.svg" /><figcaption>
 <p><span class="caption-number">Fig. 29 </span><span class="caption-text">（粗）代替財</span><a class="headerlink" href="#substitute" title="Permalink to this image">#</a></p>
@@ -471,9 +476,9 @@ document.write(`
 <p><span class="caption-number">Fig. 30 </span><span class="caption-text">（粗）補完財</span><a class="headerlink" href="#complementary" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>一方で<a class="reference internal" href="#complementary"><span class="std std-numref">Fig. 30</span></a>では財<span class="math notranslate nohighlight">\(x\)</span>の価格増加に従い財<span class="math notranslate nohighlight">\( x\)</span>の需要も財<span class="math notranslate nohighlight">\( y\)</span>の需要も減っている。こういったとき, 財<span class="math notranslate nohighlight">\( y\)</span>は財<span class="math notranslate nohighlight">\( x\)</span>の <strong>（粗）補完財</strong> であるという。財<span class="math notranslate nohighlight">\(x\)</span>と財<span class="math notranslate nohighlight">\(y\)</span>が補完的、つまり両方の財を一定の比率で購入しなければ満足できないような関係であるとき、こういったことが起きやすい。</p>
-<p><a class="reference internal" href="#substitute"><span class="std std-numref">Fig. 29</span></a>および<a class="reference internal" href="#complementary"><span class="std std-numref">Fig. 30</span></a>では財<span class="math notranslate nohighlight">\(x\)</span>価格の増加に従い財<span class="math notranslate nohighlight">\(x\)</span>の需要は減少していた。つまり価格と需要は右下がりの関係にあるということである。この関係は<strong>需要法則</strong>とよばれる。ただしこの関係は常に成り立つとは言えない。</p>
-<p><a class="reference internal" href="#giffen"><span class="std std-numref">Fig. 31</span></a>では財<span class="math notranslate nohighlight">\( x\)</span>の需要が価格の増加にもかかわらず増えている。このとき 財<span class="math notranslate nohighlight">\( x\)</span>は<strong>ギッフェン財</strong> であるという。どうしてこのようなことが起きるのであろうか。これを知るためには価格による影響を二つの要素に分解して考える必要がある。</p>
+<p>一方で<a class="reference internal" href="#complementary"><span class="std std-numref">Fig. 30</span></a>では財<span class="math notranslate nohighlight">\(x\)</span>の価格増加に従い財<span class="math notranslate nohighlight">\( x\)</span>の需要も財<span class="math notranslate nohighlight">\( y\)</span>の需要も減っている．こういったとき, 財<span class="math notranslate nohighlight">\( y\)</span>は財<span class="math notranslate nohighlight">\( x\)</span>の <strong>（粗）補完財</strong> であるという．財<span class="math notranslate nohighlight">\(x\)</span>と財<span class="math notranslate nohighlight">\(y\)</span>が補完的、つまり両方の財を一定の比率で購入しなければ満足できないような関係であるとき、こういったことが起きやすい．</p>
+<p><a class="reference internal" href="#substitute"><span class="std std-numref">Fig. 29</span></a>および<a class="reference internal" href="#complementary"><span class="std std-numref">Fig. 30</span></a>では財<span class="math notranslate nohighlight">\(x\)</span>価格の増加に従い財<span class="math notranslate nohighlight">\(x\)</span>の需要は減少していた．つまり価格と需要は右下がりの関係にあるということである．この関係は<strong>需要法則</strong>とよばれる．ただしこの関係は常に成り立つとは言えない．</p>
+<p><a class="reference internal" href="#giffen"><span class="std std-numref">Fig. 31</span></a>では財<span class="math notranslate nohighlight">\( x\)</span>の需要が価格の増加にもかかわらず増えている．このとき 財<span class="math notranslate nohighlight">\( x\)</span>は<strong>ギッフェン財</strong> であるという．どうしてこのようなことが起きるのであろうか．これを知るためには価格による影響を二つの要素に分解して考える必要がある．</p>
 <figure class="align-default" id="giffen">
 <img alt="../_images/giffen.svg" src="../_images/giffen.svg" /><figcaption>
 <p><span class="caption-number">Fig. 31 </span><span class="caption-text">ギッフェン財</span><a class="headerlink" href="#giffen" title="Permalink to this image">#</a></p>
@@ -482,18 +487,18 @@ document.write(`
 </section>
 <section id="id5">
 <h2>価格変化の効果を分解する（スルツキー分解）<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
-<p>ある財の価格が変化するとき、その需要量の変化は次の２つの効果に分解できる。</p>
+<p>ある財の価格が変化するとき、その需要量の変化は次の２つの効果に分解できる．</p>
 <ol class="arabic simple">
-<li><p>ある財の価格が、他の財の価格に比べて変化するとき、消費者は相対的に安くなった財の購入量を増やし、相対的に高くなった財の購入量を減らしたいと考える。これを<strong>代替効果</strong>と呼ぶ。</p></li>
-<li><p>価格変化は消費者が同じ所得で購入できる財の量を変化させる。ある財の価格が下がればその分実質的に使えるお金の量は増え、その分を他の財の購入に回したりすることができる。
-こうした変化を<strong>所得効果</strong>と呼ぶ。</p></li>
+<li><p>ある財の価格が、他の財の価格に比べて変化するとき、消費者は相対的に安くなった財の購入量を増やし、相対的に高くなった財の購入量を減らしたいと考える．これを<strong>代替効果</strong>と呼ぶ．</p></li>
+<li><p>価格変化は消費者が同じ所得で購入できる財の量を変化させる．ある財の価格が下がればその分実質的に使えるお金の量は増え、その分を他の財の購入に回したりすることができる．
+こうした変化を<strong>所得効果</strong>と呼ぶ．</p></li>
 </ol>
-<p>どんな需要量の変化も代替効果と所得効果に分解できる。これについて<a class="reference internal" href="#slutsky"><span class="std std-numref">Fig. 32</span></a>を見てみよう。価格変化前の消費プランがAであり、価格変化後の消費プランがBである。</p>
-<p>まず財<span class="math notranslate nohighlight">\(x\)</span>価格の上昇より実質的な所得の減少で効用水準が下がっていることに着目する。こうすると需要量の変化は所得減少の効果を拾ってしまう。一方で価格比が変わったので他の財に代替したいという動機も需要変化に現れるはずである。この二つの効果を分離したいと考える。</p>
-<p>そこで変化前の価格比で変化後の効用水準を達成する所得で予算線を描く。これは<strong>補償所得</strong>と呼ばれ、それが与えられたときの予算線は点Cを通る直線である。</p>
-<p>この補助線を引くと価格による変化を二つの効果に分解できる。BからCへの変化を<strong>代替効果</strong>と呼ぶ。つまり効用水準を保つように所得が補償されるならば所得のことを考えないで価格だけを考えて購入量を決めているようなものである。これにより価格比の変化による効果だけを拾うことができるのである。この変化の効果によると，価格が上昇した財はこの変化により必ず消費量が減少する（少なくとも増加しない）．財が二種類しかない場合にはもう一方の財の消費量は増加する．</p>
-<p>一方で、CからAへの変化を<strong>所得効果</strong>と呼ぶ。Cを通る予算線とAを通る予算線では価格比は同じで所得水準だけが異なる。これにより所得による影響を書き表すことができるのである。</p>
-<p>このように，価格の影響によるAからBへの変化を所得効果であるAからCへの変化と代替効果であるCからBへの変化へと分解する方法を<strong>スルツキー分解</strong>という。</p>
+<p>どんな需要量の変化も代替効果と所得効果に分解できる．これについて<a class="reference internal" href="#slutsky"><span class="std std-numref">Fig. 32</span></a>を見てみよう．価格変化前の消費プランがAであり、価格変化後の消費プランがBである．</p>
+<p>まず財<span class="math notranslate nohighlight">\(x\)</span>価格の上昇より実質的な所得の減少で効用水準が下がっていることに着目する．こうすると需要量の変化は所得減少の効果を拾ってしまう．一方で価格比が変わったので他の財に代替したいという動機も需要変化に現れるはずである．この二つの効果を分離したいと考える．</p>
+<p>そこで変化前の価格比で変化後の効用水準を達成する所得で予算線を描く．これは<strong>補償所得</strong>と呼ばれ、それが与えられたときの予算線は点Cを通る直線である．</p>
+<p>この補助線を引くと価格による変化を二つの効果に分解できる．BからCへの変化を<strong>代替効果</strong>と呼ぶ．つまり効用水準を保つように所得が補償されるならば所得のことを考えないで価格だけを考えて購入量を決めているようなものである．これにより価格比の変化による効果だけを拾うことができるのである．この変化の効果によると，価格が上昇した財はこの変化により必ず消費量が減少する（少なくとも増加しない）．財が二種類しかない場合にはもう一方の財の消費量は増加する．</p>
+<p>一方で、CからAへの変化を<strong>所得効果</strong>と呼ぶ．Cを通る予算線とAを通る予算線では価格比は同じで所得水準だけが異なる．これにより所得による影響を書き表すことができるのである．</p>
+<p>このように，価格の影響によるAからBへの変化を所得効果であるAからCへの変化と代替効果であるCからBへの変化へと分解する方法を<strong>スルツキー分解</strong>という．</p>
 <p>ギッフェン財は下級財で、所得減少による需要の増加が代替効果による減少を上回ることで発生する<a class="footnote-reference brackets" href="#note4" id="id6">2</a>.</p>
 <figure class="align-default" id="slutsky">
 <img alt="../_images/slutsky.svg" src="../_images/slutsky.svg" /><figcaption>
@@ -503,10 +508,10 @@ document.write(`
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note3"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
-<dd><p>下級財は「常に下級財」ではない，例えば所得0なら消費量はどの財もゼロだが，そこから所得が増えればどんな財であろうと消費量は減りようがない．正常財も常に正常財とも限らない。ただし，常に正常財となることはありうる．</p>
+<dd><p>下級財は「常に下級財」ではない，例えば所得0なら消費量はどの財もゼロだが，そこから所得が増えればどんな財であろうと消費量は減りようがない．正常財も常に正常財とも限らない．ただし，常に正常財となることはありうる．</p>
 </dd>
 <dt class="label" id="note4"><span class="brackets"><a class="fn-backref" href="#id6">2</a></span></dt>
-<dd><p>現実にギッフェン財は存在するかと言われると、非常に珍しいが存在する。これについて日本の焼酎はギッフェン財だという研究がある。（Shmuel Baruch and Yakar Kannai, 2001, “Inferior Goods, Giffen Goods, and Shochu”,  Economic Essays, pp. 9–17）また、動物実験を用いてラットにとってキニーネ入りの飼料（キニーネはトニックウォーターの原料、非常に苦い）がギッフェン財であることを示した研究もある。Thomas Hastjarjo, Alan Silberberg, and Steven R Hursh, 1990, “Quinine pellets as an inferior good and a Giffen good in rats,” Journal of the Experimental Analysis of Behavior.</p>
+<dd><p>現実にギッフェン財は存在するかと言われると、非常に珍しいが存在する．これについて日本の焼酎はギッフェン財だという研究がある．（Shmuel Baruch and Yakar Kannai, 2001, “Inferior Goods, Giffen Goods, and Shochu”,  Economic Essays, pp. 9–17）また、動物実験を用いてラットにとってキニーネ入りの飼料（キニーネはトニックウォーターの原料、非常に苦い）がギッフェン財であることを示した研究もある．Thomas Hastjarjo, Alan Silberberg, and Steven R Hursh, 1990, “Quinine pellets as an inferior good and a Giffen good in rats,” Journal of the Experimental Analysis of Behavior.</p>
 </dd>
 </dl>
 </section>

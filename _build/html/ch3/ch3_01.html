@@ -195,15 +195,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -402,31 +407,31 @@ document.write(`
   <section id="id1">
 <h1>消費者の問題<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <p>ミクロ経済学における登場人物の行動原理は
-<strong>選択可能なものの中からもっとも効用が高くなるものを選ぶ</strong>ということである。選択可能でなければそもそも選べないし、効用が低いものをわざわざ選ぶとは考えられないからだ。</p>
-<p>価格理論においては選ぶものは<strong>それぞれの種類の財の消費量の組み合わせ</strong>である。
-次の例を考えてみよう。</p>
+<strong>選択可能なものの中からもっとも効用が高くなるものを選ぶ</strong>ということである．選択可能でなければそもそも選べないし、効用が低いものをわざわざ選ぶとは考えられないからだ．</p>
+<p>価格理論においては選ぶものは<strong>それぞれの種類の財の消費量の組み合わせ</strong>である．
+次の例を考えてみよう．</p>
 <ul class="simple">
 <li><p>《昼食のメニュー》</p></li>
 </ul>
-<p>ひとことに昼食メニューの選択と言っても様々な選択肢がある。ちょっと気の利いたお店だとご飯の量を好きに選ぶことができるし、色々なおかずを組み合わせることができる。ただし、好きなメニューを好きなだけというわけには行かない。我々は日々の予算を超えて昼食代に費やすことはできない。予算内でどの食品をどれだけ選ぶかがここでの問題である<a class="footnote-reference brackets" href="#note0" id="id2">1</a>．</p>
+<p>ひとことに昼食メニューの選択と言っても様々な選択肢がある．ちょっと気の利いたお店だとご飯の量を好きに選ぶことができるし、色々なおかずを組み合わせることができる．ただし、好きなメニューを好きなだけというわけには行かない．我々は日々の予算を超えて昼食代に費やすことはできない．予算内でどの食品をどれだけ選ぶかがここでの問題である<a class="footnote-reference brackets" href="#note0" id="id2">1</a>．</p>
 <ul class="simple">
 <li><p>《働く時間と休む時間（労働と余暇）》</p></li>
 </ul>
-<p>労働時間を選ぶことも消費者の問題のひとつである。働くのは疲れるので嫌だが、全く働かなければ給与が出ないので余暇を楽しむことができない。労働（お金）と余暇のトレードオフ<a class="footnote-reference brackets" href="#note1" id="id3">2</a>がここに発生している。どれだけ働くか、そしてどれだけ余暇を取るかがここでの問題である。</p>
+<p>労働時間を選ぶことも消費者の問題のひとつである．働くのは疲れるので嫌だが、全く働かなければ給与が出ないので余暇を楽しむことができない．労働（お金）と余暇のトレードオフ<a class="footnote-reference brackets" href="#note1" id="id3">2</a>がここに発生している．どれだけ働くか、そしてどれだけ余暇を取るかがここでの問題である．</p>
 <ul class="simple">
 <li><p>《今日の消費と明日以降の消費（貯蓄問題）》</p></li>
 </ul>
-<p>毎日の消費にどれだけの予算を費やすか、というものも典型的な消費者の問題である。今日だけで将来獲得できるであろうすべての所得を使いきってしまうことは可能かもしれないがおそらく望ましくない。
-また今日一億円手に入ったとしても今日だけで使いきることはおそらくほとんどありえない。たいていの人は一部を貯蓄に回すだろう。いくら貯蓄すべきかは将来どれだけの消費を予定しているかによって決まる。一生を通じて生涯獲得できる所得の中で毎日いくら消費するかを決めることがここでの問題である。</p>
-<p>このようにあらゆる選択問題は<strong>制約</strong>に直面している。そしてそのほとんどは価格理論で考える<strong>予算制約</strong>というものである。
-価格理論における消費者の行動原理は<strong>予算制約を満たす消費財の中から効用がもっとも高くなる組み合わせを選ぶ</strong>ということである。次節以降は効用・消費・予算制約などについて細かく見ていくことにする。</p>
+<p>毎日の消費にどれだけの予算を費やすか、というものも典型的な消費者の問題である．今日だけで将来獲得できるであろうすべての所得を使いきってしまうことは可能かもしれないがおそらく望ましくない．
+また今日一億円手に入ったとしても今日だけで使いきることはおそらくほとんどありえない．たいていの人は一部を貯蓄に回すだろう．いくら貯蓄すべきかは将来どれだけの消費を予定しているかによって決まる．一生を通じて生涯獲得できる所得の中で毎日いくら消費するかを決めることがここでの問題である．</p>
+<p>このようにあらゆる選択問題は<strong>制約</strong>に直面している．そしてそのほとんどは価格理論で考える<strong>予算制約</strong>というものである．
+価格理論における消費者の行動原理は<strong>予算制約を満たす消費財の中から効用がもっとも高くなる組み合わせを選ぶ</strong>ということである．次節以降は効用・消費・予算制約などについて細かく見ていくことにする．</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note0"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
-<dd><p>別の制約、例えばカロリー制限という制約もあるかもしれないが。</p>
+<dd><p>別の制約、例えばカロリー制限という制約もあるかもしれないが．</p>
 </dd>
 <dt class="label" id="note1"><span class="brackets"><a class="fn-backref" href="#id3">2</a></span></dt>
-<dd><p>あちらが立てばこちらが立たぬ、くらいの意味。</p>
+<dd><p>あちらが立てばこちらが立たぬ、くらいの意味．</p>
 </dd>
 </dl>
 </section>

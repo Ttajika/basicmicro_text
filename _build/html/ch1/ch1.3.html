@@ -197,15 +197,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -416,36 +421,36 @@ document.write(`
 <h1>単一財の消費者理論<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <section id="id2">
 <h2>需要曲線の導出<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>前節では具体例を使って市場の役割を見てきた。本節以降ではより一般的な議論を行う。そのためにまずは需要曲線というものをもう一度きちんと定義したい。これをするために買い手（消費者ともいう）の行動から考えてみるべきである。需要曲線とは消費者の買いたい量であるので、その「買いたい」という気持ちがどこからきているのかということを真面目に取り扱わなくてはならない。その動機を解明してこそのミクロ経済学である。</p>
-<p>さて、具体的に次のような消費者を考えてみよう。消費者は財を<span class="math notranslate nohighlight">\(q\)</span>だけ消費すると金銭に換算して<span class="math notranslate nohighlight">\(v(q)\)</span>だけの幸福感を覚えるとしてみよう<a class="footnote-reference brackets" href="#note0" id="id3">1</a>。一方、市場では財を<span class="math notranslate nohighlight">\(q\)</span>だけ購入することになるので、価格が<span class="math notranslate nohighlight">\(p\)</span>であったとすれば彼の幸福感の合計（記号を使って<span class="math notranslate nohighlight">\(u(q)\)</span>と書く）は金銭で測ると</p>
+<p>前節では具体例を使って市場の役割を見てきた．本節以降ではより一般的な議論を行う．そのためにまずは需要曲線というものをもう一度きちんと定義したい．これをするために買い手（消費者ともいう）の行動から考えてみるべきである．需要曲線とは消費者の買いたい量であるので、その「買いたい」という気持ちがどこからきているのかということを真面目に取り扱わなくてはならない．その動機を解明してこそのミクロ経済学である．</p>
+<p>さて、具体的に次のような消費者を考えてみよう．消費者は財を<span class="math notranslate nohighlight">\(q\)</span>だけ消費すると金銭に換算して<span class="math notranslate nohighlight">\(v(q)\)</span>だけの幸福感を覚えるとしてみよう<a class="footnote-reference brackets" href="#note0" id="id3">1</a>．一方、市場では財を<span class="math notranslate nohighlight">\(q\)</span>だけ購入することになるので、価格が<span class="math notranslate nohighlight">\(p\)</span>であったとすれば彼の幸福感の合計（記号を使って<span class="math notranslate nohighlight">\(u(q)\)</span>と書く）は金銭で測ると</p>
 <div class="math notranslate nohighlight">
 \[u(q)=v(q)-p\times q\]</div>
-<p>だけということになるだろう。このときの値<span class="math notranslate nohighlight">\(u(q)\)</span>を<strong>効用</strong>と呼ぶ<a class="footnote-reference brackets" href="#note1" id="id4">2</a></p>
-<p>消費者はこの効用の値を最大にするよう財の購入量、つまり<span class="math notranslate nohighlight">\(q\)</span>を決定する。さて、効用を最大化するにはどうすれば良いだろうか。</p>
-<p>一番単純な、そしてほぼ万能な方法は「微分をすること」である。この関数<span class="math notranslate nohighlight">\(u\)</span>を購入量<span class="math notranslate nohighlight">\(q\)</span>で微分したとき、その値が<span class="math notranslate nohighlight">\(0\)</span>になることが「<span class="math notranslate nohighlight">\(u\)</span>を最大にする<span class="math notranslate nohighlight">\(q\)</span>を求めるため」の第一条件である。
-早速微分してみよう。すると</p>
+<p>だけということになるだろう．このときの値<span class="math notranslate nohighlight">\(u(q)\)</span>を<strong>効用</strong>と呼ぶ<a class="footnote-reference brackets" href="#note1" id="id4">2</a></p>
+<p>消費者はこの効用の値を最大にするよう財の購入量、つまり<span class="math notranslate nohighlight">\(q\)</span>を決定する．さて、効用を最大化するにはどうすれば良いだろうか．</p>
+<p>一番単純な、そしてほぼ万能な方法は「微分をすること」である．この関数<span class="math notranslate nohighlight">\(u\)</span>を購入量<span class="math notranslate nohighlight">\(q\)</span>で微分したとき、その値が<span class="math notranslate nohighlight">\(0\)</span>になることが「<span class="math notranslate nohighlight">\(u\)</span>を最大にする<span class="math notranslate nohighlight">\(q\)</span>を求めるため」の第一条件である．
+早速微分してみよう．すると</p>
 <div class="math notranslate nohighlight">
 \[u'(q)=v'(q)-p\]</div>
-<p>この値が<span class="math notranslate nohighlight">\(0\)</span>になれば良いので<span class="math notranslate nohighlight">\(u\)</span>を最大にする<span class="math notranslate nohighlight">\(q\)</span>ならば<span class="math notranslate nohighlight">\(v'(q)-p=0\iff v'(q)=p\)</span>が満たされる。
-このときの<span class="math notranslate nohighlight">\(q\)</span>の値を<span class="math notranslate nohighlight">\(q^{*}\)</span>だとしてみよう。つまり<span class="math notranslate nohighlight">\(v'(q^{*})=p\)</span>が最大化条件だ。
-直感的には次のとおりである。<span class="math notranslate nohighlight">\(v'(q)-p\)</span>というものは<span class="math notranslate nohighlight">\(q\)</span>を少し増やしたとき、<span class="math notranslate nohighlight">\(v'(p)\)</span>だけ財消費から得られる効用の増分から<span class="math notranslate nohighlight">\(p\)</span>だけの支払いの増加分を引いたものである。これが<span class="math notranslate nohighlight">\(0\)</span>より大きいのであればもっと購入すれば良いだろうし、<span class="math notranslate nohighlight">\(0\)</span>より小さいのであればもっと購入量を減らすべきである。最適な状態ではこの二つの効果が打ち消し合っている。</p>
-<p>さてこれはどういう条件であろうか。これをみるために図に書いてみよう。<a class="reference internal" href="#marginalutil"><span class="std std-numref">Fig. 4</span></a>にあるように<span class="math notranslate nohighlight">\(v'(q)\)</span>は右下がりの曲線だとする。
-すると<span class="math notranslate nohighlight">\(q^{*}\)</span>という点は<span class="math notranslate nohighlight">\(v'(q^{*})=p\)</span>となっているところ、つまり図中の黒点で求めることができる。</p>
+<p>この値が<span class="math notranslate nohighlight">\(0\)</span>になれば良いので<span class="math notranslate nohighlight">\(u\)</span>を最大にする<span class="math notranslate nohighlight">\(q\)</span>ならば<span class="math notranslate nohighlight">\(v'(q)-p=0\iff v'(q)=p\)</span>が満たされる．
+このときの<span class="math notranslate nohighlight">\(q\)</span>の値を<span class="math notranslate nohighlight">\(q^{*}\)</span>だとしてみよう．つまり<span class="math notranslate nohighlight">\(v'(q^{*})=p\)</span>が最大化条件だ．
+直感的には次のとおりである．<span class="math notranslate nohighlight">\(v'(q)-p\)</span>というものは<span class="math notranslate nohighlight">\(q\)</span>を少し増やしたとき、<span class="math notranslate nohighlight">\(v'(p)\)</span>だけ財消費から得られる効用の増分から<span class="math notranslate nohighlight">\(p\)</span>だけの支払いの増加分を引いたものである．これが<span class="math notranslate nohighlight">\(0\)</span>より大きいのであればもっと購入すれば良いだろうし、<span class="math notranslate nohighlight">\(0\)</span>より小さいのであればもっと購入量を減らすべきである．最適な状態ではこの二つの効果が打ち消し合っている．</p>
+<p>さてこれはどういう条件であろうか．これをみるために図に書いてみよう．<a class="reference internal" href="#marginalutil"><span class="std std-numref">Fig. 4</span></a>にあるように<span class="math notranslate nohighlight">\(v'(q)\)</span>は右下がりの曲線だとする．
+すると<span class="math notranslate nohighlight">\(q^{*}\)</span>という点は<span class="math notranslate nohighlight">\(v'(q^{*})=p\)</span>となっているところ、つまり図中の黒点で求めることができる．</p>
 <figure class="align-default" id="marginalutil">
 <img alt="../_images/marginalutil_ch1.svg" src="../_images/marginalutil_ch1.svg" /><figcaption>
 <p><span class="caption-number">Fig. 4 </span><span class="caption-text">効用最大化条件</span><a class="headerlink" href="#marginalutil" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>こうしてみると各<span class="math notranslate nohighlight">\(p\)</span>に対する最適な購入量<span class="math notranslate nohighlight">\(q^{*}\)</span>《買いたい量》は<a class="reference internal" href="#marginalutil"><span class="std std-numref">Fig. 4</span></a>の曲線<span class="math notranslate nohighlight">\(v'(q)\)</span>に沿うようにして求められる。そう、この曲線<span class="math notranslate nohighlight">\(v'(p)\)</span>がこの場合の需要曲線になるのである。<span class="math notranslate nohighlight">\(v'(p)\)</span>は<a class="reference internal" href="ch1.2.html"><span class="doc std std-doc">市場における交換</span></a>で見た需要曲線と関連が深い。<a class="reference internal" href="ch1.2.html"><span class="doc std std-doc">市場における交換</span></a>での需要曲線はいわば追加的な一単位に対する支払意思額といっても良い。買い手全員を一人の消費者と見なせばこの消費者は最初の一単位に5000万の価値を見出し、次の一単位に3500万円の価値を見出している。つまり追加的な一単位に出してもいい金額を指しているのである。
-<span class="math notranslate nohighlight">\(v'(q)\)</span>も似たような概念である。<span class="math notranslate nohighlight">\(v(q)\)</span>はいわば財<span class="math notranslate nohighlight">\(q\)</span>だけ消費することに<span class="math notranslate nohighlight">\(v(q)\)</span>円だけの価値を感じているということである。<span class="math notranslate nohighlight">\(v'(q)\)</span>というのは<span class="math notranslate nohighlight">\(q\)</span>が増えたとき、金銭価値<span class="math notranslate nohighlight">\(v(q)\)</span>が追加的にどれだけ増えるかを示す指標である。</p>
-<p>さて、需要曲線を導出した後はこれを使って実際、価格が<span class="math notranslate nohighlight">\(p\)</span>のときどれだけ需要量があるのかを知りたいとなるだろう。これ以降は具体的に<span class="math notranslate nohighlight">\(v(q)=-q^{2}+2 q\)</span>として計算する。そうでない場合も同じようにして計算することができる。</p>
+<p>こうしてみると各<span class="math notranslate nohighlight">\(p\)</span>に対する最適な購入量<span class="math notranslate nohighlight">\(q^{*}\)</span>《買いたい量》は<a class="reference internal" href="#marginalutil"><span class="std std-numref">Fig. 4</span></a>の曲線<span class="math notranslate nohighlight">\(v'(q)\)</span>に沿うようにして求められる．そう、この曲線<span class="math notranslate nohighlight">\(v'(p)\)</span>がこの場合の需要曲線になるのである．<span class="math notranslate nohighlight">\(v'(p)\)</span>は<a class="reference internal" href="ch1.2.html"><span class="doc std std-doc">市場における交換</span></a>で見た需要曲線と関連が深い．<a class="reference internal" href="ch1.2.html"><span class="doc std std-doc">市場における交換</span></a>での需要曲線はいわば追加的な一単位に対する支払意思額といっても良い．買い手全員を一人の消費者と見なせばこの消費者は最初の一単位に5000万の価値を見出し、次の一単位に3500万円の価値を見出している．つまり追加的な一単位に出してもいい金額を指しているのである．
+<span class="math notranslate nohighlight">\(v'(q)\)</span>も似たような概念である．<span class="math notranslate nohighlight">\(v(q)\)</span>はいわば財<span class="math notranslate nohighlight">\(q\)</span>だけ消費することに<span class="math notranslate nohighlight">\(v(q)\)</span>円だけの価値を感じているということである．<span class="math notranslate nohighlight">\(v'(q)\)</span>というのは<span class="math notranslate nohighlight">\(q\)</span>が増えたとき、金銭価値<span class="math notranslate nohighlight">\(v(q)\)</span>が追加的にどれだけ増えるかを示す指標である．</p>
+<p>さて、需要曲線を導出した後はこれを使って実際、価格が<span class="math notranslate nohighlight">\(p\)</span>のときどれだけ需要量があるのかを知りたいとなるだろう．これ以降は具体的に<span class="math notranslate nohighlight">\(v(q)=-q^{2}+2 q\)</span>として計算する．そうでない場合も同じようにして計算することができる．</p>
 <div class="math notranslate nohighlight">
 \[v'(q^{*})=-2q+2=p\]</div>
-<p>となる。これを整理すると</p>
+<p>となる．これを整理すると</p>
 <div class="math notranslate nohighlight">
 \[-2q^{*}+2=p\iff q^{*}=1-\frac{1}{2}p\]</div>
-<p>となる。これをみると<span class="math notranslate nohighlight">\(q^{*}\)</span>は<span class="math notranslate nohighlight">\(p\)</span>の関数（一次関数）としてかけることがわかる。よってそれをわかりやすくするため<span class="math notranslate nohighlight">\(q^{*}\)</span>を<span class="math notranslate nohighlight">\(D(p)\)</span>で書く。(Demand の D)である。つまり<span class="math notranslate nohighlight">\(D(p)=1-\frac{1}{2}p\)</span>である。こういった関数を<strong>需要関数</strong>という。</p>
-<p>消費者が複数いる場合、市場の需要関数は全ての消費者の需要関数を足し合わせる。このようなものは<strong>総需要関数</strong>と呼ばれる。</p>
+<p>となる．これをみると<span class="math notranslate nohighlight">\(q^{*}\)</span>は<span class="math notranslate nohighlight">\(p\)</span>の関数（一次関数）としてかけることがわかる．よってそれをわかりやすくするため<span class="math notranslate nohighlight">\(q^{*}\)</span>を<span class="math notranslate nohighlight">\(D(p)\)</span>で書く．(Demand の D)である．つまり<span class="math notranslate nohighlight">\(D(p)=1-\frac{1}{2}p\)</span>である．こういった関数を<strong>需要関数</strong>という．</p>
+<p>消費者が複数いる場合、市場の需要関数は全ての消費者の需要関数を足し合わせる．このようなものは<strong>総需要関数</strong>と呼ばれる．</p>
 <p>ひとつ注意するべきは，需要曲線のグラフを描くとき，価格を縦に，数量を横にとることである．これは効用最大化条件の図<a class="reference internal" href="#marginalutil"><span class="std std-numref">Fig. 4</span></a>を見るとわかる．
 こう見ると需要関数は価格の関数ではなく数量の関数に見えるかもしれません．実際価格と需要量の関係が一対一であれば<a class="footnote-reference brackets" href="#note5" id="id5">3</a>需要関数を反転させることができます．</p>
 <p>もし需要関数が<span class="math notranslate nohighlight">\(D(p)=a \times p+b\)</span>と書けるとします．このとき，<span class="math notranslate nohighlight">\( q=D(p)\)</span>, <span class="math notranslate nohighlight">\( p=P(q)\)</span>とおけば需要関数を<span class="math notranslate nohighlight">\(q=a \times P(q)+b\)</span>と書き直すことができます．この<span class="math notranslate nohighlight">\(P(q)\)</span>の部分が価格です．これを数量の関数とみなすのです．これを解けば<span class="math notranslate nohighlight">\(P(q)=\frac{1}{a}(q-b)\)</span>と書き換えることができます．この<span class="math notranslate nohighlight">\( P(q)\)</span>は<strong>逆需要関数</strong>と呼ばれます．経済学では需要関数を図示するとき，逆需要関数の方を書くのです．</p>
@@ -468,10 +473,10 @@ document.write(`
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note0"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
-<dd><p>これは<span class="math notranslate nohighlight">\(v\times q\)</span>という意味ではない。「<span class="math notranslate nohighlight">\(v\)</span>は<span class="math notranslate nohighlight">\(q\)</span>の関数である」ということだ。例えば<span class="math notranslate nohighlight">\(v(q)=\sqrt{q}\)</span>などが一般的である。</p>
+<dd><p>これは<span class="math notranslate nohighlight">\(v\times q\)</span>という意味ではない．「<span class="math notranslate nohighlight">\(v\)</span>は<span class="math notranslate nohighlight">\(q\)</span>の関数である」ということだ．例えば<span class="math notranslate nohighlight">\(v(q)=\sqrt{q}\)</span>などが一般的である．</p>
 </dd>
 <dt class="label" id="note1"><span class="brackets"><a class="fn-backref" href="#id4">2</a></span></dt>
-<dd><p>そして関数<span class="math notranslate nohighlight">\(u\)</span>は<strong>効用関数</strong>と呼ばれる。効用の値そのものには大した意味はない。人々がどういう順序で選択肢を好むかを数値で表現したものが効用だということに過ぎない。人々の好みがどういう条件を満たすならば（特定の）効用関数で表現できるのかという問いについては意思決定理論という分野で研究されている。ギルボア(2014)「不確実性下の意思決定理論」勁草書房などを参照せよ。</p>
+<dd><p>そして関数<span class="math notranslate nohighlight">\(u\)</span>は<strong>効用関数</strong>と呼ばれる．効用の値そのものには大した意味はない．人々がどういう順序で選択肢を好むかを数値で表現したものが効用だということに過ぎない．人々の好みがどういう条件を満たすならば（特定の）効用関数で表現できるのかという問いについては意思決定理論という分野で研究されている．ギルボア(2014)「不確実性下の意思決定理論」勁草書房などを参照せよ．</p>
 </dd>
 <dt class="label" id="note5"><span class="brackets"><a class="fn-backref" href="#id5">3</a></span></dt>
 <dd><p>一対一とは価格が違えばそのときの需要量は異なり，また量が違えば，需要量がその量になる価格も違うということです．}，</p>
