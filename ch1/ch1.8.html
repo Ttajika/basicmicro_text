@@ -197,15 +197,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_05.html">効用最大化問題</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_06.html">所得効果と代替効果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_07.html">補償需要関数とスルツキー方程式*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_02.html">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch5/ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
 </ul>
 
     </div>
@@ -400,6 +405,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ワルラス安定とマーシャル安定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">マーシャル過程に対する注意*</a></li>
 </ul>
             </nav>
         </div>
@@ -416,21 +422,18 @@ document.write(`
 <p>この章では，なぜ均衡価格を考えるべきなのか，という問いについて考える．</p>
 <section id="id2">
 <h2>ワルラス安定とマーシャル安定<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>なぜ市場均衡を考えるかと言えば，「市場均衡でなければ，需要量と供給量が一致していないので，価格や取引量はそこから変わっていってしまう，それゆえそうでないような状態は考える意味がない」というのが一般的な説明である．しかし，そうでないような状態から放っておいて市場均衡に辿り着くのか，といえばそれは明らかではない．これを考えてみよう．
-需要関数を<span class="math notranslate nohighlight">\(D\)</span>, 供給関数を<span class="math notranslate nohighlight">\(S\)</span>とする. まず最初にワルラス的調整過程という，不均衡状態における価格調整である次の仕組みを考える．</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<p>なぜ市場均衡を考えるかと言えば，「市場均衡でなければ，需要量と供給量が一致していないので，価格や取引量はそこから変わっていってしまう，それゆえそうでないような状態は考える意味がない」というのが一般的な説明である．しかし，そうでないような状態から放っておいて市場均衡に辿り着くのか，といえば，ちゃんと説明はされていない．これを考えてみよう．</p>
+<p>需要関数を<span class="math notranslate nohighlight">\(D\)</span>, 供給関数を<span class="math notranslate nohighlight">\(S\)</span>とする. まず最初にワルラス的調整過程という，不均衡状態における価格調整である次の仕組みを考える．</p>
 <p>💡 <strong>ワルラス過程</strong>：もし<span class="math notranslate nohighlight">\(D(p)&gt;S(p)\)</span>である（超過需要）ならば価格を上げなさい．もし<span class="math notranslate nohighlight">\(D(p)&lt; S(p)\)</span>である（超過供給）ならば価格を下げなさい．</p>
-</div>
 <p>つまり，均衡価格より高い価格で超過供給になっていれば，価格が低下し，価格は均衡価格に向かい，低い価格で超過需要になっていれば価格が上昇し，やはり価格は均衡価格に向かう．
 この仕組みによって，価格が均衡価格より少しズレたときでも均衡価格に戻ってくれるとき，その均衡は<strong>ワルラス安定</strong>と呼ぶ．つまり市場均衡より高い価格で超過供給が発生し，逆に市場均衡より低い価格では超過需要が発生しているような状態である．逆にもし均衡価格より高い価格で超過需要になっていたり，低い価格で超過供給になっていれば価格が均衡価格から離れていく．この場合はワルラス安定ではない．</p>
 <p>ワルラス過程を何故考えるか，という正当化としては<strong>ワルラスの競り人</strong>という考え方がある．つまり，競り人が価格を宣言し，そのもとで消費者と生産者が需要量および供給量を宣言し，それに則ってワルラス過程に従い価格を調整していくというものである．</p>
 <p>価格を調整するワルラス過程に対して次のマーシャル過程という仕組みもある．<span class="math notranslate nohighlight">\(P_D\)</span>を逆需要関数，<span class="math notranslate nohighlight">\(P_S\)</span>を逆供給関数であるとする．</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
 <p>💡 <strong>マーシャル過程</strong>：もし<span class="math notranslate nohighlight">\(P_D(q)&gt;P_S(q)\)</span>であるならば取引量を増やしなさい．もし<span class="math notranslate nohighlight">\(P_D(q)&lt; P_S(q)\)</span>であるならば取引量を減らしなさい．</p>
-</div>
-<p>それではマーシャル過程はどういう形で実現するものだろうか．色々な考え方があるが，その一つとしては，消費者と生産者の自発的な取引を考えるというものである．逆需要関数を消費者の（追加的な１単位の消費に対する）支払意思額とする．そして逆供給関数を生産者の限界費用と考える．このとき，<span class="math notranslate nohighlight">\(P_D(q)&gt;P_S(q)\)</span>であれば支払意思額のほうが限界費用より高いので新たな取引が成立し取引量が増えるのである．逆に<span class="math notranslate nohighlight">\(P_D(q)&lt; P_S(q)\)</span>であれば支払意思額のほうが限界費用より低いので取引量が減る．マーシャル過程のもとで，均衡取引量から少し離れた時でも元へ戻ってくるとき，その均衡は<strong>マーシャル安定</strong>であると呼ぶ．</p>
+<p>このマーシャル過程はどういう形で実現するものだろうか．色々な考え方があるが，その一つとしては，消費者と生産者の自発的な取引を考えるというものである．逆需要関数を消費者の（追加的な１単位の消費に対する）支払意思額とする．そして逆供給関数を生産者の限界費用と考える．このとき，<span class="math notranslate nohighlight">\(P_D(q)&gt;P_S(q)\)</span>であれば支払意思額のほうが限界費用より高いので新たな取引が成立し取引量が増えるのである．逆に<span class="math notranslate nohighlight">\(P_D(q)&lt; P_S(q)\)</span>であれば支払意思額のほうが限界費用より低いので取引量が減る．マーシャル過程のもとで，均衡取引量から少し離れたときに元へ戻ってくるとき，その均衡は<strong>マーシャル安定</strong>であると呼ぶ．逆に，ほんの少し離れるだけで元に戻ってこなくなるとき，マーシャル不安定であると呼ぶ．</p>
+</section>
+<section id="id3">
+<h2>マーシャル過程に対する注意*<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <p>さて，上記の理解で行くとワルラス安定もマーシャル安定もよくある需要曲線と供給曲線の図では何も問題ない．右下がりの支払意思額と右上がりの限界費用であれば，それがそのまま需要曲線と供給曲線の図になるからである．</p>
 <p>問題は右上がりの需要曲線や，右下がりの供給曲線を考えるときである．こういった場合，支払意思額が右上がりとか，限界費用が右下がりだということはできない．右上がりの支払意思額から需要曲線を作ると，一定以上の価格では需要量が0でそれ以下では需要量が無限大になるような需要曲線になる．限界費用が右下がりでも同様に，一定の価格以下では供給量が０でそれ以上だと無限大になるような供給曲線が描ける．したがって，右上がりの需要曲線や右下がりの供給曲線を考えるときは需要曲線を支払意思額と，限界費用を供給曲線と対応させることはできない．このケースでは消費者と生産者の自発的な取引としてマーシャル過程を考えることは短絡的にはできないのである．</p>
 <p>マーシャル過程のもう一つの理解は次のような考え方もある．まず，生産者が供給量を提示する．消費者がそれに応答してその量を買う価格を提示する．そして，その価格で生産者がもしもっと作りたくなれば生産量を増やし，そうでなければ生産量を減らす．均衡価格に近づくためには，もし，最初に提示した量が均衡価格より大きければ，次に提示する量が下がり，逆に最初に提示した量が均衡価格より小さければ，次に提示する量が上がるということである．</p>
@@ -439,6 +442,7 @@ document.write(`
 <img alt="../_images/taton.svg" src="../_images/taton.svg" /></figure>
 <p>上の図はマーシャル安定で，ワルラス安定でない図として描かれがち（実際，傾きで定義すると正しい）であるが，よくよく考えると論理が通っていないのである．</p>
 <p>最後の仮説として，ワルラスの競り人を真似て，マーシャルの調整者というものを作ってみよう．この調整者はまず，取引量を宣言する．次に，消費者と生産者にそれぞれ，その量を買いたくなる価格，その量を売りたくなる価格を尋ねる．もし，買いたくなる価格が売りたくなる価格より高ければ，取引量を増やし，そうでなければ取引量を減らす．これはこれでマーシャル安定と整合的になる．しかし，これだと，消費者や生産者が複数いた場合には対応できない可能性がある．全体の需要は市場にいる全員の消費者の需要の合計だからである．したがって，取引量でそのときに解体価格を聞いてもバラバラであるし，市場の逆需要曲線の値とも対応しない．やはりこれにも無理がある．</p>
+<p>右上がりの需要曲線や右下がりの供給曲線など，スタンダードでないものを考えるとき，マーシャル安定かどうかを調べることにどれだけ意味があるかは注意が必要である．</p>
 </section>
 </section>
 
@@ -506,6 +510,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ワルラス安定とマーシャル安定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">マーシャル過程に対する注意*</a></li>
 </ul>
   </nav></div>
 

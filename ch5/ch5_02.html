@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>複数財市場の市場均衡 &#8212; 基礎ミクロ経済学</title>
+    <title>生産関数と費用関数 &#8212; 基礎ミクロ経済学</title>
   
   
   
@@ -65,11 +65,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch4/ch4_01';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch5/ch5_02';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="価値判断の基準" href="ch4_02.html" />
-    <link rel="prev" title="生産要素と生産関数" href="../ch5/ch5_01.html" />
+    <link rel="next" title="生産関数と利潤の性質" href="ch5_03.html" />
+    <link rel="prev" title="生産要素と生産関数" href="ch5_01.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -200,10 +200,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch3/ch3_08.html">消費者問題の応用</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../ch5/ch5_01.html">生産要素と生産関数</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">複数財市場の市場均衡</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="ch4_02.html">価値判断の基準</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ch5_01.html">生産要素と生産関数</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">生産関数と費用関数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch5_03.html">生産関数と利潤の性質</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch4/ch4_01.html">複数財市場の市場均衡</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_02.html">価値判断の基準</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch4/ch4_03.html">純粋交換経済とエッジワースボックス</a></li>
 
 </ul>
 </li>
@@ -278,7 +282,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch4/ch4_01.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Ttajika/basicmicro_text/issues/new?title=Issue%20on%20page%20%2Fch5/ch5_02.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -308,7 +312,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/ch4/ch4_01.md" target="_blank"
+      <li><a href="../_sources/ch5/ch5_02.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -390,7 +394,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>複数財市場の市場均衡</h1>
+    <h1>生産関数と費用関数</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -400,7 +404,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">一般均衡理論とは</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">短期</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">長期</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">短期と長期の費用関数の関係</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -413,43 +421,75 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>複数財市場の市場均衡<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<section id="id2">
-<h2>一般均衡理論とは<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>前章まで学んできたのは消費者個人の問題である。すなわち与えられた価格と所得をもとにどの財をどれだけ消費するかという問題である。</p>
-<p>この章で学んでいくのはその価格や所得がどのように決まるかという問題だ。これは単一財市場のケースでは需要曲線と供給曲線の交点で決まると学習してきた。
-では財は複数種類、少なくとも二種類はある今回のようなケースではどうやって市場の取引や価格を考えればよいのだろうか。</p>
-<p>基本的な発想は財が１種類のときと同じである。価格は世の中の欲しい量と世の中の売りたい量が一致するように決まる。
-欲しい量とは需要量のことで、売りたい量とは供給量のことである。</p>
-<p>財が１種類のときと異なる点は財が複数種類ある点であるので、それぞれの種類の財の需要量と供給量が一致しなくてはならない。つまりは財<span class="math notranslate nohighlight">\(x\)</span>の需要量は財<span class="math notranslate nohighlight">\(x\)</span>の供給量と一致しなければならないし、財<span class="math notranslate nohighlight">\(y\)</span>の需要量も財<span class="math notranslate nohighlight">\(y\)</span>の供給量と一致しなければならない。</p>
-<p>注意点は、前章で学んだように財<span class="math notranslate nohighlight">\(x\)</span>の価格が財<span class="math notranslate nohighlight">\(y\)</span>の価格に影響するかもしれないということである。
-単一財の需給を分析する部分均衡分析では複数種類ある財と財の間の相互関係を無視していた。
-一方で、前章で学んだように財同士には代替関係や補完関係といった相互作用が働くことがある。
-つまりある財の市場の動向は他の財市場の動向に影響する。
-例えばバイオ燃料技術の発達によるトウモロコシの需要の増加は他の穀物の需要にも影響する。</p>
-<p>このように財の相互関係まで考えて、市場同士の影響を分析する手法を <strong>一般均衡分析</strong> という。
-一般均衡分析の目的は次の二点である。ひとつは市場の相互作用のメカニズムを解明し、一般均衡効果の影響の規模などを調べること。
-もうひとつは経済全体の市場均衡が効率的かどうかを問うことである。</p>
-<p>実際に計算例を出してみよう。
-財<span class="math notranslate nohighlight">\(x\)</span>と財<span class="math notranslate nohighlight">\(y\)</span>の需要関数がそれぞれ次の式で表されているとしよう。（単純化のため所得の部分は無視する）</p>
+<h1>生産関数と費用関数<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p><span class="xref myst">単一財の生産者理論の章</span>では費用関数は前提とされた．これは謎のブラックボックスである．100 万個作りたいと言ったら「200 億円かかります」とだけ言われるようなものである．この総費用関数はどこから出てくるのかが，この章の疑問となる．それを考えるために<strong>生産関数</strong>なるものを考えてみる．生産要素なるものを投入したら生産物が出てくる関数のことである．<a class="footnote-reference brackets" href="#note2" id="id2">1</a> この生産関数から総費用関数を作るということをかんがえよう．</p>
+<p>その生産要素とは何かといえば，財を作るために必要な材料，労力，機械などの資本などのことをいう．ここでは単純化のため，二つの要素，資本と労働によって財を生産できるものとしよう．資本の量を<span class="math notranslate nohighlight">\(K\)</span> (capital)<a class="footnote-reference brackets" href="#note1" id="id3">2</a>, 労働の量を<span class="math notranslate nohighlight">\(L\)</span> (labor)とする．</p>
+<p>そして生産関数を<span class="math notranslate nohighlight">\(f\)</span>とする．つまり<span class="math notranslate nohighlight">\(f(K,L)\)</span>が資本と労働の組み合わせをそれぞれ<span class="math notranslate nohighlight">\(K\)</span>と<span class="math notranslate nohighlight">\(L\)</span>だけ投入した時にできる財の量である．</p>
+<section id="id4">
+<h2>短期<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<p>さて，ではそれぞれどれだけ投入すべきかが問題になる．そのためにまずは，労働だけ調整できる場合を考えてみる．このように，一部の生産要素のみが調整できる状態のことを<strong>短期</strong>と呼ぶ．例えば，ケーキ屋は12月末に忙しくなるが，その度にケーキを作る機会を新たに購入したりしない．そんなことをすれば，暇なときに無駄になるからである．ではそういった時期にはどうするかというとアルバイトなどの人を増やしたりして対応する．ここでいう機械などが調整できない生産要素で助っ人で雇うアルバイトなどが調整できる生産要素である．ここでは労働が調整でき，資本が調整できないとしてみよう．ここでは<span class="math notranslate nohighlight">\(K=\bar K\)</span>の水準で固定されているとする．</p>
+<p>ではこのような短期では財を<span class="math notranslate nohighlight">\(q\)</span>だけ作るにはどうしたら良いだろうか．これは<span class="math notranslate nohighlight">\(q=f(\bar K,L)\)</span>となるような<span class="math notranslate nohighlight">\(L\)</span>を考える．これを<span class="math notranslate nohighlight">\(L^*(q,\bar K)\)</span>と書いておく．こう書くのは<span class="math notranslate nohighlight">\(q\)</span>や<span class="math notranslate nohighlight">\(\bar K\)</span>によって必要な労働量が違うからである．機械がたくさんあれば，同じだけ作るにしても労働量は少なくて済むし，作るべき量がたくさんあれば，機械の量が同じでも労働量は多くなる．
+このときの費用はどうなるかといえば</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}d_{x}(p_{x},p_{y})=10-p_{x}+p_{y}\\
-d_{y}(p_{x},p_{y})=10-p_{y}+p_{x}\end{split}\]</div>
-<p>一方財<span class="math notranslate nohighlight">\(x\)</span>と財<span class="math notranslate nohighlight">\(y\)</span>の供給関数も次のとおりであるとする</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}S_{x}(p_{x},p_{y})=p_{x}\\
-S_{y}(p_{x},p_{y})=p_{y}\end{split}\]</div>
-<p>このとき、一般均衡価格と取引量を求める。
-条件は次のとおりである。</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}  d_{x}(p_{x},p_{y})=S_{x}(p_{x},p_{y})\\
-     d_{y}(p_{x},p_{y})=S_{y}(p_{x},p_{y})\end{split}\]</div>
-<p>この方程式を解くことで一般均衡価格<span class="math notranslate nohighlight">\(p_x,p_y\)</span>を求めることができる。その価格を需要関数（あるいは供給関数）に代入すれば一般均衡における取引量を計算することができる。</p>
-<p>一般には、一般均衡分析は複雑になるため、（パラメータを推定しつつ）コンピューターなどを使って数値的に解くことが多い。
-このような分野は応用一般均衡(AGE)や計算可能一般均衡(CGE)と呼ばれる。 政府の政策の効果を推定したり、試算を行うのに使われている。</p>
+\[C^{\text{短期},\bar K}(q)= w \cdot L^*(q,\bar K)+r\cdot \bar K\]</div>
+<p>となる．ここで<span class="math notranslate nohighlight">\(w\)</span>は労働の価格で，<span class="math notranslate nohighlight">\(r\)</span>は資本の価格である．労働の価格は賃金率と呼ばれる．つまり時給みたいなものである．資本の価格はレンタル率と呼ばれる．イメージ的には機械を借りてきてそのレンタル料を払う感じである．多くの企業では機械はリース品（借りてきたもの）であることが多いという点を考えれば自然である．</p>
+<p>さて，これで短期の費用関数を作ることができたわけである．ちなみに<span class="math notranslate nohighlight">\( w \cdot L^*(q,\bar K)\)</span>の部分が可変費用，<span class="math notranslate nohighlight">\(r\cdot \bar K\)</span>が固定費用となっていることに注意する．短期的に動かせないものが固定費用という扱いなのである．</p>
 </section>
-<div class="toctree-wrapper compound">
-</div>
+<section id="id5">
+<h2>長期<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p>次に，労働も資本も調整できるような状況を考えよう．このような状況は<strong>長期</strong>と呼ばれる，すべての生産要素が調整できる世界である．このとき，<span class="math notranslate nohighlight">\(q=f(K,L)\)</span> を達成するような <span class="math notranslate nohighlight">\(K,L\)</span> の中で費用が最小になるものを考える．それを<span class="math notranslate nohighlight">\(K^*(q),L^*(q)\)</span>とすれば，総費用関数は</p>
+<div class="math notranslate nohighlight">
+\[C^{\text{長期}}(q)= w \cdot L^*(q)+r\cdot  K^*(q)\]</div>
+<p>となる. <span class="math notranslate nohighlight">\(K\)</span>も動かせることに注意すること．</p>
+<p>ではそのような費用を最小にする資本と労働はどのように決まるだろうか．実はこの発想は消費者の問題と全く同じである．生産量が同じになるような<span class="math notranslate nohighlight">\((K,L)\)</span>の組み合わせを結んだ曲線のことを<strong>等量曲線</strong>（あるいは<strong>等産出量曲線</strong>とも）呼ぶ．下記がその図である．</p>
+<figure class="align-default" id="iso-quant">
+<img alt="../_images/iso_quant.png" src="../_images/iso_quant.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">等量曲線</span><a class="headerlink" href="#iso-quant" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>この曲線の傾きは次のようにして求められる．<span class="math notranslate nohighlight">\(\frac{\partial f(K,L)}{\partial K}\)</span>を<strong>資本の限界生産物</strong>と呼ぶ．これは関数<span class="math notranslate nohighlight">\(f\)</span>を<span class="math notranslate nohighlight">\(K\)</span>で微分したものである
+これは他の生産要素の投入量が変わらないとき, 資本の投入量だけをほんの少し増やしたとき, 生産量がどれだけ増えるかを示している。労働の限界生産物も同じように定義する．</p>
+<p>資本の労働に対する<strong>技術的限界代替率</strong>とは言葉の原義的には「資本をほんの少し(1だけ)増やしたとき，生産量を一定に保つためには労働をどれだけ減らしてよいかという交換比率」である。
+減らすべき量を<span class="math notranslate nohighlight">\(\Delta\)</span>としよう。
+すると，「増やした<span class="math notranslate nohighlight">\(1\)</span>が十分に小さければ」以下のような式が成り立つ。</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial f(K,L)}{\partial K}-\frac{\partial f(K,L)}{\partial q_y}\Delta=0\]</div>
+<p>したがってその交換比率 <span class="math notranslate nohighlight">\(\Delta\)</span>（<strong>技術的限界代替率</strong>）は以下のように計算できる。</p>
+<div class="math notranslate nohighlight">
+\[\Delta = \frac{\frac{\partial f(K,L)}{\partial K}}{\frac{\partial f(K,L)}{\partial L}}\]</div>
+<p>これは無差別曲線のときの話と同様に，等量曲線の傾き（の絶対値）と等しくなる．</p>
+<p>これに対して，同じ費用を達成する<span class="math notranslate nohighlight">\((K,L)\)</span>の組み合わせを結んだ曲線のことを<strong>等費用曲線</strong>と呼ぶ．これは次の図で表される．</p>
+<figure class="align-default" id="iso-cost">
+<img alt="../_images/iso_cost.png" src="../_images/iso_cost.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">等費用曲線</span><a class="headerlink" href="#iso-cost" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>これは予算制約線とのときと同じで，生産要素の価格の比率<span class="math notranslate nohighlight">\(r/w\)</span>が傾きの絶対値になる．この等費用曲線は原点に向かっていけば行くほど費用が低くなる．</p>
+<p>このとき，生産量を一定にしたもとで費用を最小にする<span class="math notranslate nohighlight">\((K,L)\)</span>の組み合わせは，次の図で表現される.</p>
+<figure class="align-default" id="cost-min">
+<img alt="../_images/cost_mini.png" src="../_images/cost_mini.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">費用最小化</span><a class="headerlink" href="#cost-min" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>つまり，等費用曲線と等量曲線が接するところである．もし，接しないとしたらどうだろうか．そもそも等量曲線上にない <span class="math notranslate nohighlight">\((K,L)\)</span> の組み合わせでは生産量 <span class="math notranslate nohighlight">\(f(K,L)=q\)</span> を達成できないので論外である．したがって，等量曲線の上の組み合わせを考える．もし等費用曲線と交わっているとしよう．そうすると，等量曲線が原点に向かって凸であれば，等費用曲線と等量曲線が交わる点が二つできる．すると，等量曲線は下に出っ張っているので，それよりもほんの少し低い費用を達成し，なおかつ等量曲線と交わる等費用曲線を描くことができる．そうであるなら元々の組み合わせでは費用は最小できていないことになるのである．したがって，費用を最小にするところでは等量曲線と等費用曲線は接することになる．</p>
+<p>このようにして求まった<span class="math notranslate nohighlight">\(K,L\)</span>をそれぞれ<span class="math notranslate nohighlight">\(K^*(q)\)</span>と<span class="math notranslate nohighlight">\(L^*(q)\)</span>と書く．このベストな<span class="math notranslate nohighlight">\(K,L\)</span>はどれだけ作るのかによって変わる可能性があるので，その目印として<span class="math notranslate nohighlight">\((q)\)</span>をつけている．そうした<span class="math notranslate nohighlight">\(K^*(q)\)</span>と<span class="math notranslate nohighlight">\(L^*(q)\)</span>を用いると費用関数を<span class="math notranslate nohighlight">\(C^\text{長期}(q)=w L^*(q)+rK^*(q)\)</span>と求めることができる．</p>
+<section id="id6">
+<h3>短期と長期の費用関数の関係<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<p>短期と長期の費用関数には<span class="math notranslate nohighlight">\(C^{\text{短期},\bar K}(q)\ge C^\text{長期}(q)\)</span>という関係がある．短期の資本の量<span class="math notranslate nohighlight">\(\bar K\)</span>は必ずしも適切な水準ではないので，それすらうまく変更できる長期と比べると，どうしても費用がかかってしまうのである．もちろん，たまたまベストな可能性もあるので，<span class="math notranslate nohighlight">\(C^{\text{短期},\bar K}(q)= C^\text{長期}(q)\)</span>となる可能性があることには注意である．</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="note2"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>結局これもブラックボックスじゃないか，と思われるかもしれない．しかしこれはデータなどを用いて逆算することもできる．この辺りは実証産業組織論という分野が詳しいので興味ある方は参照せよ．</p>
+</dd>
+<dt class="label" id="note1"><span class="brackets"><a class="fn-backref" href="#id3">2</a></span></dt>
+<dd><p>capitalが資本であるが，頭文字cが費用のコスト(cost)と被るので，ドイツ語のKapitalで考える，マルクスの有名な著書，資本論はドイツ語でDas Kapital である．</p>
+</dd>
+</dl>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -465,7 +505,7 @@ S_{y}(p_{x},p_{y})=p_{y}\end{split}\]</div>
         },
         kernelOptions: {
             name: "python3",
-            path: "./ch4"
+            path: "./ch5"
         },
         predefinedOutput: true
     }
@@ -483,7 +523,7 @@ S_{y}(p_{x},p_{y})=p_{y}\end{split}\]</div>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../ch5/ch5_01.html"
+       href="ch5_01.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -492,11 +532,11 @@ S_{y}(p_{x},p_{y})=p_{y}\end{split}\]</div>
       </div>
     </a>
     <a class="right-next"
-       href="ch4_02.html"
+       href="ch5_03.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">価値判断の基準</p>
+        <p class="prev-next-title">生産関数と利潤の性質</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -515,7 +555,11 @@ S_{y}(p_{x},p_{y})=p_{y}\end{split}\]</div>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">一般均衡理論とは</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">短期</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">長期</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">短期と長期の費用関数の関係</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
