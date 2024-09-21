@@ -4,6 +4,11 @@
 format: jb-book
 root: intro
 chapters:
+- file: ch0/ch0_0
+  sections:
+  - file: ch0/ch0_1
+  - file: ch0/ch0_1_1
+  - file: ch0/ch0_2
 - file: ch1/ch1.1
   sections:
   - file: ch1/ch1.2
