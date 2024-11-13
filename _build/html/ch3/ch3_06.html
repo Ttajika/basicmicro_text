@@ -451,7 +451,9 @@ document.write(`
 </figcaption>
 </figure>
 <p>また個々の財の最適消費量が所得の増加にしたがってどのように変化するかをプロットした曲線を<strong>エンゲル曲線</strong>と呼ぶ．</p>
-<p>需要の所得による変動がどれほどのものかを示す基準として、<strong>需要の所得弾力性</strong>と呼ばれるものがある．所得が<span class="math notranslate nohighlight">\(I_{\text{前}}\)</span>から<span class="math notranslate nohighlight">\(I_{\text{後}}\)</span>に変化したとき、財<span class="math notranslate nohighlight">\( x\)</span>の需要の所得弾力性は次のように定義される．</p>
+<p>需要の所得による変動がどれほどのものかを示す基準として、<strong>需要の所得弾力性</strong>と呼ばれるものがある．大雑把に言えば所得が1%上昇したとき，需要が<span class="math notranslate nohighlight">\(e\)</span>%上昇していれば需要の所得弾力性は<span class="math notranslate nohighlight">\(e\)</span>だ，ということである．</p>
+<p>数式を使って細かく見てみると次の通りである．
+所得が<span class="math notranslate nohighlight">\(I_{\text{前}}\)</span>から<span class="math notranslate nohighlight">\(I_{\text{後}}\)</span>に変化したとき、財<span class="math notranslate nohighlight">\( x\)</span>の需要の所得弾力性は次のように定義される．</p>
 <div class="math notranslate nohighlight">
 \[ \frac{ \frac{ d _x(p _x,p _y,I_{\text{後}})-d _x(p _x,p _y,I_{\text{前}})} {d _x(p _x,p _y,I_{\text{前}})}}{\frac{I_{\text{後}}-I_{\text{前}}}{I_{\text{前}}}}\]</div>
 <p>あるいは式変形しただけであるが、</p>
@@ -466,7 +468,9 @@ document.write(`
 所得弾力性が<span class="math notranslate nohighlight">\( 0\)</span>から<span class="math notranslate nohighlight">\( 1\)</span>の間の財を<strong>必需財</strong>と呼ぶ．
 このような財は所得の増加によって財の消費量は増えるが、その増える割合は所得の伸びを下回る．つまり支出に占めるその財の割合が減って行くような財のことなのである．電気・水道や住宅費など生活に必要な費用は所得が増加したとしてもあまり増えたりはしないだろうし、所得が減ったとしても大きく減らすことのできるものでもない．所得が増えた分は他への支出に使うようになることが多いであろう．したがってそういった財を必需財と呼ぶのである．</p>
 <p>逆に所得弾力性が<span class="math notranslate nohighlight">\( 1\)</span>より大きい財は<strong>贅沢財</strong>あるいは奢侈財と呼ぶ．所得の伸び以上に消費の伸びが増えていくのである．</p>
-<p>ちなみに所得弾力性の平均値は<span class="math notranslate nohighlight">\(1\)</span>でなくてはならないことに注意する．実際にこれを示してみよう（ただし，以下の式変形は多少複雑なので細かいところに興味がない読者は飛ばしても良い．）</p>
+<p>ちなみに所得弾力性の平均値は<span class="math notranslate nohighlight">\(1\)</span>でなくてはならないことに注意する．簡単に言えば，所得が1%上昇したということは予算制約の右辺が1%上昇したということだ．ということは消費量は<span class="math notranslate nohighlight">\(p_x q_x+p_yq_y=I\)</span>を満たしているので，左辺の消費量もちょうど1%上昇しなければならない．つまり<span class="math notranslate nohighlight">\(x\)</span>の上昇率と<span class="math notranslate nohighlight">\(y\)</span>の上昇率の平均は1%出なければならない．</p>
+<p>所得弾力性の平均値は<span class="math notranslate nohighlight">\(1\)</span>になるということから，財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>両方が贅沢財になることはない，財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>両方が下級財になることはないということがわかる．もしそうなら，所得弾力性の平均値は１にならないからである．これは両方贅沢財なら所得弾力性の平均値は１を超え，両方下級財なら所得弾力性の平均値はマイナスになってしまうことから確かめられる．</p>
+<p>最後に所得弾力性の平均値は<span class="math notranslate nohighlight">\(1\)</span>であることを示してみよう．ただし，以下の式変形は多少複雑なので細かいところに興味がない読者は飛ばしても良い．</p>
 <p>例えば<span class="math notranslate nohighlight">\(I\)</span>から<span class="math notranslate nohighlight">\(I'\)</span>に所得が変化した結果，消費プランが<span class="math notranslate nohighlight">\((x,y)\)</span>から<span class="math notranslate nohighlight">\((x',y')\)</span>に変化したとしよう．すると，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}p_x x + p_y y = I\\
@@ -481,7 +485,6 @@ p_x x'+p_y y' = I' \end{split}\]</div>
 \frac{p_x x}{I}\frac{\frac{(x-x')}{x}}{\frac{I-I'}{I}}+\frac{p_yy}{I}\frac{\frac{(y-y')}{y}}{\frac{I-I'}{I}}=1\\
 \frac{p_x x}{I}\text{$x$の所得弾力性}+\frac{p_yy}{I}\text{$y$の所得弾力性}=1\end{split}\]</div>
 <p>となる．<span class="math notranslate nohighlight">\(\frac{p_x x}{I}+\frac{p_yy}{I}=1\)</span>であることから，所得弾力性の平均値は<span class="math notranslate nohighlight">\(1\)</span>になる．</p>
-<p>所得弾力性の平均値は<span class="math notranslate nohighlight">\(1\)</span>になるということから，財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>両方が贅沢財になることはない，財<span class="math notranslate nohighlight">\(x\)</span>と<span class="math notranslate nohighlight">\(y\)</span>両方が下級財になることはないということがわかる．もしそうなら，所得弾力性の平均値は１にならないからである．これは両方贅沢財なら所得弾力性の平均値は１を超え，両方下級財なら所得弾力性の平均値はマイナスになってしまうことから確かめられる．</p>
 </section>
 <section id="id4">
 <h2>価格による影響<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
